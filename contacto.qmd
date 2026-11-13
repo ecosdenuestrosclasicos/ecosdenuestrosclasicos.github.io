@@ -1,0 +1,33 @@
+---
+title: "Contacto"
+description: "Cómo escribir a Ecos de nuestros clásicos."
+---
+
+La forma más directa de hablar conmigo es el correo. Lo leo yo, así que puede que tarde unos días, pero contesto.
+
+```{=html}
+<p class="contacto-correo"><a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a></p>
+
+<div class="fichero contacto-motivos">
+  <article class="ficha">
+    <span class="signatura">Comunidad</span>
+    <h3>Preguntas y propuestas</h3>
+    <p>Un tema que quieres que trate, una duda sobre un vídeo o una corrección.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Pregunta%20para%20Ecos">Escribir</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Editorial</span>
+    <h3>Propuestas editoriales</h3>
+    <p>Libros, artículos, prólogos, charlas o proyectos de escritura.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Propuesta%20editorial">Escribir</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Colaboraciones</span>
+    <h3>Museos, cultura y marcas</h3>
+    <p>Antes, échale un vistazo a <a href="colaboraciones.html">cómo me gusta colaborar</a>.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Colaboraci%C3%B3n%20con%20Ecos">Escribir</a>
+  </article>
+</div>
+```
+
+También me encuentras en [Instagram](https://www.instagram.com/ecosdenuestrosclasicos/), [TikTok](https://www.tiktok.com/@ecosdenuestrosclasicos), [YouTube](https://www.youtube.com/@Ecosdenuestrosclásicos) y [Facebook](https://www.facebook.com/profile.php?id=61586532315391).

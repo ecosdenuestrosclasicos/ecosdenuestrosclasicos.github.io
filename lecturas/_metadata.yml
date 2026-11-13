@@ -1,0 +1,16 @@
+toc: true
+toc-title: "En esta página"
+
+# COMENTARIOS (giscus). Desactivados hasta configurar GitHub Discussions.
+# Sigue los pasos del README y luego quita los # de las líneas de abajo,
+# pegando los dos códigos que te da giscus.app.
+# comments:
+#   giscus:
+#     repo: ecosdenuestrosclasicos/ecosdenuestrosclasicos.github.io
+#     repo-id: "PEGA_AQUI_REPO_ID"
+#     category: "Comentarios"
+#     category-id: "PEGA_AQUI_CATEGORY_ID"
+#     mapping: pathname
+#     reactions-enabled: true
+#     language: es
+#     theme: light

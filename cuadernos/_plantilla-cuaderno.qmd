@@ -1,0 +1,29 @@
+---
+# PLANTILLA PARA UN TEXTO DE «CUADERNOS DE ECOS»
+# Copia este archivo dentro de cuadernos/ con un nombre sin espacios
+# ni tildes (por ejemplo: sobre-la-ira.qmd), cambia los datos y escribe.
+title: "Título"
+subtitle: "Subtítulo opcional"
+description: "Una frase que se verá en la Biblioteca."
+date: 2026-11-23
+categories: [Cuadernos, Filosofía]
+image: ../imagenes/mapa-ruta.jpg
+---
+
+::: {.capitular}
+Primer párrafo. La primera letra saldrá como capitular.
+:::
+
+Resto del texto. Para una cita clásica con referencia:
+
+::: {.cita}
+[Texto original en latín.]{.original lang="la"}
+
+[Traducción.]{.traduccion}
+
+[Autor, *Obra* 1.1]{.referencia}
+:::
+
+Para notas al pie, escribe esto[^1].
+
+[^1]: Y aquí el texto de la nota.

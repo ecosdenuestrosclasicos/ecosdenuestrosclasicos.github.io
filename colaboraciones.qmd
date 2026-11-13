@@ -1,0 +1,42 @@
+---
+title: "Prensa y colaboraciones"
+subtitle: "Para editoriales, museos, proyectos culturales y marcas"
+description: "Qué es Ecos de nuestros clásicos, con qué tipo de proyectos colabora y cómo contactar."
+image: imagenes/mapa-ruta.jpg
+---
+
+:::: {.colab-cabecera}
+::: {.colab-texto}
+**Ecos de nuestros clásicos** es un proyecto independiente de divulgación sobre Grecia y Roma creado por Isabel en noviembre de 2025. Combina vídeos breves, episodios largos, lecturas comentadas e investigación con fuentes, y se publica en Instagram, TikTok, YouTube y Facebook.
+
+Su público es gente curiosa que quiere entender el mundo clásico con rigor y sin solemnidad: lectores, estudiantes, docentes y personas que, simplemente, disfrutan con la historia y los libros.
+:::
+::: {.colab-contacto}
+```{=html}
+<p class="colab-correo-titulo">Escríbeme a</p>
+<p class="colab-correo"><a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Colaboraci%C3%B3n%20con%20Ecos">ecosdenuestrosclasicos@gmail.com</a></p>
+<p class="colab-nota">Las cifras actualizadas de audiencia y alcance de cada plataforma, a petición.</p>
+```
+:::
+::::
+
+## Con quién me gusta trabajar
+
+Prefiero las colaboraciones que tienen sentido cultural, editorial o narrativo. Me encaja especialmente trabajar con:
+
+- **Editoriales** de historia, humanidades, pensamiento y literatura.
+- **Museos y exposiciones.**
+- **Artesanos y creadores** vinculados al patrimonio.
+- **Reproducciones arqueológicas** y piezas inspiradas en la Antigüedad.
+- **Proyectos culturales y educativos.**
+- **Marcas** cuyos productos pueda incorporar de forma natural a lo que cuento.
+
+## Cómo me gusta trabajar
+
+Prefiero una colaboración bien pensada a muchas publicaciones publicitarias. Me interesa crear algo que tenga valor para mi comunidad y para quien colabora conmigo, con acuerdos claros y respetando mi independencia editorial: lo que cuento sobre historia lo decido yo.
+
+Los códigos de descuento por comisión y las campañas muy comerciales no suelen encajar con Ecos. Si tienes una idea original que una tu proyecto con el mundo clásico, en cambio, me encantará escucharla.
+
+## Para prensa
+
+Si estás preparando un artículo, un programa o un pódcast sobre divulgación, historia antigua o el cruce entre humanidades y datos, puedo ayudarte con el tema o participar. Escríbeme con el contexto y los plazos.

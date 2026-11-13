@@ -1,0 +1,429 @@
+/* =========================================================
+   ECOS DE NUESTROS CLÁSICOS — hoja de estilos
+   Colores y tipos de letra: ver README («Identidad visual»)
+   ========================================================= */
+
+/* Tipografías alojadas en la propia web (licencias en assets/fuentes) */
+@font-face { font-family: "EB Garamond"; src: url("fuentes/EBGaramond.woff") format("woff"); font-weight: 400 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fuentes/EBGaramond-Italic.woff") format("woff"); font-weight: 400 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "IM Fell English"; src: url("fuentes/IMFeENrm28P.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IM Fell English"; src: url("fuentes/IMFeENit28P.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Special Elite"; src: url("fuentes/SpecialElite.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+
+:root {
+  --granate: #652638;
+  --burdeos: #421C2A;
+  --marfil: #F6F0E5;
+  --pergamino: #E8DCC7;
+  --tinta: #282321;
+  --bronce: #A78658;
+  --bronce-osc: #7C6038;
+  --oliva: #5F6152;
+  --fell: "IM Fell English", "EB Garamond", Georgia, serif;
+  --garamond: "EB Garamond", Garamond, Georgia, serif;
+  --maquina: "Special Elite", "Courier New", monospace;
+  --medida: 36rem;           /* ancho de lectura */
+}
+
+/* Papel: un grano muy leve, casi invisible */
+body {
+  background-color: var(--marfil);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  font-feature-settings: "liga", "kern", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--granate); color: var(--marfil); }
+
+a { text-decoration-thickness: 1px; text-underline-offset: .18em; }
+a:hover { color: var(--burdeos); }
+
+:focus-visible {
+  outline: 2px solid var(--granate);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- Barra de navegación ---------- */
+.navbar {
+  border-bottom: 1px solid rgba(167, 134, 88, .55);
+  box-shadow: none !important;
+  padding-top: .55rem; padding-bottom: .55rem;
+}
+.navbar-title {
+  font-family: var(--fell);
+  font-style: italic;
+  font-size: 1.32rem;
+  color: var(--granate) !important;
+  letter-spacing: .005em;
+}
+.navbar .nav-link, .navbar .dropdown-item { font-size: .95rem; }
+.navbar .nav-link { color: var(--tinta) !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: var(--granate) !important; }
+.navbar .dropdown-menu {
+  background: var(--marfil);
+  border: 1px solid var(--pergamino);
+  border-radius: 2px;
+  box-shadow: 0 10px 30px -18px rgba(66, 28, 42, .45);
+}
+.navbar .dropdown-item:hover { background: var(--pergamino); color: var(--burdeos); }
+.navbar-nav.ms-auto .nav-link[href$="apoyame.html"] {
+  border: 1px solid var(--granate);
+  padding: .3rem .85rem !important;
+  border-radius: 999px;
+  color: var(--granate) !important;
+}
+.navbar-nav.ms-auto .nav-link[href$="apoyame.html"]:hover {
+  background: var(--granate); color: var(--marfil) !important;
+}
+#quarto-search .aa-DetachedSearchButton { border: 0; background: transparent; }
+
+/* ---------- Tipografía general ---------- */
+h1, h2, h3, h4, .title { font-family: var(--fell); color: var(--burdeos); font-weight: 400; }
+h1.title, .quarto-title h1 { font-size: clamp(2.3rem, 5vw, 3.4rem); line-height: 1.08; }
+h2 { font-size: 1.85rem; margin-top: 2.6rem; border-bottom: 0 !important; }
+h3 { font-size: 1.35rem; font-style: italic; }
+.quarto-title .subtitle, .description {
+  font-family: var(--garamond); font-style: italic; color: var(--oliva); font-size: 1.22rem;
+}
+.quarto-title-meta-heading { font-family: var(--garamond); text-transform: none !important; letter-spacing: 0 !important; color: var(--oliva); }
+
+main.content p, main.content li { hyphens: auto; -webkit-hyphens: auto; }
+#quarto-content main.content { max-width: 44rem; }
+.page-columns .content p, .page-columns .content li { max-width: var(--medida); }
+
+blockquote {
+  border-left: 2px solid var(--bronce) !important;
+  color: var(--tinta);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+hr { border-top: 1px solid var(--bronce); opacity: .5; }
+
+/* Capitular */
+.capitular > p:first-of-type::first-letter,
+p.capitular::first-letter {
+  float: left;
+  font-family: var(--fell);
+  font-size: 4.1em;
+  line-height: .78;
+  padding: .08em .1em 0 0;
+  color: var(--granate);
+}
+
+/* Griego y latín */
+:lang(grc), .griego { font-family: var(--garamond); font-feature-settings: "liga" 1; }
+:lang(la) { font-style: italic; }
+
+/* ---------- Cita clásica con referencia ---------- */
+.cita {
+  margin: 2.2rem 0;
+  padding: 0 0 0 1.4rem;
+  border-left: 2px solid var(--granate);
+  max-width: var(--medida);
+}
+.cita .original { font-size: 1.28rem; line-height: 1.45; color: var(--burdeos); margin: 0 0 .5rem; }
+.cita .traduccion { margin: 0 0 .45rem; }
+.cita .referencia { font-size: .88rem; color: var(--oliva); margin: 0; }
+
+/* ---------- Sellos de estado (investigación) ---------- */
+.sello {
+  display: inline-block;
+  font-family: var(--maquina);
+  font-size: .78rem;
+  letter-spacing: .02em;
+  padding: .12rem .5rem;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  transform: rotate(-2deg);
+  opacity: .9;
+}
+.sello.terminado { color: var(--granate); }
+.sello.en-curso { color: var(--bronce-osc); }
+.sello.propuesta { color: var(--oliva); border-style: dashed; }
+
+/* ---------- Fichas de biblioteca ---------- */
+.fichero { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.6rem; margin: 2rem 0; }
+.ficha {
+  position: relative;
+  background:
+    repeating-linear-gradient(to bottom, transparent 0 1.55rem, rgba(101, 38, 56, .09) 1.55rem calc(1.55rem + 1px)),
+    #FBF7EE;
+  background-position: 0 2.9rem;
+  border: 1px solid #DCCDB3;
+  padding: .9rem 1.2rem 1.2rem;
+  box-shadow: 0 1px 0 #DCCDB3, 0 14px 22px -20px rgba(40, 35, 33, .55);
+  line-height: 1.55rem;
+}
+.ficha::before {               /* filete rojo de las fichas de catálogo */
+  content: ""; position: absolute; left: 0; right: 0; top: 2.45rem;
+  border-top: 1px solid rgba(101, 38, 56, .55);
+}
+.ficha::after {                /* agujero del fichero */
+  content: ""; position: absolute; bottom: .55rem; left: 50%;
+  width: .7rem; height: .7rem; margin-left: -.35rem;
+  border-radius: 50%; background: var(--marfil); box-shadow: inset 0 1px 2px rgba(40,35,33,.35);
+}
+.ficha .signatura { font-family: var(--maquina); font-size: .8rem; color: var(--oliva); display: block; height: 1.55rem; }
+.ficha h3 { font-size: 1.2rem; margin: .7rem 0 .2rem; font-style: normal; line-height: 1.3; }
+.ficha p { font-size: .97rem; margin: 0 0 .6rem; }
+.ficha a { font-weight: 500; }
+.ficha .relacion { font-family: var(--maquina); font-size: .78rem; color: var(--granate); }
+
+/* ---------- Bloques auxiliares ---------- */
+.nota-margen {
+  font-size: .9rem; color: var(--oliva); border-top: 1px solid var(--bronce); padding-top: .4rem;
+}
+.boton {
+  display: inline-block; font-family: var(--garamond); font-size: 1.05rem;
+  padding: .55rem 1.3rem; border: 1px solid var(--granate); border-radius: 999px;
+  text-decoration: none; color: var(--granate); background: transparent;
+  transition: background .2s, color .2s;
+}
+.boton:hover { background: var(--granate); color: var(--marfil); }
+.boton.lleno { background: var(--granate); color: var(--marfil); }
+.boton.lleno:hover { background: var(--burdeos); }
+
+.foto-marco {
+  padding: .55rem; background: #FBF7EE; border: 1px solid #DCCDB3;
+  box-shadow: 0 18px 30px -24px rgba(40,35,33,.6);
+}
+.foto-marco img { display: block; width: 100%; height: auto; }
+.pie-foto { font-size: .86rem; color: var(--oliva); font-style: italic; margin-top: .45rem; }
+
+/* ---------- Pie de página ---------- */
+.nav-footer {
+  background: var(--burdeos) !important;
+  color: var(--pergamino);
+  border-top: 0 !important;
+  position: relative;
+  padding-top: 2.4rem; padding-bottom: 2.2rem;
+  font-size: .93rem;
+}
+.nav-footer::before {           /* greca fina, una sola vez en toda la web */
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 10px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='10' viewBox='0 0 20 10'%3E%3Cpath d='M0 9h4V3h8v4H8V5' fill='none' stroke='%23A78658' stroke-width='1'/%3E%3Cpath d='M12 9h8' stroke='%23A78658' stroke-width='1'/%3E%3C/svg%3E") repeat-x;
+  opacity: .8;
+}
+.nav-footer a, .nav-footer .nav-link { color: var(--marfil) !important; }
+.nav-footer a:hover { color: var(--bronce) !important; }
+.nav-footer strong { font-family: var(--fell); font-weight: 400; font-style: italic; font-size: 1.15rem; color: var(--marfil); }
+.nav-footer .footer-items .nav-item { padding: 0 .35rem; }
+.nav-footer .nav-footer-center .footer-items { flex-wrap: wrap; justify-content: center; }
+
+/* ---------- Listados (Biblioteca) ---------- */
+.quarto-listing .listing-title a, .quarto-listing h3 { font-family: var(--fell); color: var(--burdeos); }
+.quarto-listing .listing-categories .listing-category, .quarto-category {
+  font-family: var(--maquina); font-size: .75rem; border-color: var(--bronce) !important;
+  color: var(--granate) !important; border-radius: 2px !important; text-transform: none;
+}
+.quarto-listing-category-title { font-family: var(--fell); color: var(--burdeos); }
+.quarto-listing-container-default .quarto-post { border-bottom: 1px solid rgba(167,134,88,.35); }
+.listing-description { color: var(--tinta); }
+input#listing-search, .input-group-text { background: #FBF7EE !important; border-color: #DCCDB3 !important; border-radius: 2px !important; }
+
+/* Código R */
+div.sourceCode { background: #FBF7EE; border: 1px solid #E3D6BE; border-radius: 2px; }
+.cell-output pre { font-size: .82rem; }
+table { font-size: .93rem; }
+.table > thead { border-bottom: 1.5px solid var(--granate); }
+
+/* ---------- Mini Odi asomándose ---------- */
+.miniodi {
+  position: fixed; right: 1rem; bottom: -90px; z-index: 30;
+  width: 96px; height: 73px; padding: 0; border: 0; background: none; cursor: pointer;
+  transition: bottom .35s ease;
+}
+.miniodi img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(40,35,33,.35)); }
+.miniodi.visible { bottom: -30px; }
+.miniodi:hover, .miniodi:focus-visible, .miniodi.abierto { bottom: 1rem; }
+.miniodi-bocadillo {
+  position: fixed; right: 1.2rem; bottom: 6.2rem; z-index: 31; max-width: 15rem;
+  background: #FBF7EE; border: 1px solid var(--bronce); padding: .7rem .9rem; font-size: .95rem;
+  box-shadow: 0 14px 26px -18px rgba(40,35,33,.7);
+}
+.miniodi-bocadillo[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@media print {
+  .miniodi, .navbar, .nav-footer { display: none !important; }
+}
+
+/* =========================================================
+   PORTADA
+   ========================================================= */
+.portada { max-width: 76rem; margin: 0 auto; padding: 0 1.5rem; }
+.portada h2 { margin-top: 0; }
+
+.portada-cabecera { text-align: center; padding: 3.2rem 0 2rem; }
+.portada-firma { font-style: italic; color: var(--oliva); margin: 0 0 .6rem; font-size: 1.05rem; }
+.portada-titulo {
+  font-family: var(--fell); font-weight: 400; color: var(--granate);
+  font-size: clamp(2.9rem, 8.4vw, 6.4rem); line-height: .98; letter-spacing: -.01em; margin: 0;
+}
+.portada-entrada { max-width: 34rem; margin: 1.3rem auto 0; font-size: 1.22rem; line-height: 1.55; }
+
+.lamina { margin: 0 auto; max-width: 70rem; }
+.lamina img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--bronce); padding: 7px; background: #FBF7EE;
+  box-shadow: 0 30px 50px -40px rgba(40, 35, 33, .8);
+}
+.lamina figcaption { text-align: center; font-style: italic; color: var(--oliva); font-size: .95rem; margin-top: .7rem; }
+
+/* Las paradas: la misma ruta granate del mapa, convertida en índice */
+.paradas { position: relative; margin: 5rem 0 0; }
+.paradas > h2 { text-align: center; margin-bottom: 1.6rem; }
+.paradas-ruta { width: 100%; height: 40px; display: block; }
+.paradas-ruta path {
+  fill: none; stroke: var(--granate); stroke-width: 2.2; stroke-dasharray: 9 7;
+  vector-effect: non-scaling-stroke;
+}
+.paradas-lista {
+  list-style: none; padding: 0; margin: -.2rem 0 0;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.4rem;
+}
+.paradas-lista li { position: relative; padding-top: 1.1rem; }
+.paradas-lista li::before {
+  content: ""; position: absolute; top: -1.6rem; left: 0;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--marfil); border: 2.5px solid var(--granate);
+}
+.paradas-lista a { text-decoration: none; }
+.parada-nombre { font-family: var(--fell); font-size: 1.32rem; color: var(--burdeos); line-height: 1.15; }
+.paradas-lista a:hover .parada-nombre { color: var(--granate); text-decoration: underline; text-decoration-thickness: 1px; }
+.paradas-lista p { font-size: .97rem; line-height: 1.5; margin: .35rem 0 0; color: var(--tinta); }
+
+/* Investigación destacada */
+.destacado {
+  margin: 6rem 0 0; display: grid; grid-template-columns: 1.05fr 1fr; gap: 3.5rem; align-items: center;
+  border-top: 1px solid rgba(167,134,88,.5); border-bottom: 1px solid rgba(167,134,88,.5);
+  padding: 3.6rem 0;
+}
+.destacado-cita .original {
+  font-family: var(--fell); font-style: italic; color: var(--granate);
+  font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.12; margin: 0 0 1.1rem;
+}
+.destacado-cita .traduccion { font-size: 1.15rem; margin: 0 0 .5rem; }
+.destacado-cita .referencia { color: var(--oliva); font-size: .95rem; margin: 0; }
+.destacado-tipo { margin: 0 0 .9rem; }
+.destacado-texto p { max-width: 32rem; }
+
+/* Presentación */
+.presentacion { margin: 6rem auto 0; max-width: 60rem; display: grid; grid-template-columns: 17rem 1fr; gap: 3.2rem; align-items: center; }
+.presentacion-foto { transform: rotate(-1.4deg); margin: 0; }
+.presentacion-texto p { max-width: 33rem; }
+
+/* Preguntas */
+.preguntas { margin: 6rem 0 0; }
+.preguntas > h2 { text-align: center; margin-bottom: 2.2rem; }
+.preguntas-rejilla { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; max-width: 66rem; margin: 0 auto; }
+.preguntas .cita { margin: 0; }
+.preguntas .cita .original[lang="grc"] { font-style: normal; }
+.preguntas .pregunta { margin: 1rem 0 0; padding-top: .9rem; border-top: 1px dashed rgba(101,38,56,.4); }
+
+/* Patreon */
+.patreon {
+  margin: 6rem 0 5rem; background: var(--pergamino);
+  border: 1px solid #D8C7A8; padding: 3.2rem 2rem; text-align: center;
+}
+.patreon-texto { max-width: 36rem; margin: 0 auto; }
+.patreon-texto p { margin-left: auto; margin-right: auto; }
+.patreon-mas { margin-left: 1.2rem; }
+
+/* Entrada de la portada: la ruta se dibuja una sola vez */
+@media (prefers-reduced-motion: no-preference) {
+  .paradas-ruta { clip-path: inset(0 100% 0 0); animation: trazar 2.2s ease-out .4s forwards; }
+  @keyframes trazar { to { clip-path: inset(0 0 0 0); } }
+}
+
+@media (max-width: 991px) {
+  .paradas-lista { grid-template-columns: repeat(3, 1fr); row-gap: 2.6rem; }
+  .paradas-ruta { display: none; }
+  .paradas-lista li { border-top: 2px dashed var(--granate); padding-top: 1.2rem; }
+  .paradas-lista li::before { top: -8px; }
+  .destacado, .preguntas-rejilla { grid-template-columns: 1fr; gap: 2.4rem; }
+}
+@media (max-width: 640px) {
+  .portada { padding: 0 1.1rem; }
+  .portada-cabecera { padding-top: 2.2rem; }
+  .lamina { margin: 0 -1.1rem; }
+  .lamina img { border-left: 0; border-right: 0; padding: 4px 0; }
+  .lamina figcaption { padding: 0 1.1rem; }
+  .paradas-lista { grid-template-columns: 1fr; }
+  .presentacion { grid-template-columns: 1fr; gap: 2rem; }
+  .presentacion-foto { max-width: 15rem; }
+  .patreon-mas { display: block; margin: 1rem 0 0; }
+  .destacado, .presentacion, .preguntas { margin-top: 4rem; }
+}
+
+/* =========================================================
+   PÁGINAS INTERIORES
+   ========================================================= */
+.sobre-mi { display: grid; grid-template-columns: 15rem 1fr; gap: 2.6rem; align-items: start; margin-top: .5rem; }
+.sobre-mi-foto .foto-marco { transform: rotate(-1.2deg); margin: 0; }
+.sobre-mi-texto p:first-child { margin-top: 0; }
+
+.botonera { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.4rem 0; }
+
+.dibujo-comunidad { max-width: 26rem; margin: 1.2rem 0 0; transform: rotate(.8deg); }
+
+.plataformas { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1rem; margin: 1.8rem 0 1rem; }
+.plataformas a {
+  display: block; padding: 1rem 1.1rem; text-decoration: none;
+  border: 1px solid #DCCDB3; background: #FBF7EE; border-top: 3px solid var(--granate);
+}
+.plataformas a:hover { border-color: var(--granate); }
+.plataformas strong { display: block; font-family: var(--fell); font-weight: 400; font-size: 1.3rem; color: var(--burdeos); }
+.plataformas span { color: var(--tinta); font-size: .95rem; }
+
+.colab-cabecera { display: grid; grid-template-columns: 1fr 16rem; gap: 2.4rem; align-items: start; }
+.colab-contacto { background: var(--pergamino); border: 1px solid #D8C7A8; padding: 1.3rem 1.3rem 1rem; }
+.colab-correo-titulo { font-style: italic; color: var(--oliva); margin: 0; }
+.colab-correo { font-family: var(--fell); font-size: 1.15rem; word-break: break-all; margin: .2rem 0 .8rem; }
+.colab-nota { font-size: .9rem; margin: 0; }
+
+.contacto-correo { font-family: var(--fell); font-size: clamp(1.4rem, 4vw, 2.1rem); margin: 1.5rem 0 1rem; word-break: break-word; }
+
+.error404 { display: grid; grid-template-columns: 13rem 1fr; gap: 2rem; align-items: center; margin-top: 1rem; }
+.error404 img { width: 100%; height: auto; transform: scaleX(-1); }
+.error404-texto { font-size: 1.25rem; }
+
+@media (max-width: 760px) {
+  .sobre-mi, .colab-cabecera, .error404 { grid-template-columns: 1fr; }
+  .sobre-mi-foto { max-width: 15rem; }
+  .error404 img { max-width: 11rem; }
+}
+.quarto-title-block:has(.subtitle) .description { display: none; }
+.quarto-listing .listing-category, .quarto-category { text-transform: none !important; }
+.colab-correo { font-size: 1.02rem; word-break: normal; overflow-wrap: anywhere; }
+@media (max-width: 640px) { .navbar-title { font-size: 1.08rem; } }
+/* ---------- Mapa de la ruta (portada) ---------- */
+.mapa-ruta { display: block; width: 100%; height: auto; }
+.mapa-ruta .mar-fondo { fill: #EFE6D6; }
+.mapa-ruta .reticula { stroke: #A78658; stroke-width: .6; opacity: .35; fill: none; }
+.mapa-ruta .costa-3 { fill: none; stroke: #8DA0A0; stroke-width: 15; opacity: .10; stroke-linejoin: round; }
+.mapa-ruta .costa-2 { fill: none; stroke: #6F8686; stroke-width: 8; opacity: .16; stroke-linejoin: round; }
+.mapa-ruta .costa-1 { fill: none; stroke: #4F6B6B; stroke-width: 3.2; opacity: .22; stroke-linejoin: round; }
+.mapa-ruta .tierra { fill: #E2D2B4; stroke: #421C2A; stroke-width: .9; stroke-linejoin: round; }
+.mapa-ruta .mar { font-family: "IM Fell English", Georgia, serif; font-style: italic; fill: #4F6B6B; font-size: 17px; opacity: .85; }
+.mapa-ruta .mar.grande { font-size: 30px; opacity: .6; }
+.mapa-ruta .ruta { fill: none; stroke: #652638; stroke-width: 2.6; stroke-dasharray: 10 7; stroke-linecap: round; }
+.mapa-ruta .lugar circle { fill: #F6F0E5; stroke: #652638; stroke-width: 2.6; }
+.mapa-ruta .lugar text { font-family: "IM Fell English", Georgia, serif; font-size: 21px; fill: #421C2A; paint-order: stroke; stroke: #E2D2B4; stroke-width: 4px; stroke-linejoin: round; }
+.mapa-ruta .lugar .antiguo { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: 14px; fill: #5F6152; }
+.mapa-ruta .miniodi-mapa line { stroke: #652638; stroke-width: 1.2; }
+.mapa-ruta .miniodi-aro { fill: #F6F0E5; stroke: #652638; stroke-width: 2; }
+.mapa-ruta .miniodi-mapa text { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: 15px; fill: #421C2A; paint-order: stroke; stroke: #EFE6D6; stroke-width: 4px; }
+.mapa-ruta .marco { fill: none; stroke: #A78658; stroke-width: 1; }
+.lamina-pista { display: none; }
+@media (max-width: 640px) {
+  .lamina { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .lamina .mapa-ruta { width: 860px; max-width: none; }
+  .lamina figcaption { position: sticky; left: 0; width: calc(100vw - 2.2rem); }
+  .lamina-pista { display: block; }
+}
+.error404 img { max-width: 170px; }

@@ -1,0 +1,30 @@
+<!-- Mini Odi: aparece solo cuando llegas al final de una página -->
+<button class="miniodi" type="button" aria-label="Mini Odi quiere decirte algo" aria-expanded="false" aria-controls="miniodi-bocadillo">
+  <img src="/imagenes/miniodi-ruta.webp" alt="">
+</button>
+<div class="miniodi-bocadillo" id="miniodi-bocadillo" role="status" hidden></div>
+<script>
+(function () {
+  var b = document.querySelector('.miniodi'), t = document.getElementById('miniodi-bocadillo');
+  if (!b || !t) return;
+  var frases = [
+    'Shh. Voy por el canto XII y acaban de aparecer las sirenas.',
+    'En el mapa de la portada salgo corriendo detrás de Isabel. Como siempre.',
+    'No me preguntes por Catilina. Isabel ya me ha leído la conjuración tres veces.'
+  ], i = Math.floor(Math.random() * frases.length);
+  function alFinal() {
+    var abajo = window.innerHeight + window.scrollY >= document.body.scrollHeight - 420;
+    b.classList.toggle('visible', abajo);
+    if (!abajo) cerrar();
+  }
+  function cerrar() { t.hidden = true; b.classList.remove('abierto'); b.setAttribute('aria-expanded', 'false'); }
+  b.addEventListener('click', function () {
+    if (!t.hidden) { cerrar(); return; }
+    t.textContent = frases[i]; i = (i + 1) % frases.length;
+    t.hidden = false; b.classList.add('abierto'); b.setAttribute('aria-expanded', 'true');
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
+  window.addEventListener('scroll', alFinal, { passive: true });
+  alFinal();
+})();
+</script>

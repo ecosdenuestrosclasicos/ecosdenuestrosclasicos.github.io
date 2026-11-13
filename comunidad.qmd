@@ -1,0 +1,45 @@
+---
+title: "Comunidad"
+subtitle: "Preguntar, proponer y discrepar con argumentos"
+description: "Cómo participar en Ecos de nuestros clásicos: propuestas de temas, preguntas y conversación."
+image: imagenes/dibujo-comunidad.jpg
+---
+
+::: {.capitular}
+Ecos no sería lo mismo sin la gente que lo sigue. Hay quien comenta cada publicación, quien me manda una lectura que le ha gustado, quien me corrige una fecha (gracias) y quien lleva meses discutiendo conmigo sobre la República romana. Esta página es para todas esas conversaciones.
+:::
+
+## Propón un clásico o hazme una pregunta
+
+¿Hay un autor, un episodio o un personaje del que te gustaría que hablase? ¿Algo de un vídeo que no te ha quedado claro, o con lo que no estás de acuerdo? Escríbeme. Leo todos los correos, y las mejores preguntas acabarán convertidas en vídeos o en textos de esta web (si me das permiso para citarte).
+
+```{=html}
+<p class="botonera">
+  <a class="boton lleno" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Propuesta%20de%20cl%C3%A1sico">Proponer un tema</a>
+  <a class="boton" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Pregunta%20para%20Ecos">Hacer una pregunta</a>
+</p>
+```
+
+También puedes hacerlo en los comentarios de [Instagram](https://www.instagram.com/ecosdenuestrosclasicos/) o de [YouTube](https://www.youtube.com/@Ecosdenuestrosclásicos), donde suelo contestar.
+
+## Un regalo de la comunidad
+
+```{=html}
+<figure class="foto-marco dibujo-comunidad">
+  <img src="imagenes/dibujo-comunidad.jpg" width="996" height="868" loading="lazy"
+       alt="Dibujo a tinta de Isabel sonriendo, con el pelo largo y ondulado y una camiseta negra. En la manga lleva el perfil de una estatua clásica. El dibujo está firmado.">
+</figure>
+<p class="pie-foto">Un seguidor me dibujó así, con una estatua clásica en la manga. Está firmado, como debe ser.</p>
+```
+
+## Cómo conversamos aquí
+
+Pocas normas, y bastante de sentido común:
+
+- Se puede discrepar de todo, con argumentos y con respeto.
+- Si citas una fuente, mejor con la referencia. Si te equivocas, no pasa nada: a mí también me pasa.
+- Nada de insultos, de spam ni de ataques personales. Esos mensajes se borran.
+
+## Comentarios en los artículos
+
+Estoy preparando un espacio de comentarios debajo de las investigaciones y las lecturas. Mientras tanto, cualquier comentario sobre un texto de la web me lo puedes mandar por correo y lo contesto encantada.

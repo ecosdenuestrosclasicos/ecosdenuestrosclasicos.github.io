@@ -1,0 +1,51 @@
+---
+title: "Soy Isabel"
+description: "Quién está detrás de Ecos de nuestros clásicos."
+image: imagenes/isabel.jpg
+---
+
+:::: {.sobre-mi}
+
+::: {.sobre-mi-foto}
+```{=html}
+<figure class="foto-marco">
+  <img src="imagenes/isabel.jpg" width="784" height="1384"
+       alt="Isabel sonríe al aire libre, con el pelo revuelto por el viento y un micrófono en la mano.">
+</figure>
+<p class="pie-foto">Grabando al aire libre. El viento no estaba invitado.</p>
+```
+:::
+
+::: {.sobre-mi-texto .capitular}
+Me llamo Isabel, vivo en la provincia de Valencia y soy la persona que hay detrás de Ecos de nuestros clásicos.
+
+Me gradué en Economía por la Universitat de València en junio de 2026. Antes había empezado Filología Clásica; no llegué a terminarla, pero de ahí me vienen el latín, el griego y la costumbre de ir siempre al texto original. Ahora estudio el Máster en Economía de la Universitat de València y Matemáticas en la UNED.
+
+Contado así parece un currículum sin rumbo. Para mí tiene bastante lógica: la filología me enseñó a leer con cuidado, la economía a preguntarme por qué las instituciones funcionan (o no) y las matemáticas a comprobar si lo que creo ver en un texto está de verdad ahí. Casi todo lo que hago en Ecos sale de juntar esas tres cosas.
+
+Doy clase desde 2019 y es probablemente lo que más me ha enseñado a explicar: si no puedo contarle algo a alguien de forma sencilla, es que todavía no lo he entendido del todo. Eso sí, sencillo no significa inexacto.
+:::
+
+::::
+
+## Lo que me interesa
+
+La economía institucional, la historia económica, el pensamiento político y la historia de las instituciones. Y, cada vez más, el análisis cuantitativo de textos: contar palabras, ver con qué otras aparecen, seguir cómo cambia el lenguaje político de un autor o de una época. Trabajo con R y RStudio, y esta misma web está hecha con ellos.
+
+Me gustaría seguir investigando y hacer un doctorado. Mientras tanto, lo que voy haciendo lo tienes en [Investigación](investigacion.qmd).
+
+## Lo que no soy
+
+No soy una enciclopedia ni una profesora que habla desde lo alto de una tarima. Soy alguien que lee, se hace preguntas y comparte lo que va encontrando. A veces me equivoco, y cuando alguien me lo señala con argumentos, lo agradezco y lo corrijo.
+
+También soy alguien que puede pasarse una tarde con las instituciones de la República tardía y, al día siguiente, grabar un vídeo sobre las manías de un emperador. No son dos personas distintas. Es la misma curiosidad.
+
+## Y Mini Odi
+
+Mini Odi es mi pequeño compañero de aventuras. Es un pato de ganchillo con muy buen gusto para las camisetas. En el mapa de la portada corre detrás de mí, con su capa y su corona de laurel, y si llegas al final de cualquier página puede que te lo encuentres asomándose.
+
+```{=html}
+<p style="margin-top:2.5rem">
+  <a class="boton" href="contacto.html">Escríbeme</a>
+</p>
+```

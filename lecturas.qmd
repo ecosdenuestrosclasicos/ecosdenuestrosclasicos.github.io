@@ -1,0 +1,81 @@
+---
+title: "Lecturas y fuentes"
+subtitle: "Los autores con los que converso más a menudo"
+description: "Fichero de autores clásicos y contemporáneos que aparecen en Ecos, y las lecturas conjuntas del proyecto."
+---
+
+En redes casi nunca cabe la referencia completa. Aquí sí. Este fichero recoge los autores que más aparecen en Ecos y en qué parte del proyecto los he trabajado. Irá creciendo con cada lectura.
+
+Si quieres leer los textos originales, buena parte de ellos están disponibles con traducción inglesa en la [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/), de la Universidad de Tufts, que es la edición digital que más uso.
+
+## Lecturas conjuntas
+
+```{=html}
+<div class="fichero">
+  <article class="ficha">
+    <span class="signatura">LEC. 01 · Suetonio</span>
+    <h3><a href="lecturas/doce-cesares.html"><cite>Los doce césares</cite></a></h3>
+    <p>Leímos juntos las vidas de los césares, de Julio César a Domiciano, libro a libro y con el contexto de cada reinado.</p>
+    <span class="relacion">Lectura conjunta</span>
+  </article>
+</div>
+```
+
+## Autores antiguos
+
+```{=html}
+<div class="fichero">
+  <article class="ficha">
+    <span class="signatura">Lat. · s. I a. n. e.</span>
+    <h3>Salustio</h3>
+    <p><cite>Bellum Catilinae</cite> y <cite>Bellum Iugurthinum</cite>. Un historiador obsesionado con la decadencia moral de la República, y uno de los que mejor escribe sobre ella.</p>
+    <span class="relacion">Mi trabajo de fin de grado</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · s. I a. n. e.</span>
+    <h3>Cicerón</h3>
+    <p>Las <cite>Catilinarias</cite>: la versión de la conjuración contada por quien la combatió desde el consulado, con todo su interés político.</p>
+    <span class="relacion">Estudio de confianza institucional</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · ss. I–II n. e.</span>
+    <h3>Suetonio</h3>
+    <p><cite>De vita Caesarum</cite>. Biografías llenas de detalles, rumores y manías imperiales que hay que leer con lupa.</p>
+    <span class="relacion">Lectura conjunta</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · s. V a. n. e.</span>
+    <h3>Tucídides</h3>
+    <p><cite>Historia de la guerra del Peloponeso</cite>. Poder, miedo e interés en una guerra entre griegos que él mismo vivió.</p>
+    <span class="relacion">Serie sobre Tucídides y la guerra</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · época arcaica</span>
+    <h3>Homero</h3>
+    <p><cite>Odisea</cite>. Un viaje de vuelta a casa que dura diez años y una galería de personajes que da para muchas conversaciones.</p>
+    <span class="relacion">Serie sobre la Odisea</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · s. II a. n. e.</span>
+    <h3>Polibio</h3>
+    <p>Un griego que explica a los griegos cómo Roma llegó a dominar el Mediterráneo, y por qué su constitución funcionaba.</p>
+    <span class="relacion">Instituciones romanas</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · ss. V–IV a. n. e.</span>
+    <h3>Platón y Aristóteles</h3>
+    <p>La crítica a la democracia, la pregunta por la mejor forma de gobierno y una buena parte del vocabulario político que todavía usamos.</p>
+    <span class="relacion">Democracia ateniense y filósofos griegos</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · s. I n. e.</span>
+    <h3>Séneca</h3>
+    <p>Las cartas a Lucilio: filosofía para el día a día, escrita por alguien con una relación bastante complicada con el poder.</p>
+    <span class="relacion">Reflexiones</span>
+  </article>
+</div>
+```
+
+## Autores contemporáneos
+
+Para pensar las instituciones vuelvo una y otra vez a cuatro autores: **Douglass North**, por su forma de entender las instituciones como reglas del juego; **Daron Acemoglu**, por la relación entre instituciones y prosperidad; **Francis Fukuyama**, por su historia del orden político; y **Joseph Henrich**, por su manera de unir cultura, psicología e historia.

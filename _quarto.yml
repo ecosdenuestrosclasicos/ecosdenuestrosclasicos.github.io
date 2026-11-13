@@ -1,0 +1,101 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!README.md"
+  resources:
+    - imagenes/
+    - datos/
+    - assets/fuentes/
+
+lang: es
+date-format: "D [de] MMMM [de] YYYY"
+
+execute:
+  freeze: auto
+  echo: true
+  message: false
+  warning: false
+
+website:
+  title: "Ecos de nuestros clásicos"
+  site-url: "https://ecosdenuestrosclasicos.github.io"
+  description: "Divulgación sobre Grecia y Roma: instituciones, poder, literatura, filosofía y fuentes. Un proyecto de Isabel."
+  favicon: assets/favicon.svg
+  open-graph: true
+  page-navigation: false
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    title: "Ecos de nuestros clásicos"
+    collapse-below: lg
+    left:
+      - text: "Sobre Ecos"
+        menu:
+          - text: "El proyecto"
+            href: proyecto.qmd
+          - text: "Soy Isabel"
+            href: sobre-mi.qmd
+      - text: "Biblioteca"
+        menu:
+          - text: "Todo el archivo"
+            href: biblioteca.qmd
+          - text: "Investigación"
+            href: investigacion.qmd
+          - text: "Lecturas y fuentes"
+            href: lecturas.qmd
+          - text: "Vídeos y episodios"
+            href: videos.qmd
+      - text: "Comunidad"
+        href: comunidad.qmd
+      - text: "Prensa y colaboraciones"
+        href: colaboraciones.qmd
+      - text: "Contacto"
+        href: contacto.qmd
+    right:
+      - text: "Apoya Ecos"
+        href: apoyame.qmd
+        aria-label: "Apoya Ecos en Patreon"
+  page-footer:
+    left: |
+      **Ecos de nuestros clásicos**<br>
+      Un proyecto de Isabel, desde Valencia.
+    center:
+      - text: Instagram
+        href: https://www.instagram.com/ecosdenuestrosclasicos/
+      - text: YouTube
+        href: https://www.youtube.com/@Ecosdenuestrosclásicos
+      - text: TikTok
+        href: https://www.tiktok.com/@ecosdenuestrosclasicos
+      - text: Facebook
+        href: https://www.facebook.com/profile.php?id=61586532315391
+      - text: Patreon
+        href: https://www.patreon.com/cw/Ecosdenuestrosclasicos
+    right: |
+      [ecosdenuestrosclasicos@gmail.com](mailto:ecosdenuestrosclasicos@gmail.com)<br>
+      [Privacidad](/privacidad.html)
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/ecos.scss]
+    css: assets/ecos.css
+    include-in-header: assets/cabecera.html
+    include-after-body: assets/miniodi.html
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    anchor-sections: true
+    lightbox: true
+    fig-cap-location: bottom
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: a11y
+    crossref:
+      fig-title: Gráfico
+      tbl-title: Tabla
+
+# Los comentarios (giscus) se configuran en investigacion/_metadata.yml,
+# lecturas/_metadata.yml y cuadernos/_metadata.yml. Pasos en el README.

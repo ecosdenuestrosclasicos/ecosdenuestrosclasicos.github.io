@@ -1,0 +1,38 @@
+---
+title: "*Los doce césares*, de Suetonio"
+subtitle: "Una lectura conjunta, libro a libro"
+description: "Ficha de la lectura conjunta de De vita Caesarum de Suetonio: qué leímos, cómo está organizada la obra y cómo leerla."
+date: 2026-11-12
+categories: [Lecturas, Roma, Suetonio, Emperadores]
+image: ../imagenes/mapa-ruta.jpg
+---
+
+<!--
+  ISABEL: pon aquí la fecha real en la que empezó la lectura conjunta
+  y, si quieres, enlaces a los vídeos o carruseles de cada libro.
+-->
+
+Suetonio escribió *De vita Caesarum* a comienzos del siglo II de nuestra era. Fue secretario en la corte imperial, así que tuvo acceso a archivos que no tenían otros historiadores, pero también le encantaba un buen rumor. Por eso es un autor estupendo para leer en compañía: casi cada página pide una pregunta del tipo «¿y esto quién lo cuenta?, ¿y por qué?».
+
+## Cómo está organizada la obra
+
+Son ocho libros con doce biografías:
+
+| Libro | Vidas |
+|:---|:---|
+| I | Julio César |
+| II | Augusto |
+| III | Tiberio |
+| IV | Calígula |
+| V | Claudio |
+| VI | Nerón |
+| VII | Galba, Otón y Vitelio |
+| VIII | Vespasiano, Tito y Domiciano |
+
+## Cómo la leímos
+
+Fuimos libro a libro, situando cada reinado en su contexto y contrastando lo que cuenta Suetonio con otras fuentes cuando las hay. Una de las cosas que más dieron que hablar fue su manera de organizar las vidas: no sigue siempre el orden cronológico, sino que agrupa por temas (familia, carrera, vicios, virtudes, muerte), y eso condiciona mucho la imagen que nos queda de cada emperador.
+
+## Si quieres empezar
+
+Lo mejor es empezar por Augusto: es la vida más larga y la que mejor enseña cómo trabaja Suetonio. Después, Tiberio, para ver cómo cambia el tono.

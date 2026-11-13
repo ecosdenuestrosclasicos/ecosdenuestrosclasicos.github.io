@@ -1,0 +1,40 @@
+---
+title: "El proyecto"
+subtitle: "Qué es Ecos de nuestros clásicos y cómo trabajo"
+description: "Un proyecto independiente de divulgación sobre Grecia y Roma, con las fuentes delante."
+image: imagenes/mapa-ruta.jpg
+---
+
+::: {.capitular}
+Ecos de nuestros clásicos empezó el 23 de noviembre de 2025 con una idea bastante sencilla: hablar de Grecia y Roma sin quedarme en la anécdota. Me interesa cómo funcionaban aquellas sociedades, cómo se justificaba el poder, cómo se construían sus instituciones y cómo se iban estropeando. Y qué pensaban de todo eso quienes lo vivieron y lo escribieron.
+:::
+
+Pero no todo tiene que ser una lección sobre el presente. A veces lo que quiero es contar una historia buenísima, comentar un libro o pararme en un pasaje de un autor porque me ha hecho gracia, o porque no lo he entendido y quiero entenderlo en voz alta. También de eso va Ecos.
+
+## Cómo entiendo esto
+
+No creo que la historia sirva para darle la razón a cualquier opinión de hoy. Tampoco creo que Grecia y Roma fueran sociedades ideales. La democracia ateniense dejaba fuera a la mayoría de quienes vivían en Atenas, y la República romana pasó buena parte de su último siglo a golpes. Esas contradicciones son lo que más me interesa.
+
+Los clásicos merecen la pena porque permiten plantear preguntas difíciles, no porque haya que aceptar sus respuestas sin mirarlas dos veces. Por eso intento que todo lo que cuento tenga una base: el autor, la obra, el pasaje, y cuando puedo, el texto original. Si dos fuentes no cuentan lo mismo, te lo digo. Si no se sabe, también.
+
+Uso «antes de nuestra era» y «de nuestra era» (a. n. e. y n. e.) cuando hace falta precisar fechas.
+
+## De qué hablo
+
+De instituciones y de poder, sobre todo en la República romana y en la Atenas democrática. De Tucídides y la guerra, del ostracismo, de los emperadores y de cómo nos los han contado. De la *Odisea* y sus personajes, de filósofos griegos, de costumbres, de la relación entre Grecia y Roma. De museos y de piezas arqueológicas, cuando tengo la suerte de verlas de cerca.
+
+Y de economía, claro. Me formé como economista y me interesa mucho la economía institucional: por qué unas reglas funcionan y otras no, qué hace que la gente confíe en sus instituciones y qué pasa cuando deja de hacerlo. Autores como Douglass North, Daron Acemoglu, Francis Fukuyama o Joseph Henrich me acompañan tanto como Salustio o Polibio.
+
+## En qué formatos
+
+- **Vídeos cortos**, de unos minutos, sobre un episodio, un concepto, un personaje o un texto.
+- **Episodios largos**, para análisis más extensos y lecturas con calma.
+- **Carruseles**, donde puedo desarrollar un argumento y enseñar las fuentes.
+- **Lecturas conjuntas**, como la de *Los doce césares* de Suetonio, libro a libro.
+- **Reflexiones**, sobre filosofía, lectura y las decisiones de todos los días.
+
+Esta web es el sitio donde todo eso se queda: las fuentes que no caben en un vídeo, las investigaciones completas y las conversaciones que merecen algo más que un comentario.
+
+## Quién está detrás
+
+Una persona, con ayuda de una comunidad que pregunta, corrige y propone temas. Puedes conocerme un poco mejor en [Soy Isabel](sobre-mi.qmd), y si quieres que Ecos siga siendo independiente, en [Apoya Ecos](apoyame.qmd) te cuento cómo.

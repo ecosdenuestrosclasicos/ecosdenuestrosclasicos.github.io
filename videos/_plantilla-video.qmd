@@ -1,0 +1,27 @@
+---
+# PLANTILLA PARA UN VÍDEO NUEVO
+# 1. Copia este archivo dentro de la carpeta videos/ con un nombre sin
+#    espacios ni tildes, por ejemplo: ostracismo.qmd
+#    (los archivos que empiezan por _ no se publican, como este).
+# 2. Rellena los datos de abajo y escribe debajo las fuentes.
+# 3. Aparecerá solo en «Vídeos y episodios» y en la Biblioteca.
+title: "Título del vídeo"
+description: "Una o dos frases sobre de qué va."
+date: 2026-11-23
+categories: [Vídeos, Grecia]
+image: ../imagenes/mapa-ruta.jpg   # o la miniatura del vídeo
+---
+
+{{< video https://www.youtube.com/watch?v=CODIGO >}}
+
+## De qué hablo
+
+Texto breve.
+
+## Fuentes
+
+- Autor, *Obra* libro.capítulo.
+
+## Para seguir leyendo
+
+- Libro recomendado.

@@ -1,0 +1,56 @@
+---
+title: "Investigación"
+subtitle: "Humanidades con datos, y datos con humanidades"
+description: "Proyectos de investigación de Isabel: Salustio, instituciones romanas, confianza institucional y análisis cuantitativo de textos."
+---
+
+Aquí reúno lo que hago cuando la divulgación se convierte en investigación: preguntas concretas, fuentes identificadas, un método que se puede revisar y, cuando hay datos, el código en R para que cualquiera pueda repetir el análisis.
+
+Cada ficha lleva un sello con su estado. **Terminado** quiere decir que el trabajo está cerrado. **En curso**, que estoy trabajando en ello. **Propuesta**, que es una línea que quiero abrir y todavía no tiene resultados.
+
+```{=html}
+<div class="fichero">
+
+  <article class="ficha">
+    <span class="signatura">INV. 01 · Roma</span>
+    <h3><a href="investigacion/salustio-catilina.html">El deterioro institucional de la República romana tardía en el <cite>Bellum Catilinae</cite></a></h3>
+    <p>Trabajo de fin de grado. Salustio leído con economía institucional y modelos de recuento de palabras.</p>
+    <span class="sello terminado">Terminado</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 02 · Datos</span>
+    <h3><a href="investigacion/confianza-gobierno.html">La confianza en el gobierno en países de la OCDE (2006–2024)</a></h3>
+    <p>Datos oficiales de la OCDE, análisis reproducible en R y una mirada a la crisis de la República con Salustio y Cicerón.</p>
+    <span class="sello terminado">Terminado</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 03 · Ensayo</span>
+    <h3>Un libro sobre la democracia y sus grietas</h3>
+    <p>Un ensayo de divulgación sobre los problemas institucionales de la democracia, de Atenas y Roma a hoy. El título, de momento, es secreto.</p>
+    <span class="sello en-curso">En curso</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 04 · Instituciones</span>
+    <h3>Legitimidad fiscal y cambio institucional</h3>
+    <p>Por qué se aceptan (o no) los impuestos, y cómo cambia el lenguaje con el que el poder los justifica en distintos momentos históricos.</p>
+    <span class="sello propuesta">Propuesta</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 05 · Textos</span>
+    <h3>Grandes corpus históricos como datos</h3>
+    <p>Frecuencias, coocurrencias, redes semánticas y modelos de temas aplicados a textos antiguos.</p>
+    <span class="sello propuesta">Propuesta</span>
+  </article>
+
+</div>
+```
+
+## Cómo trabajo
+
+Empiezo casi siempre por una pregunta que me surge leyendo. Después busco qué fuentes pueden responderla, qué se ha escrito ya sobre ella y si hay algo que se pueda medir. Cuando lo hay, el análisis se hace en R, y el código queda publicado junto al texto para que se pueda comprobar.
+
+Si trabajas en algo parecido y te apetece comentarlo, [escríbeme](contacto.qmd). Las conversaciones entre disciplinas son de las que más aprendo.

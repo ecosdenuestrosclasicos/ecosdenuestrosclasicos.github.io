@@ -1,0 +1,29 @@
+---
+title: "Apoya Ecos"
+subtitle: "Qué significa acompañar el proyecto en Patreon"
+description: "Por qué Ecos de nuestros clásicos está en Patreon y qué supone apoyarlo."
+---
+
+::: {.capitular}
+Ecos es un proyecto independiente. No hay detrás ninguna editorial, universidad ni empresa: hay muchas horas de lectura, de búsqueda de fuentes, de guion, de grabación y de edición. Y una comunidad que hace que merezca la pena.
+:::
+
+## Por qué Patreon
+
+En Instagram, TikTok y las demás redes comparto contenido casi a diario, pero allí todo va muy rápido. Patreon me permite otra cosa: un sitio más tranquilo, donde puedo dedicar más tiempo a las lecturas, a los textos largos y a hablar con calma con las personas que quieren acompañar el proyecto de cerca.
+
+## Qué supone apoyar Ecos
+
+- **Mantenerlo independiente.** Puedo elegir de qué hablo y cómo, sin depender de lo que pida un algoritmo o una marca.
+- **Más tiempo para leer e investigar.** Cada apoyo se traduce en horas de trabajo con las fuentes, que es lo que más tiempo lleva y lo que menos se ve.
+- **Formar parte de la conversación.** Una comunidad de gente que disfruta pensando, leyendo y discutiendo sin prisa.
+
+Las opciones de apoyo y lo que incluye cada una las tienes siempre actualizadas en la propia página de Patreon.
+
+```{=html}
+<p class="botonera" style="margin-top:2rem">
+  <a class="boton lleno" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">Ir a Ecos en Patreon</a>
+</p>
+```
+
+Y si ahora mismo no puedes o no quieres, de verdad que no pasa nada. Ver los vídeos, compartirlos con alguien a quien le puedan gustar o escribirme con una pregunta también es apoyar Ecos.

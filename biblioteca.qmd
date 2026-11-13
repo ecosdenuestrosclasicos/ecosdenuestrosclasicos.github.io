@@ -1,0 +1,26 @@
+---
+title: "La biblioteca"
+subtitle: "Todo el archivo de Ecos, en un mismo sitio"
+description: "Investigaciones, lecturas, cuadernos y vídeos de Ecos de nuestros clásicos, con buscador y temas."
+listing:
+  id: archivo
+  contents:
+    - "investigacion/*.qmd"
+    - "lecturas/*.qmd"
+    - "cuadernos/*.qmd"
+    - "videos/*.qmd"
+  type: default
+  sort: "date desc"
+  sort-ui: [date, title]
+  filter-ui: [title, description, categories]
+  categories: numbered
+  fields: [date, title, subtitle, description, categories]
+  date-format: "D [de] MMMM [de] YYYY"
+  feed: true
+  page-size: 15
+---
+
+Aquí está todo lo que se publica en la web: investigaciones, fichas de lectura, textos de los *Cuadernos de Ecos* y episodios con sus fuentes. Puedes buscar por título o por tema, o filtrar con la lista de temas de la derecha.
+
+:::{#archivo}
+:::

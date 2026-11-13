@@ -1,0 +1,42 @@
+---
+title: "Vídeos y episodios"
+subtitle: "Las series del canal y dónde verlas"
+description: "Dónde ver los vídeos de Ecos de nuestros clásicos y qué series y temas he trabajado."
+listing:
+  id: catalogo
+  contents: "videos/*.qmd"
+  type: grid
+  sort: "date desc"
+  fields: [image, date, title, description, categories]
+  categories: true
+  date-format: "D MMM YYYY"
+---
+
+Publico vídeos breves en Instagram, TikTok y Facebook, y vídeos más largos en YouTube. Aquí iré reuniendo los episodios con lo que no cabe en el vídeo: las fuentes, los pasajes citados y alguna lectura para seguir.
+
+```{=html}
+<div class="plataformas">
+  <a href="https://www.youtube.com/@Ecosdenuestrosclásicos"><strong>YouTube</strong><span>Episodios largos y lecturas</span></a>
+  <a href="https://www.instagram.com/ecosdenuestrosclasicos/"><strong>Instagram</strong><span>Vídeos cortos y carruseles</span></a>
+  <a href="https://www.tiktok.com/@ecosdenuestrosclasicos"><strong>TikTok</strong><span>Vídeos cortos</span></a>
+  <a href="https://www.facebook.com/profile.php?id=61586532315391"><strong>Facebook</strong><span>Vídeos y publicaciones</span></a>
+</div>
+```
+
+## Series y temas
+
+- **Los emperadores romanos** y cómo nos los han contado.
+- **La *Odisea*** y sus personajes.
+- **La República romana**: instituciones, conflictos y crisis.
+- **La democracia ateniense**, con sus logros y sus exclusiones.
+- **Tucídides y la guerra.**
+- **El ostracismo**: votar para expulsar a alguien de la ciudad.
+- **Los filósofos griegos.**
+- **Costumbres y prácticas** de Grecia y Roma.
+- **Grecia y Roma**, y lo que se tomaron la una de la otra.
+- **Lecturas comentadas**, como [*Los doce césares*](lecturas/doce-cesares.qmd).
+
+## Catálogo de episodios
+
+:::{#catalogo}
+:::

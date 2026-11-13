@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+
+// Paleta de Ecos (ver README, apartado «Identidad visual»)
+$granate:   #652638;
+$burdeos:   #421C2A;
+$marfil:    #F6F0E5;
+$pergamino: #E8DCC7;
+$tinta:     #282321;
+$bronce:    #A78658;
+$oliva:     #5F6152;   // oliva oscurecido para que el texto pequeño cumpla contraste
+
+$body-bg: $marfil;
+$body-color: $tinta;
+$link-color: $granate;
+$primary: $granate;
+$secondary: $oliva;
+
+$font-family-serif: "EB Garamond", "Garamond", "Georgia", serif;
+$font-family-sans-serif: $font-family-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: "IM Fell English", "EB Garamond", Georgia, serif;
+$headings-font-weight: 400;
+$headings-color: $burdeos;
+$font-size-root: 19px;
+$line-height-base: 1.62;
+
+$navbar-bg: $marfil;
+$navbar-fg: $tinta;
+$navbar-hl: $granate;
+$footer-bg: $burdeos;
+$footer-fg: $pergamino;
+
+$border-radius: 2px;
+$border-radius-lg: 3px;
+$code-color: $burdeos;
+
+/*-- scss:rules --*/

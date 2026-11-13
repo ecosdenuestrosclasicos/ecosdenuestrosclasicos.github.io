@@ -1,0 +1,53 @@
+---
+title: "El deterioro institucional de la República romana tardía en el *Bellum Catilinae*"
+subtitle: "Salustio, economía institucional y análisis cuantitativo de textos"
+description: "Ficha de mi trabajo de fin de grado: una lectura de la Conjuración de Catilina con herramientas de economía institucional y modelos de recuento."
+date: 2026-06-30
+categories: [Investigación, Roma, Salustio, Instituciones, Análisis de textos]
+image: ../imagenes/mapa-ruta.jpg
+---
+
+```{=html}
+<p><span class="sello terminado">Terminado · Trabajo de fin de grado</span></p>
+```
+
+<!--
+  ISABEL: revisa la fecha (puse 30 de junio de 2026 como referencia
+  porque terminaste el grado en junio). Cuando quieras publicar los
+  resultados, añádelos en el apartado «Resultados».
+-->
+
+::: {.cita}
+[Iam pridem equidem nos vera vocabula rerum amisimus.]{.original lang="la"}
+
+[Hace ya tiempo que perdimos los verdaderos nombres de las cosas.]{.traduccion}
+
+[Catón, en Salustio, *Bellum Catilinae* 52.11]{.referencia}
+:::
+
+## La pregunta
+
+¿Se puede seguir el deterioro de una república a través de las palabras con las que se describe a sí misma? En el discurso que Salustio pone en boca de Catón, el problema no es solo que haya una conjuración: es que el vocabulario político se ha vaciado. Llamar generosidad a repartir lo ajeno o valentía a la audacia para el mal es ya un síntoma.
+
+Mi trabajo de fin de grado parte de ahí y estudia el deterioro institucional de la República romana tardía a través del *Bellum Catilinae*.
+
+## Las fuentes
+
+- Salustio, *Bellum Catilinae* (*La conjuración de Catilina*), texto latino.
+- Como contraste, las *Catilinarias* de Cicerón, la otra gran versión de los hechos, escrita desde dentro del conflicto.
+
+## El enfoque
+
+El trabajo combina tres miradas:
+
+1. **Interpretación histórica.** Situar el texto: Salustio escribe años después de los hechos y con una intención moralizante clara. No es un testigo neutral.
+2. **Economía institucional.** Leer la crisis en términos de reglas formales, normas informales y su erosión, con autores como Douglass North, Daron Acemoglu, Francis Fukuyama y Joseph Henrich como marco.
+3. **Métodos cuantitativos de análisis textual.** Recuento de términos relacionados con la discordia, la sedición, la corrupción, la avaricia, el Senado, la República y las normas políticas romanas, y modelos estadísticos de recuento para analizarlos.
+
+## Resultados
+
+El texto completo y los resultados se publicarán aquí, con el código en R para reproducir el análisis.
+
+## Lo que viene después
+
+Este trabajo abre dos líneas que quiero seguir: el análisis de grandes corpus históricos como datos y el estudio del lenguaje político en contextos de cambio institucional. Las tienes en [Investigación](../investigacion.qmd).

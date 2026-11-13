@@ -1,0 +1,14 @@
+---
+title: "Privacidad"
+description: "Qué datos se tratan al visitar esta web."
+---
+
+Esta web es estática: no tiene formularios propios, no pide registro y no instala cookies de seguimiento ni de publicidad.
+
+- **Alojamiento.** La web está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de las visitas, como la dirección IP, por motivos de seguridad.
+- **Tipografías.** Las fuentes de letra están alojadas en la propia web; no se cargan desde servicios externos.
+- **Correo.** Si me escribes, uso tu dirección y tu mensaje solo para contestarte. No los comparto ni los uso para enviarte publicidad. Si quieres que borre nuestra conversación, pídemelo.
+- **Comentarios.** Cuando estén activos, los comentarios de los artículos funcionarán con giscus, que guarda los mensajes en GitHub Discussions. Para comentar habrá que iniciar sesión con una cuenta de GitHub, y se aplicará su política de privacidad.
+- **Enlaces externos.** Los enlaces a Instagram, TikTok, YouTube, Facebook y Patreon te llevan a esas plataformas, que tienen sus propias políticas.
+
+Para cualquier duda: [ecosdenuestrosclasicos@gmail.com](mailto:ecosdenuestrosclasicos@gmail.com).
