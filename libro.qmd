@@ -1,0 +1,58 @@
+---
+title: "El libro"
+subtitle: "Un ensayo sobre la democracia y sus grietas, todavía en el escritorio"
+description: "El libro que estoy escribiendo, la palabra que lo une todo y el diario donde cuento cómo avanza."
+image: imagenes/mapa-ruta.jpg
+listing:
+  id: diario-libro
+  contents: "libro/*.qmd"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description]
+  date-format: "D [de] MMMM [de] YYYY"
+  feed: true
+---
+
+::: {.capitular}
+Estoy escribiendo un libro. Es un ensayo de divulgación sobre la democracia, sobre sus contradicciones y sobre los problemas institucionales que ya asomaban en Atenas y en Roma y que, con otros nombres, siguen apareciendo hoy. El título, de momento, me lo guardo.
+:::
+
+No es un libro de historia antigua al uso, ni tampoco uno de política actual. Es lo que pasa cuando alguien que ha estudiado economía y filología se pone a leer a Tucídides, a Salustio y a Polibio con las preguntas de ahora, y descubre que muchas de ellas ya se las habían hecho, a su manera, hace más de dos mil años.
+
+## La palabra
+
+Todo el libro gira alrededor de una palabra. Es un concepto en el que llevo tiempo trabajando, que no vas a encontrar en ningún diccionario y que no contaré hasta el día en que el libro se publique.
+
+```{=html}
+<div class="palabra">
+  <div class="palabra-sellada" role="img" aria-label="Palabra oculta hasta que se publique el libro">
+    <span class="palabra-lacre" aria-hidden="true">?</span>
+  </div>
+  <p class="palabra-pie">Se revelará con el libro.</p>
+</div>
+```
+
+### ¿Qué crees que es?
+
+Te dejo jugar. Si tienes una teoría sobre qué palabra puede ser, o sobre qué idea cabe en ella, mándamela. Guardo todas las apuestas para el día de la publicación.
+
+```{=html}
+<form class="form-correo caja-propuesta palabra-apuesta" data-etiqueta="La palabra">
+  <label for="pal-titulo">Tu apuesta</label>
+  <input id="pal-titulo" name="titulo" type="text" placeholder="Una palabra, o una idea" required>
+  <label for="pal-mensaje">Por qué lo crees <span>(opcional)</span></label>
+  <textarea id="pal-mensaje" name="mensaje" rows="3"></textarea>
+  <label for="pal-nombre">Tu nombre <span>(opcional)</span></label>
+  <input id="pal-nombre" name="nombre" type="text" autocomplete="name">
+  <button class="boton lleno" type="submit">Enviar mi apuesta</button>
+  <p class="form-nota">Al enviarla se abre tu correo con el mensaje ya preparado. Solo tienes que darle a enviar.</p>
+  <p class="form-aviso" hidden>Se ha abierto tu programa de correo. Si no aparece, escríbeme directamente a <a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a>.</p>
+</form>
+```
+
+## Diario del libro
+
+Aquí voy contando cómo avanza: lo que leo para escribirlo, los capítulos que se me atascan, las fuentes que encuentro por el camino y alguna duda que quiero compartir contigo. Sin desvelar la palabra, eso sí.
+
+:::{#diario-libro}
+:::

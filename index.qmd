@@ -11,7 +11,7 @@ toc: false
 <div class="portada">
 
 <header class="portada-cabecera">
-  <p class="portada-firma">Un proyecto de Isabel, en marcha desde el 23 de noviembre de 2025</p>
+  <p class="portada-firma">Un proyecto de Isabel Sanz, en marcha desde el 23 de noviembre de 2025</p>
   <h1 class="portada-titulo">Ecos de nuestros clásicos</h1>
   <p class="portada-entrada">Grecia y Roma leídas despacio: cómo se organizaban, cómo se justificaba el poder, qué escribieron sus autores y qué preguntas nos siguen dejando. Con las fuentes delante y, cuando toca, con humor.</p>
 </header>
@@ -64,8 +64,8 @@ toc: false
          alt="Isabel sonríe al aire libre, con el pelo revuelto por el viento y un micrófono en la mano.">
   </figure>
   <div class="presentacion-texto">
-    <h2 id="presentacion-titulo">Soy Isabel</h2>
-    <p>Estudié Economía, pasé antes por Filología Clásica y ahora ando entre un máster de Economía y el grado de Matemáticas. Suena a no saber elegir, y algo de eso hay, pero es justo lo que me permite mirar Roma con un diccionario de latín en una mano y RStudio en la otra.</p>
+    <h2 id="presentacion-titulo">Soy Isabel Sanz</h2>
+    <p>Soy economista, antes estudié Filología Clásica y ahora ando entre un máster de Economía y el grado de Matemáticas. Esa mezcla es justo lo que me permite mirar Roma con un diccionario de latín en una mano y RStudio en la otra.</p>
     <p>Grabo vídeos, leo mucho, me equivoco a veces y lo corrijo en público. Y hablo de instituciones con la misma ilusión con la que comento los cotilleos que Suetonio cuenta de los emperadores.</p>
     <p><a href="sobre-mi.html">Más sobre mí</a></p>
   </div>

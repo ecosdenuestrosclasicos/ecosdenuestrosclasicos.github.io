@@ -1,7 +1,7 @@
 ---
 title: "Apoya Ecos"
 subtitle: "Cómo ayudar a que el proyecto siga siendo independiente"
-description: "Por qué Ecos de nuestros clásicos está en Patreon, cómo hacer un donativo y otras formas de apoyar el proyecto."
+description: "Por qué Ecos de nuestros clásicos está en Patreon, cómo hacer una aportación y otras formas de apoyar el proyecto."
 ---
 
 ::: {.capitular}
@@ -24,16 +24,16 @@ Apoyar Ecos en Patreon me permite seguir eligiendo de qué hablo y cómo, sin de
 
 ## Ayuda a que los clásicos sigan vivos
 
-Detrás de cada vídeo hay horas de lectura, investigación, preparación y trabajo. Si disfrutas del contenido y quieres contribuir a que este proyecto de divulgación siga creciendo, muy pronto podrás hacer una aportación voluntaria a través de PayPal, sin suscripciones ni compromisos.
+Si disfrutas del contenido y prefieres echar una mano de vez en cuando, sin suscripciones ni compromisos, muy pronto podrás hacer una aportación puntual a través de PayPal.
 
-<!-- PAYPAL: cuando tengas el enlace, sustituye todo el bloque <div class="donativo-pronto"> … </div>
+<!-- PAYPAL: cuando tengas el enlace, sustituye todo el bloque <div class="aportacion-pronto"> … </div>
      por esta línea:
      <p class="botonera"><a class="boton lleno" href="AQUÍ-EL-ENLACE-DE-PAYPAL">Apoyar el proyecto en PayPal</a></p>
      y cambia «muy pronto podrás hacer» por «puedes hacer» en el párrafo de arriba. -->
 ```{=html}
-<div class="donativo-pronto">
+<div class="aportacion-pronto">
   <span class="sello en-curso">En preparación</span>
-  <p>Estoy terminando de configurar los donativos. En cuanto estén listos, aparecerá aquí el botón para apoyar el proyecto.</p>
+  <p>Lo estoy terminando de configurar. En cuanto esté listo, aquí aparecerá el botón para apoyar el proyecto.</p>
 </div>
 ```
 

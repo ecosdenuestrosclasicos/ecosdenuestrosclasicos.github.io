@@ -35,4 +35,4 @@ Esta web es donde se queda todo lo que no cabe en un vídeo. Las fuentes, las in
 
 ## Quién está detrás
 
-Yo, Isabel, y una comunidad que pregunta, corrige y propone temas. Si quieres saber un poco más de mí, lo tienes en [Soy Isabel](sobre-mi.qmd). Y si te gustaría que Ecos siga siendo independiente, en [Apoya Ecos](apoyame.qmd) te cuento cómo ayudar.
+Yo, Isabel, y una comunidad que pregunta, corrige y propone temas. Si quieres saber un poco más de mí, lo tienes en [Soy Isabel Sanz](sobre-mi.qmd). Y si te gustaría que Ecos siga siendo independiente, en [Apoya Ecos](apoyame.qmd) te cuento cómo ayudar.

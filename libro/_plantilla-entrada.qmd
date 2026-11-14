@@ -1,0 +1,12 @@
+---
+# PLANTILLA PARA UNA ENTRADA DEL DIARIO DEL LIBRO
+# Copia este archivo dentro de libro/ con un nombre sin espacios ni tildes
+# (por ejemplo: capitulo-tres.qmd), cambia los datos y escribe.
+# OJO: no escribas nunca aquí la palabra secreta ni el título; el repositorio es público.
+title: "Título de la entrada"
+description: "Una frase que se verá en la lista del diario."
+date: 2026-11-23
+categories: [El libro]
+---
+
+Texto de la entrada.

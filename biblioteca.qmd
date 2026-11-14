@@ -9,6 +9,7 @@ listing:
     - "lecturas/*.qmd"
     - "cuadernos/*.qmd"
     - "videos/*.qmd"
+    - "libro/*.qmd"
   type: default
   sort: "date desc"
   sort-ui: [date, title]
@@ -20,7 +21,7 @@ listing:
   page-size: 15
 ---
 
-Aquí está todo lo que se publica en la web: investigaciones, fichas de lectura, textos de los *Cuadernos de Ecos* y episodios con sus fuentes. Puedes buscar por título o por tema, o filtrar con la lista de temas de la derecha.
+Aquí está todo lo que se publica en la web: investigaciones, fichas de lectura, textos de los *Cuadernos de Ecos*, episodios con sus fuentes y el diario del libro. Puedes buscar por título o por tema, o filtrar con la lista de temas de la derecha.
 
 :::{#archivo}
 :::

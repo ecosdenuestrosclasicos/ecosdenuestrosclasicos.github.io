@@ -21,7 +21,7 @@ execute:
 website:
   title: "Ecos de nuestros clásicos"
   site-url: "https://ecosdenuestrosclasicos.github.io"
-  description: "Divulgación sobre Grecia y Roma: instituciones, poder, literatura, filosofía y fuentes. Un proyecto de Isabel."
+  description: "Divulgación sobre Grecia y Roma: instituciones, poder, literatura, filosofía y fuentes. Un proyecto de Isabel Sanz."
   favicon: assets/favicon.svg
   open-graph: true
   page-navigation: false
@@ -36,8 +36,10 @@ website:
         menu:
           - text: "El proyecto"
             href: proyecto.qmd
-          - text: "Soy Isabel"
+          - text: "Soy Isabel Sanz"
             href: sobre-mi.qmd
+          - text: "El libro"
+            href: libro.qmd
       - text: "Biblioteca"
         menu:
           - text: "Todo el archivo"
@@ -61,7 +63,7 @@ website:
   page-footer:
     left: |
       **Ecos de nuestros clásicos**<br>
-      Un proyecto de Isabel, desde Valencia.
+      Un proyecto de Isabel Sanz, desde Valencia.
     center:
       - text: Instagram
         href: https://www.instagram.com/ecosdenuestrosclasicos/

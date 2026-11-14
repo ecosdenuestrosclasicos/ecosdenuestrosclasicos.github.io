@@ -1,7 +1,7 @@
 ---
 title: "Investigación"
 subtitle: "Humanidades con datos, y datos con humanidades"
-description: "Proyectos de investigación de Isabel: Salustio, instituciones romanas, confianza institucional y análisis cuantitativo de textos."
+description: "Proyectos de investigación de Isabel Sanz: Salustio, instituciones romanas, confianza institucional, artículos en curso y análisis cuantitativo de textos."
 ---
 
 Aquí reúno lo que hago cuando la divulgación se convierte en investigación: preguntas concretas, fuentes identificadas, un método que se puede revisar y, cuando hay datos, el código en R para que cualquiera pueda repetir el análisis.
@@ -27,20 +27,34 @@ Cada ficha lleva un sello con su estado. **Terminado** quiere decir que el traba
 
   <article class="ficha">
     <span class="signatura">INV. 03 · Ensayo</span>
-    <h3>Un libro sobre la democracia y sus grietas</h3>
+    <h3><a href="libro.html">Un libro sobre la democracia y sus grietas</a></h3>
     <p>Un ensayo de divulgación sobre los problemas institucionales de la democracia, de Atenas y Roma a hoy. El título, de momento, es secreto.</p>
     <span class="sello en-curso">En curso</span>
   </article>
 
   <article class="ficha">
-    <span class="signatura">INV. 04 · Instituciones</span>
+    <span class="signatura">INV. 04 · Artículo</span>
+    <h3><cite><i lang="la">Ludus</i> y bienestar emocional</cite></h3>
+    <p>Artículo en preparación, a punto de publicarse. Cuando salga, aquí tendrás el enlace para leerlo o para conseguir la edición.</p>
+    <span class="sello en-curso">En curso</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 05 · Artículo</span>
+    <h3><cite>Términos y condiciones de la paz</cite></h3>
+    <p>Artículo en preparación, a punto de publicarse. Cuando salga, aquí tendrás el enlace para leerlo o para conseguir la edición.</p>
+    <span class="sello en-curso">En curso</span>
+  </article>
+
+  <article class="ficha">
+    <span class="signatura">INV. 06 · Instituciones</span>
     <h3>Legitimidad fiscal y cambio institucional</h3>
     <p>Por qué se aceptan (o no) los impuestos, y cómo cambia el lenguaje con el que el poder los justifica en distintos momentos históricos.</p>
     <span class="sello propuesta">Propuesta</span>
   </article>
 
   <article class="ficha">
-    <span class="signatura">INV. 05 · Textos</span>
+    <span class="signatura">INV. 07 · Textos</span>
     <h3>Grandes corpus históricos como datos</h3>
     <p>Frecuencias, coocurrencias, redes semánticas y modelos de temas aplicados a textos antiguos.</p>
     <span class="sello propuesta">Propuesta</span>
