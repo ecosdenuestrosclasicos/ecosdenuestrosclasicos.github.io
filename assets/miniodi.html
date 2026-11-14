@@ -1,5 +1,6 @@
-<!-- Mini Odi: vive en la esquina de abajo a la derecha. Se puede arrastrar por toda
-     la pantalla (ratón o dedo) y, si le haces clic sin moverlo, dice una frase. -->
+<!-- Mini Odi: vive en la esquina de abajo a la derecha. Si nadie le hace caso, da saltitos,
+     se da la vuelta o se va de paseo por el borde de abajo. Se puede arrastrar (ratón o dedo)
+     y, si le haces clic sin moverlo, dice una frase. Las frases están más abajo, en FRASES. -->
 <button class="miniodi" type="button" aria-label="Mini Odi quiere decirte algo. Puedes arrastrarlo por la pantalla." aria-expanded="false" aria-controls="miniodi-bocadillo">
   <img src="/imagenes/miniodi-ruta.webp" alt="" draggable="false">
 </button>
@@ -8,54 +9,133 @@
 (function () {
   var b = document.querySelector('.miniodi'), t = document.getElementById('miniodi-bocadillo');
   if (!b || !t) return;
-  var frases = [
-    'Shh. Voy por el canto XII y acaban de aparecer las sirenas.',
-    'En el mapa de la portada salgo corriendo detrás de Isabel. Como siempre.',
-    'No me preguntes por Catilina. Isabel ya me ha leído la conjuración tres veces.',
-    'Llévame a donde quieras. Ulises tardó diez años en volver a casa; yo tengo prisa.',
-    'Isabel me tejió a ganchillo. La capa granate la elegí yo.'
-  ], i = Math.floor(Math.random() * frases.length);
+  var img = b.querySelector('img');
 
-  var pos = null;              // posición elegida por quien visita la web
+  /* ---------- FRASES ----------
+     Texto normal: { t: '...' }
+     Cita clásica: { t: 'introducción', o: 'texto original', tr: 'traducción', ref: 'autor, obra y pasaje' }
+     Para añadir una, copia una línea y cambia el texto. */
+  var FRASES = [
+    { t: 'Shh. Voy por el canto XII de la Odisea y acaban de aparecer las sirenas.' },
+    { t: 'Isa me tejió a ganchillo. La capa granate la elegí yo.' },
+    { t: 'No me preguntes por Catilina. Isa ya me ha leído la conjuración tres veces.' },
+    { t: 'Llévame a donde quieras. Ulises tardó diez años en volver a casa; yo tengo prisa.' },
+    { t: 'En el mapa de la portada salgo corriendo detrás de Isa. Como siempre.' },
+    { t: '¿Tú sabías que Isa está escribiendo un libro? Tiene su propia página en la web.' },
+    { t: 'Todo el libro de Isa gira alrededor de una palabra. Yo la sé. No te la voy a decir.' },
+    { t: 'Me han prohibido dar pistas sobre la palabra del libro. Ni una letra. Ni media.' },
+    { t: 'Si tienes una teoría sobre la palabra secreta, en la página del libro puedes dejar tu apuesta.' },
+    { t: 'Isa me dijo una vez que hay que leer siempre con un lápiz en la mano. Yo lo intento con las patas.' },
+    { t: 'Isa siempre dice que hay que ir al texto original. Por eso en esta casa hay tantos diccionarios.' },
+    { t: 'En Atenas se podía votar para mandar a alguien diez años lejos de la ciudad. Se llamaba ostracismo, y se votaba escribiendo el nombre en un trozo de cerámica.' },
+    { t: 'Los romanos no numeraban los años como nosotros: los nombraban por los dos cónsules de ese año.' },
+    { t: 'Suetonio cuenta que Augusto tenía tanto miedo a los rayos que siempre llevaba encima una piel de foca, para protegerse (Vida de Augusto, 90).' },
+    { t: 'Según Suetonio, se decía que Calígula pensaba hacer cónsul a su caballo Incitato. Yo me presento para el año que viene.' },
+    { t: 'Si te gusta Ecos, en Patreon Isa cuenta las cosas con más calma. Yo me cuelo a veces.' },
+    { t: '¿Te has perdido? En la biblioteca está todo ordenado. Bueno, casi todo.' },
+    { t: 'Isa me enseñó que Augusto repetía mucho esta frase:', o: 'Festina lente.', tr: 'Apresúrate despacio.', ref: 'Suetonio, Vida de Augusto 25 (él la decía en griego: σπεῦδε βραδέως)' },
+    { t: 'Isa me dijo que la primera carta de Séneca a Lucilio empieza así:', o: 'Vindica te tibi.', tr: 'Reclámate para ti mismo.', ref: 'Séneca, Cartas a Lucilio 1.1' },
+    { t: 'Lo que Catón le dijo al Senado, y que Isa estudió en su trabajo de fin de grado:', o: 'Iam pridem equidem nos vera vocabula rerum amisimus.', tr: 'Hace ya tiempo que perdimos los verdaderos nombres de las cosas.', ref: 'Salustio, Conjuración de Catilina 52.11' },
+    { t: 'Un rey moribundo se lo dijo a sus herederos. No le hicieron caso:', o: 'Concordia parvae res crescunt, discordia maximae dilabuntur.', tr: 'Con la concordia crecen las cosas pequeñas; con la discordia se desmoronan las más grandes.', ref: 'Salustio, Guerra de Yugurta 10.6' },
+    { t: 'Esta es de mis favoritas. Isa dice que resume bien por qué leemos a los clásicos:', o: 'Homo sum, humani nihil a me alienum puto.', tr: 'Soy humano, y nada de lo humano me es ajeno.', ref: 'Terencio, El atormentador de sí mismo 77' },
+    { t: 'Horacio lo tenía clarísimo:', o: 'Carpe diem, quam minimum credula postero.', tr: 'Aprovecha el día y confía lo menos posible en el mañana.', ref: 'Horacio, Odas 1.11.8' },
+    { t: 'Isa me contó que esto lo escribió Juvenal hablando de vigilar a las esposas, aunque hoy se usa para hablar del poder:', o: 'Quis custodiet ipsos custodes?', tr: '¿Quién vigilará a los propios vigilantes?', ref: 'Juvenal, Sátiras 6' },
+    { t: 'Lo que dijo César al cruzar el Rubicón, según Suetonio:', o: 'Iacta alea est.', tr: 'La suerte está echada.', ref: 'Suetonio, Vida de César 32' },
+    { t: 'César, presumiendo de lo rápido que había ganado en el Ponto:', o: 'Veni, vidi, vici.', tr: 'Llegué, vi, vencí.', ref: 'Suetonio, Vida de César 37' },
+    { t: 'Séneca se quejaba de que en las escuelas pasaba esto:', o: 'Non vitae sed scholae discimus.', tr: 'No aprendemos para la vida, sino para la escuela.', ref: 'Séneca, Cartas a Lucilio 106.12' },
+    { t: 'Cicerón, sobre la historia. Isa la tiene apuntada en su cuaderno:', o: 'Historia magistra vitae.', tr: 'La historia, maestra de la vida.', ref: 'Cicerón, Sobre el orador 2.36' },
+    { t: 'Juvenal, sobre lo único que merece la pena pedir:', o: 'Orandum est ut sit mens sana in corpore sano.', tr: 'Hay que pedir una mente sana en un cuerpo sano.', ref: 'Juvenal, Sátiras 10.356' },
+    { t: 'Plinio cuenta que el pintor Apeles no dejaba pasar un día sin trazar al menos una línea. De ahí viene el dicho:', o: 'Nulla dies sine linea.', tr: 'Ningún día sin una línea.', ref: 'A partir de Plinio el Viejo, Historia natural 35.84' },
+    { t: 'Lo que estaba escrito en el templo de Apolo en Delfos:', o: 'Γνῶθι σεαυτόν.', tr: 'Conócete a ti mismo.', ref: 'Inscripción del templo de Delfos', griego: true }
+  ];
+
+  var orden = FRASES.map(function (_, k) { return k; });
+  for (var k = orden.length - 1; k > 0; k--) { var j = Math.floor(Math.random() * (k + 1)); var tmp = orden[k]; orden[k] = orden[j]; orden[j] = tmp; }
+  var i = 0;
+
+  function pintar(f) {
+    t.textContent = '';
+    var p = document.createElement('p'); p.className = 'mo-texto'; p.textContent = f.t; t.appendChild(p);
+    if (f.o) {
+      var o = document.createElement('p'); o.className = 'mo-original'; o.lang = f.griego ? 'grc' : 'la'; o.textContent = f.o; t.appendChild(o);
+      var tr = document.createElement('p'); tr.className = 'mo-traduccion'; tr.textContent = f.tr; t.appendChild(tr);
+      var r = document.createElement('p'); r.className = 'mo-ref'; r.textContent = f.ref; t.appendChild(r);
+    }
+  }
+
+  var reducido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pos = null;
   try { pos = JSON.parse(sessionStorage.getItem('miniodi-pos')); } catch (e) {}
 
   function limitar(x, y) {
     var w = b.offsetWidth, h = b.offsetHeight;
-    return {
-      x: Math.min(Math.max(0, x), window.innerWidth - w),
-      y: Math.min(Math.max(0, y), window.innerHeight - h)
-    };
+    return { x: Math.min(Math.max(0, x), window.innerWidth - w), y: Math.min(Math.max(0, y), window.innerHeight - h) };
   }
   function colocar() {
     if (!pos) return;
     var p = limitar(pos.x, pos.y);
-    b.style.left = p.x + 'px'; b.style.top = p.y + 'px';
-    b.style.right = 'auto'; b.style.bottom = 'auto';
+    b.style.left = p.x + 'px'; b.style.top = p.y + 'px'; b.style.right = 'auto'; b.style.bottom = 'auto';
     if (!t.hidden) colocarBocadillo();
   }
   function colocarBocadillo() {
     var r = b.getBoundingClientRect(), tw = t.offsetWidth, th = t.offsetHeight;
     var x = Math.min(Math.max(8, r.left + r.width / 2 - tw / 2), window.innerWidth - tw - 8);
-    var y = r.top - th - 10;
-    if (y < 8) y = r.bottom + 10;
-    t.style.left = x + 'px'; t.style.top = y + 'px';
-    t.style.right = 'auto'; t.style.bottom = 'auto';
+    var y = r.top - th - 10; if (y < 8) y = r.bottom + 10;
+    t.style.left = x + 'px'; t.style.top = y + 'px'; t.style.right = 'auto'; t.style.bottom = 'auto';
   }
   function cerrar() { t.hidden = true; b.classList.remove('abierto'); b.setAttribute('aria-expanded', 'false'); }
   function hablar() {
     if (!t.hidden) { cerrar(); return; }
-    t.textContent = frases[i]; i = (i + 1) % frases.length;
+    pintar(FRASES[orden[i]]); i = (i + 1) % orden.length;
     t.hidden = false; b.classList.add('abierto'); b.setAttribute('aria-expanded', 'true');
-    colocarBocadillo();
+    colocarBocadillo(); quieto(12000);
   }
 
-  // Arrastrar
+  /* ---------- Movimiento propio ---------- */
+  var esperaHasta = 0, temporizador = null, paseando = false;
+  function quieto(ms) { esperaHasta = Date.now() + ms; }
+  function mirar(derecha) { b.style.setProperty('--dir', derecha ? 1 : -1); }
+  function gesto(clase, ms) {
+    b.classList.remove('saltito', 'vueltita', 'bamboleo');
+    void b.offsetWidth; b.classList.add(clase);
+    setTimeout(function () { b.classList.remove(clase); }, ms);
+  }
+  function pasear() {
+    var r = b.getBoundingClientRect();
+    var dist = (80 + Math.random() * 180) * (Math.random() < .5 ? -1 : 1);
+    var destino = limitar(r.left + dist, r.top);
+    if (Math.abs(destino.x - r.left) < 30) destino = limitar(r.left - dist, r.top);
+    mirar(destino.x > r.left);
+    pos = { x: r.left, y: r.top }; colocar();
+    var dur = Math.abs(destino.x - r.left) * 9;
+    paseando = true; b.classList.add('andando');
+    b.style.transition = 'left ' + dur + 'ms linear, opacity .3s ease, transform .2s ease';
+    requestAnimationFrame(function () { pos = destino; colocar(); });
+    setTimeout(function () {
+      paseando = false; b.classList.remove('andando'); b.style.transition = '';
+      try { sessionStorage.setItem('miniodi-pos', JSON.stringify(pos)); } catch (e) {}
+      if (Math.random() < .5) setTimeout(function () { mirar(Math.random() < .5); }, 900);
+    }, dur + 50);
+  }
+  function hacerAlgo() {
+    var ocupado = document.hidden || !t.hidden || inicio || paseando || Date.now() < esperaHasta;
+    if (!ocupado) {
+      var r = Math.random();
+      if (r < .32) gesto('saltito', 900);
+      else if (r < .52) gesto('vueltita', 1100);
+      else if (r < .70) gesto('bamboleo', 1200);
+      else pasear();
+    }
+    temporizador = setTimeout(hacerAlgo, 3500 + Math.random() * 5500);
+  }
+
+  /* ---------- Arrastrar ---------- */
   var inicio = null, movido = false;
   b.addEventListener('pointerdown', function (e) {
     if (e.button !== 0) return;
     var r = b.getBoundingClientRect();
     inicio = { px: e.clientX, py: e.clientY, dx: e.clientX - r.left, dy: e.clientY - r.top };
-    movido = false;
+    movido = false; b.style.transition = ''; quieto(8000);
     b.setPointerCapture(e.pointerId);
   });
   b.addEventListener('pointermove', function (e) {
@@ -67,7 +147,7 @@
   });
   function soltar() {
     if (!inicio) return;
-    inicio = null; b.classList.remove('arrastrando');
+    inicio = null; b.classList.remove('arrastrando'); quieto(8000);
     if (movido && pos) {
       pos = limitar(pos.x, pos.y);
       try { sessionStorage.setItem('miniodi-pos', JSON.stringify(pos)); } catch (e) {}
@@ -79,12 +159,10 @@
     if (movido) { e.preventDefault(); movido = false; return; }
     hablar();
   });
-
-  // Con teclado: flechas para moverlo
   b.addEventListener('keydown', function (e) {
     var paso = e.shiftKey ? 60 : 20, d = { ArrowLeft: [-paso, 0], ArrowRight: [paso, 0], ArrowUp: [0, -paso], ArrowDown: [0, paso] }[e.key];
     if (!d) return;
-    e.preventDefault();
+    e.preventDefault(); quieto(8000);
     var r = b.getBoundingClientRect();
     pos = limitar(r.left + d[0], r.top + d[1]); colocar();
     try { sessionStorage.setItem('miniodi-pos', JSON.stringify(pos)); } catch (e2) {}
@@ -94,5 +172,6 @@
   window.addEventListener('resize', colocar);
   colocar();
   b.classList.add('visible');
+  if (!reducido) { quieto(2500); temporizador = setTimeout(hacerAlgo, 3000); }
 })();
 </script>

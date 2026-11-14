@@ -512,3 +512,40 @@ table { font-size: .93rem; }
 @media (max-width: 640px) {
   .lamina.lamina-ilustrada .mapa-ruta { width: 1100px; max-width: none; }
 }
+
+/* Mini Odi: movimientos propios y bocadillo con citas */
+.miniodi img { transform: scaleX(var(--dir, 1)); transform-origin: 50% 100%; }
+.miniodi.saltito img { animation: mo-saltito .9s ease-out; }
+.miniodi.vueltita img { animation: mo-vueltita 1.1s ease-in-out; }
+.miniodi.bamboleo img { animation: mo-bamboleo 1.2s ease-in-out; }
+.miniodi.andando img { animation: mo-andar .36s ease-in-out infinite; }
+@keyframes mo-saltito {
+  0%, 100% { transform: scaleX(var(--dir, 1)) translateY(0); }
+  25% { transform: scaleX(var(--dir, 1)) translateY(-22px) scaleY(1.04); }
+  50% { transform: scaleX(var(--dir, 1)) translateY(0) scaleY(.92); }
+  70% { transform: scaleX(var(--dir, 1)) translateY(-8px); }
+}
+@keyframes mo-vueltita {
+  0% { transform: scaleX(var(--dir, 1)); }
+  25% { transform: scaleX(calc(var(--dir, 1) * .05)) translateY(-6px); }
+  50% { transform: scaleX(calc(var(--dir, 1) * -1)) translateY(-10px); }
+  75% { transform: scaleX(calc(var(--dir, 1) * .05)) translateY(-6px); }
+  100% { transform: scaleX(var(--dir, 1)); }
+}
+@keyframes mo-bamboleo {
+  0%, 100% { transform: scaleX(var(--dir, 1)) rotate(0); }
+  20% { transform: scaleX(var(--dir, 1)) rotate(-9deg); }
+  40% { transform: scaleX(var(--dir, 1)) rotate(8deg); }
+  60% { transform: scaleX(var(--dir, 1)) rotate(-6deg); }
+  80% { transform: scaleX(var(--dir, 1)) rotate(4deg); }
+}
+@keyframes mo-andar {
+  0%, 100% { transform: scaleX(var(--dir, 1)) translateY(0) rotate(0); }
+  50% { transform: scaleX(var(--dir, 1)) translateY(-7px) rotate(calc(var(--dir, 1) * 4deg)); }
+}
+.miniodi-bocadillo { max-width: 18rem; line-height: 1.4; }
+.miniodi-bocadillo p { margin: 0; max-width: none; }
+.miniodi-bocadillo .mo-original { margin-top: .45rem; font-family: var(--fell); font-style: italic; font-size: 1.12rem; color: var(--granate); line-height: 1.25; }
+.miniodi-bocadillo .mo-original:lang(grc) { font-family: var(--garamond); font-style: normal; }
+.miniodi-bocadillo .mo-traduccion { margin-top: .25rem; }
+.miniodi-bocadillo .mo-ref { margin-top: .35rem; font-size: .8rem; color: var(--oliva); font-style: italic; }
