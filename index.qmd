@@ -14,6 +14,10 @@ toc: false
   <p class="portada-firma">Un proyecto de Isabel Sanz, en marcha desde el 23 de noviembre de 2025</p>
   <h1 class="portada-titulo">Ecos de nuestros clásicos</h1>
   <p class="portada-entrada">Grecia y Roma leídas despacio: cómo se organizaban, cómo se justificaba el poder, qué escribieron sus autores y qué preguntas nos siguen dejando. Con las fuentes delante y, cuando toca, con humor.</p>
+  <p class="portada-apoyo">
+    <a class="boton lleno" href="https://paypal.me/ecosclasicos">Apoyar en PayPal</a>
+    <a class="boton" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">Unirme en Patreon</a>
+  </p>
 </header>
 
 ```
@@ -93,8 +97,12 @@ toc: false
   <div class="patreon-texto">
     <h2 id="patreon-titulo">Un rincón más tranquilo</h2>
     <p>En Instagram y TikTok todo va deprisa. En Patreon puedo dedicar más tiempo a las lecturas, a los textos largos y a las conversaciones que en redes se quedan a medias. Si te apetece acompañar el proyecto desde ahí, me ayudas a mantenerlo independiente y a seguir leyendo e investigando con calma.</p>
-    <p><a class="boton lleno" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">Ir a Patreon</a>
-       <a class="patreon-mas" href="apoyame.html">Qué significa apoyar Ecos</a></p>
+    <p>Y si prefieres una aportación puntual, sin suscripción, también puedes hacerla por PayPal.</p>
+    <p class="botonera botonera-centro">
+       <a class="boton lleno" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">Ir a Patreon</a>
+       <a class="boton lleno" href="https://paypal.me/ecosclasicos">Apoyar en PayPal</a>
+    </p>
+    <p><a class="patreon-mas" href="apoyame.html">Qué significa apoyar Ecos</a></p>
   </div>
 </section>
 

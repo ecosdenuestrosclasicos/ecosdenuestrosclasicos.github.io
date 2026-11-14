@@ -57,10 +57,14 @@ website:
         href: colaboraciones.qmd
       - text: "Contacto"
         href: contacto.qmd
+    tools:
+      - icon: heart-fill
+        href: apoyame.qmd
+        aria-label: "Apoya Ecos"
     right:
       - text: "Apoya Ecos"
         href: apoyame.qmd
-        aria-label: "Apoya Ecos en Patreon"
+        aria-label: "Apoya Ecos en Patreon o PayPal"
   page-footer:
     left: |
       **Ecos de nuestros clásicos**<br>
@@ -76,9 +80,11 @@ website:
         href: https://www.facebook.com/profile.php?id=61586532315391
       - text: Patreon
         href: https://www.patreon.com/cw/Ecosdenuestrosclasicos
+      - text: PayPal
+        href: https://paypal.me/ecosclasicos
     right: |
       [ecosdenuestrosclasicos@gmail.com](mailto:ecosdenuestrosclasicos@gmail.com)<br>
-      [Privacidad](/privacidad.html)
+      [Apoya Ecos](/apoyame.html) · [Privacidad](/privacidad.html)
 
 format:
   html:
@@ -89,6 +95,7 @@ format:
     include-after-body:
       - assets/miniodi.html
       - assets/formularios.html
+      - assets/apoyo.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true

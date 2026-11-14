@@ -10,6 +10,23 @@ Ecos es un proyecto independiente. No tengo detrás ninguna editorial, universid
 
 Además, solo colaboro con marcas que de verdad encajan con el proyecto, y eso hace que casi todo el trabajo salga de mi tiempo y de mi bolsillo. Por eso cualquier apoyo, por pequeño que sea, se nota.
 
+```{=html}
+<div class="apoyo-opciones">
+  <a class="apoyo-opcion" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">
+    <span class="sello en-curso">Cada mes</span>
+    <strong>Patreon</strong>
+    <span>Acompaña el proyecto de cerca, con lecturas y conversaciones más tranquilas.</span>
+    <span class="boton lleno">Unirme en Patreon</span>
+  </a>
+  <a class="apoyo-opcion" href="https://paypal.me/ecosclasicos">
+    <span class="sello terminado">Una vez</span>
+    <strong>PayPal</strong>
+    <span>Una aportación puntual, de la cantidad que tú quieras y sin suscripción.</span>
+    <span class="boton lleno">Apoyar en PayPal</span>
+  </a>
+</div>
+```
+
 ## Patreon, el rincón tranquilo
 
 En Instagram, TikTok y las demás redes comparto contenido casi a diario, pero allí todo va muy rápido. Patreon es otra cosa. Es un sitio más tranquilo, donde puedo dedicar más tiempo a las lecturas y a los textos largos, y hablar con calma con las personas que quieren acompañar el proyecto de cerca.

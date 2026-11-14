@@ -1,0 +1,20 @@
+<!-- Franja «Apoya Ecos» que aparece justo encima del pie de página en todas las páginas
+     (menos en la propia página de apoyo). Para cambiar los enlaces, edita este archivo. -->
+<aside class="franja-apoyo" aria-label="Apoya Ecos" hidden>
+  <div class="franja-apoyo-dentro">
+    <p class="franja-apoyo-texto"><strong>¿Te gusta Ecos?</strong> Es un proyecto independiente y cada apoyo se convierte en más horas de lectura e investigación.</p>
+    <p class="franja-apoyo-botones">
+      <a class="boton lleno" href="https://paypal.me/ecosclasicos">Apoyar en PayPal</a>
+      <a class="boton claro" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">Unirme en Patreon</a>
+    </p>
+  </div>
+</aside>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var f = document.querySelector('.franja-apoyo'), pie = document.querySelector('footer.footer, .nav-footer');
+  if (!f) return;
+  if (/apoyame\.html$/.test(location.pathname)) { f.remove(); return; }
+  if (pie) { var cont = pie.closest('footer') || pie; cont.parentNode.insertBefore(f, cont); }
+  f.hidden = false;
+});
+</script>

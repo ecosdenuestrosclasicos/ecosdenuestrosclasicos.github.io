@@ -549,3 +549,26 @@ table { font-size: .93rem; }
 .miniodi-bocadillo .mo-original:lang(grc) { font-family: var(--garamond); font-style: normal; }
 .miniodi-bocadillo .mo-traduccion { margin-top: .25rem; }
 .miniodi-bocadillo .mo-ref { margin-top: .35rem; font-size: .8rem; color: var(--oliva); font-style: italic; }
+
+
+/* Apoyo bien visible: portada, franja sobre el pie y opciones en «Apoya Ecos» */
+.portada-apoyo { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin: 1.6rem 0 0; }
+.botonera-centro { justify-content: center; }
+.boton.claro { border-color: var(--marfil); color: var(--marfil); }
+.boton.claro:hover { background: var(--marfil); color: var(--burdeos); }
+.franja-apoyo { background: var(--granate); color: var(--marfil); padding: 1.6rem 1.5rem; margin-top: 3rem; }
+.franja-apoyo-dentro { max-width: 60rem; margin: 0 auto; display: flex; gap: 1.2rem 2rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.franja-apoyo-texto { margin: 0; max-width: 34rem; font-size: 1.05rem; }
+.franja-apoyo-texto strong { font-family: var(--fell); font-weight: 400; font-style: italic; font-size: 1.3rem; }
+.franja-apoyo-botones { margin: 0; display: flex; gap: .7rem; flex-wrap: wrap; }
+.franja-apoyo .boton.lleno { background: var(--marfil); color: var(--granate); border-color: var(--marfil); }
+.franja-apoyo .boton.lleno:hover { background: var(--pergamino); }
+.apoyo-opciones { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.2rem; margin: 1.8rem 0 2.4rem; max-width: 44rem; }
+.apoyo-opcion { display: flex; flex-direction: column; gap: .5rem; align-items: flex-start; padding: 1.2rem 1.3rem 1.3rem; text-decoration: none; color: var(--tinta);
+  background: #FBF7EE; border: 1px solid #DCCDB3; border-top: 3px solid var(--granate); box-shadow: 0 14px 22px -20px rgba(40,35,33,.55); }
+.apoyo-opcion strong { font-family: var(--fell); font-weight: 400; font-size: 1.6rem; color: var(--burdeos); line-height: 1.1; }
+.apoyo-opcion .boton { margin-top: .4rem; }
+.apoyo-opcion:hover { border-color: var(--granate); color: var(--tinta); }
+.apoyo-opcion:hover .boton { background: var(--burdeos); }
+.navbar .quarto-navbar-tools a[href$="apoyame.html"] { color: var(--granate) !important; font-size: 1.15rem; }
+@media (max-width: 640px) { .franja-apoyo-botones .boton { flex: 1 1 auto; text-align: center; } }
