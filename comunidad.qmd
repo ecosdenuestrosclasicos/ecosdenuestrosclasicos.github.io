@@ -3,6 +3,18 @@ title: "Comunidad"
 subtitle: "Preguntar, proponer y discrepar con argumentos"
 description: "Cómo participar en Ecos de nuestros clásicos: propuestas de temas, preguntas y conversación."
 image: imagenes/dibujo-comunidad.jpg
+comments:
+  giscus:
+    repo: ecosdenuestrosclasicos/ecosdenuestrosclasicos.github.io
+    repo-id: "R_kgDOVs3uXQ"
+    category: "Comentarios"
+    category-id: "DIC_kwDOVs3uXc4DLIbd"
+    mapping: pathname
+    reactions-enabled: true
+    input-position: top
+    loading: lazy
+    language: es
+    theme: https://ecosdenuestrosclasicos.github.io/assets/giscus-ecos.css
 ---
 
 ::: {.capitular}
@@ -53,6 +65,12 @@ Pocas normas, y bastante de sentido común.
 - Si citas una fuente, mejor con la referencia. Y si te equivocas no pasa nada, a mí también me pasa.
 - Nada de insultos, de spam ni de ataques personales. Esos mensajes se borran.
 
-## Comentarios en los artículos
+## Recomienda tu lectura
 
-Siempre tengo algún artículo o algún paper entre manos, y me gustaría que cada uno tuviera debajo su propio espacio de comentarios. Lo estoy preparando. Mientras tanto, si quieres comentar cualquier texto de la web, mándamelo con el formulario de arriba y te contesto encantada.
+Este es el rincón para hablar de libros. Cuéntanos qué estás leyendo o qué clásico recomendarías a alguien que empieza, y sobre todo por qué. También puedes responder a otras recomendaciones, discrepar o apuntarte las que te convenzan.
+
+Las investigaciones, las lecturas y los textos de la web tienen también su propio espacio de comentarios al final de cada página.
+
+::: {.nota-margen}
+Los comentarios funcionan con GitHub, así que para escribir hace falta una cuenta (es gratuita). Si no tienes o no te apetece crearla, mándame tu recomendación con el formulario de arriba y la comparto yo.
+:::

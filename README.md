@@ -56,16 +56,12 @@ Para griego, usa `lang="grc"`. Para las fichas de biblioteca y los sellos (Termi
 
 ## 4. Comentarios (giscus)
 
-Los comentarios están preparados pero **desactivados**, porque necesitan que hagas tres cosas en GitHub:
+Están **activos**. Funcionan con giscus, que guarda cada conversación en la pestaña **Discussions** del repositorio, en la categoría «Comentarios» (de tipo anuncio: solo la web abre temas y la gente comenta y responde).
 
-1. En el repositorio: **Settings → General → Features**, marca **Discussions**.
-2. En **Discussions**, crea una categoría llamada `Comentarios` de tipo *Announcement* (así solo giscus puede abrir hilos nuevos y no se llena de spam).
-3. Instala la app de giscus en el repositorio: <https://github.com/apps/giscus>.
-4. Entra en <https://giscus.app/es>, escribe `ecosdenuestrosclasicos/ecosdenuestrosclasicos.github.io` y elige la categoría `Comentarios`. Abajo te dará dos códigos: `data-repo-id` y `data-category-id`.
-5. Abre `investigacion/_metadata.yml`, `lecturas/_metadata.yml`, `cuadernos/_metadata.yml` y `videos/_metadata.yml`, quita los `#` del bloque `comments` y pega los dos códigos.
-6. En `comunidad.qmd`, cambia el último apartado («Comentarios en los artículos») para decir que ya están abiertos.
-
-**Lo que hay que saber:** para comentar con giscus hace falta una cuenta de GitHub. Para tu público eso es una barrera; por eso la página de Comunidad recoge propuestas y preguntas por correo, que no exige nada. Moderas desde la pestaña **Discussions** del repositorio (puedes borrar, ocultar o bloquear usuarios). Si más adelante quieres comentarios sin registro, las alternativas realistas son de pago (Hyvor Talk, Commento) o requieren mantener un servidor (Remark42); en ese caso habría que actualizar también la página de privacidad.
+- Salen al final de cada investigación, lectura, texto de Cuadernos, vídeo y entrada del diario del libro, y en las páginas **Comunidad** («Recomienda tu lectura») y **Lecturas y fuentes**.
+- Para comentar hace falta una cuenta de GitHub; por eso la página de Comunidad ofrece también el formulario por correo.
+- **Moderar:** en el repositorio, pestaña **Discussions**. Desde ahí puedes ocultar, borrar o bloquear usuarios. Te llegarán avisos al correo de la cuenta ecosdenuestrosclasicos.
+- Configuración: los `_metadata.yml` de cada carpeta y la cabecera de `comunidad.qmd` y `lecturas.qmd`. Colores: `assets/giscus-ecos.css`.
 
 ## 5. Identidad visual
 

@@ -2,6 +2,18 @@
 title: "Lecturas y fuentes"
 subtitle: "Lo que leo, lo que leemos juntos y lo que te recomendaría"
 description: "Lecturas conjuntas, recomendaciones personales y fichero de autores antiguos y contemporáneos que aparecen en Ecos."
+comments:
+  giscus:
+    repo: ecosdenuestrosclasicos/ecosdenuestrosclasicos.github.io
+    repo-id: "R_kgDOVs3uXQ"
+    category: "Comentarios"
+    category-id: "DIC_kwDOVs3uXc4DLIbd"
+    mapping: pathname
+    reactions-enabled: true
+    input-position: top
+    loading: lazy
+    language: es
+    theme: https://ecosdenuestrosclasicos.github.io/assets/giscus-ecos.css
 ---
 
 En redes casi nunca cabe la referencia completa, y aquí sí. Esta página reúne las lecturas que hacemos juntos, los libros que recomendaría a cualquiera que me pregunte y los autores que más aparecen en Ecos. Irá creciendo con cada cosa que lea.
@@ -171,3 +183,7 @@ Para la historia de Roma y de Grecia me gusta tener cerca a otros:
 - **Moses I. Finley**, *Vieja y nueva democracia*. Qué tenía de democrática Atenas y qué no tiene la nuestra.
 - **Elinor Ostrom**, *El gobierno de los bienes comunes*. Cómo se ponen de acuerdo las comunidades para gestionar lo que es de todos, sin Estado ni mercado.
 - **Irene Vallejo**, *El infinito en un junco*. La historia de los libros en el mundo antiguo, para quien quiera empezar por algo que se lea de un tirón.
+
+## Y tú, ¿qué estás leyendo?
+
+Déjame aquí abajo tu recomendación: el libro, el autor y por qué merece la pena. Las que más me gusten acabarán en esta página (con tu permiso).

@@ -1,0 +1,22 @@
+/* Tema de giscus con los colores de Ecos (se carga desde la web). */
+@import url("https://giscus.app/themes/light.css");
+main {
+  --color-canvas-default: #FBF7EE;
+  --color-canvas-subtle: #F3EAD7;
+  --color-canvas-inset: #F6F0E5;
+  --color-border-default: #DCCDB3;
+  --color-border-muted: #E8DCC7;
+  --color-fg-default: #282321;
+  --color-fg-muted: #5F6152;
+  --color-accent-fg: #652638;
+  --color-accent-emphasis: #652638;
+  --color-btn-primary-bg: #652638;
+  --color-btn-primary-hover-bg: #421C2A;
+  --color-btn-primary-border: #421C2A;
+  --color-btn-primary-text: #F6F0E5;
+  --color-btn-primary-disabled-bg: #9B6A77;
+  --color-btn-primary-disabled-text: #F6F0E5;
+  --color-segmented-control-bg: #E8DCC7;
+}
+main, main * { font-family: "EB Garamond", Georgia, serif; }
+.gsc-comment-box-textarea, textarea { font-size: 1rem; }

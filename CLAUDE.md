@@ -15,7 +15,7 @@ Web de **Ecos de nuestros clásicos**, proyecto independiente de divulgación so
 - `assets/mapa-ruta.md`: el mapa de la portada. Fondo `imagenes/mapa-ilustrado.jpg` (marco, adornos, monumentos y personajes recortados de la ilustración original de Isabel sobre un Mediterráneo real de Natural Earth) más una capa SVG con la ruta circular en barco, las escapadas a pie (Segovia, Guiza, Petra), los nombres y el barquito animado. Geografía rigurosa: cada monumento junto a su lugar real. Generado con `herramientas/mapa_mediterraneo.py`, `componer_mapa.py` y `capa_ruta.py` (`hacer_mapa.py` y `imagenes/personajes-ruta.webp` son de la versión anterior y ya no se usan).
 - `assets/miniodi.html`: Mini Odi dibujado se asoma al final de cada página; al hacer clic dice una frase.
 - Plantillas: `videos/_plantilla-video.qmd` y `cuadernos/_plantilla-cuaderno.qmd`.
-- Comentarios con giscus: preparados pero comentados en los `_metadata.yml` de cada carpeta. Hace falta activar Discussions, instalar la app de giscus y pegar `repo-id` y `category-id` (pasos en el README, apartado 4). Requiere cuenta de GitHub; las propuestas de la comunidad van por correo.
+- Comentarios con giscus: ACTIVOS (Discussions activado, app giscus instalada solo en este repo, categoría «Comentarios» de tipo anuncio; repo-id R_kgDOVs3uXQ, category-id DIC_kwDOVs3uXc4DLIbd). Configurados en los `_metadata.yml` de cada carpeta y en la cabecera de `comunidad.qmd` y `lecturas.qmd`; tema en `assets/giscus-ecos.css`.
 
 ## Paleta
 Granate `#652638`, burdeos `#421C2A`, marfil `#F6F0E5`, pergamino `#E8DCC7`, tinta `#282321`, bronce `#A78658`, oliva `#5F6152`.

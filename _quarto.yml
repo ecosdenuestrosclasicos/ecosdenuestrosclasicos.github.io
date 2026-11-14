@@ -8,6 +8,7 @@ project:
     - imagenes/
     - datos/
     - assets/fuentes/
+    - assets/giscus-ecos.css
 
 lang: es
 date-format: "D [de] MMMM [de] YYYY"
