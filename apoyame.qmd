@@ -24,19 +24,13 @@ Apoyar Ecos en Patreon me permite seguir eligiendo de qué hablo y cómo, sin de
 
 ## Ayuda a que los clásicos sigan vivos
 
-Si disfrutas del contenido y prefieres echar una mano de vez en cuando, sin suscripciones ni compromisos, muy pronto podrás hacer una aportación puntual a través de PayPal.
+Si disfrutas del contenido y prefieres echar una mano de vez en cuando, sin suscripciones ni compromisos, puedes hacer una aportación puntual a través de PayPal. Tú eliges la cantidad.
 
-<!-- PAYPAL: cuando tengas el enlace, sustituye todo el bloque <div class="aportacion-pronto"> … </div>
-     por esta línea:
-     <p class="botonera"><a class="boton lleno" href="AQUÍ-EL-ENLACE-DE-PAYPAL">Apoyar el proyecto en PayPal</a></p>
-     y cambia «muy pronto podrás hacer» por «puedes hacer» en el párrafo de arriba. -->
 ```{=html}
-<div class="aportacion-pronto">
-  <span class="sello en-curso">En preparación</span>
-  <p>Lo estoy terminando de configurar. En cuanto esté listo, aquí aparecerá el botón para apoyar el proyecto.</p>
-</div>
+<p class="botonera">
+  <a class="boton lleno" href="https://paypal.me/ecosclasicos">Apoyar el proyecto en PayPal</a>
+</p>
 ```
-
 
 ## Otras formas de apoyar
 

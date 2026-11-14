@@ -26,7 +26,7 @@ Granate `#652638`, burdeos `#421C2A`, marfil `#F6F0E5`, pergamino `#E8DCC7`, tin
 - **Patreon**: sin niveles ni precios. Enlace: https://www.patreon.com/cw/Ecosdenuestrosclasicos
 - **El libro** (`libro.qmd` + diario en `libro/`): el título es secreto, no ponerlo. Todo el libro gira en torno a una palabra que Isabel revelará al publicarlo: **no escribirla NUNCA en ningún archivo del repositorio** (es público), ni siquiera en comentarios. En la web aparece tapada, con un formulario «¿Qué crees que es?».
 - **Artículos en curso** (fichas en `investigacion.qmd`): «Ludus y bienestar emocional» y «Términos y condiciones de la paz». Solo se pueden dar los títulos: nada de contenido, universidad ni coautores. Cuando se publiquen, añadir el enlace para leerlos o comprar la edición. Poner el enlace cuando se publiquen.
-- **PayPal**: en `apoyame.qmd` hay un hueco «En preparación»; cuando Isabel dé el enlace, cambiarlo por el botón (instrucciones en un comentario del archivo). No usar la palabra «donativos».
+- **PayPal**: activo en `apoyame.qmd`, botón a https://paypal.me/ecosclasicos (aportaciones puntuales). No usar la palabra «donativos».
 - Formación: no decir que Filología Clásica quedó sin terminar; basta con «antes estudié Filología Clásica».
 - No poner notas sobre ilustraciones hechas con IA.
 - No publicar cifras de audiencia (en la página de colaboraciones pone «a petición»).
