@@ -3,7 +3,7 @@ title: "Contacto"
 description: "Cómo escribir a Ecos de nuestros clásicos."
 ---
 
-La forma más directa de hablar conmigo es el correo. Lo leo yo, así que puede que tarde unos días, pero contesto.
+La forma más directa de hablar conmigo es el correo. Lo leo yo, así que a veces tardo unos días, pero contesto siempre.
 
 ```{=html}
 <p class="contacto-correo"><a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a></p>
@@ -12,20 +12,26 @@ La forma más directa de hablar conmigo es el correo. Lo leo yo, así que puede 
   <article class="ficha">
     <span class="signatura">Comunidad</span>
     <h3>Preguntas y propuestas</h3>
-    <p>Un tema que quieres que trate, una duda sobre un vídeo o una corrección.</p>
-    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Pregunta%20para%20Ecos">Escribir</a>
+    <p>Un tema que quieres que trate, una duda sobre un vídeo o una corrección. También puedes usar el <a href="comunidad.html">formulario de la comunidad</a>.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Pregunta%5D%20">Escribir</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Prensa</span>
+    <h3>Entrevistas y medios</h3>
+    <p>Artículos, programas, pódcasts o reportajes sobre historia antigua y divulgación.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Prensa%5D%20">Escribir</a>
   </article>
   <article class="ficha">
     <span class="signatura">Editorial</span>
     <h3>Propuestas editoriales</h3>
     <p>Libros, artículos, prólogos, charlas o proyectos de escritura.</p>
-    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Propuesta%20editorial">Escribir</a>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Editorial%5D%20">Escribir</a>
   </article>
   <article class="ficha">
     <span class="signatura">Colaboraciones</span>
     <h3>Museos, cultura y marcas</h3>
     <p>Antes, échale un vistazo a <a href="colaboraciones.html">cómo me gusta colaborar</a>.</p>
-    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Colaboraci%C3%B3n%20con%20Ecos">Escribir</a>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Colaboraci%C3%B3n%5D%20">Escribir</a>
   </article>
 </div>
 ```

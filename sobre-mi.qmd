@@ -19,30 +19,30 @@ image: imagenes/isabel.jpg
 ::: {.sobre-mi-texto .capitular}
 Me llamo Isabel, vivo en la provincia de Valencia y soy la persona que hay detrás de Ecos de nuestros clásicos.
 
-Me gradué en Economía por la Universitat de València en junio de 2026. Antes había empezado Filología Clásica; no llegué a terminarla, pero de ahí me vienen el latín, el griego y la costumbre de ir siempre al texto original. Ahora estudio el Máster en Economía de la Universitat de València y Matemáticas en la UNED.
+Soy economista. Me gradué en Economía por la Universitat de València y antes estudié Filología Clásica, que no llegué a terminar pero de la que me traje el latín, el griego y la manía de ir siempre al texto original. Ahora curso el Máster en Economía en la Universitat de València y el grado en Matemáticas en la UNED.
 
-Contado así parece un currículum sin rumbo. Para mí tiene bastante lógica: la filología me enseñó a leer con cuidado, la economía a preguntarme por qué las instituciones funcionan (o no) y las matemáticas a comprobar si lo que creo ver en un texto está de verdad ahí. Casi todo lo que hago en Ecos sale de juntar esas tres cosas.
-
-Doy clase desde 2019 y es probablemente lo que más me ha enseñado a explicar: si no puedo contarle algo a alguien de forma sencilla, es que todavía no lo he entendido del todo. Eso sí, sencillo no significa inexacto.
+Contado así parece un currículum sin rumbo. Para mí tiene bastante lógica. La filología me enseñó a leer despacio, la economía a preguntarme por qué unas instituciones funcionan y otras no, y las matemáticas a comprobar si lo que creo ver en un texto está de verdad ahí. Casi todo lo que hago en Ecos sale de juntar esas tres cosas.
 :::
 
 ::::
 
 ## Lo que me interesa
 
-La economía institucional, la historia económica, el pensamiento político y la historia de las instituciones. Y, cada vez más, el análisis cuantitativo de textos: contar palabras, ver con qué otras aparecen, seguir cómo cambia el lenguaje político de un autor o de una época. Trabajo con R y RStudio, y esta misma web está hecha con ellos.
+Me interesa entender por qué las sociedades confían en sus instituciones y por qué dejan de hacerlo. Por eso me paso el día entre la economía institucional, la historia económica, el pensamiento político y la historia de las instituciones, y Roma es mi laboratorio favorito para todo eso.
+
+Cada vez me engancha más el análisis cuantitativo de textos. Contar palabras, ver con qué otras aparecen y seguir cómo cambia el lenguaje político de un autor o de una época. Trabajo con R y RStudio, y esta web también está hecha con ellos.
 
 Me gustaría seguir investigando y hacer un doctorado. Mientras tanto, lo que voy haciendo lo tienes en [Investigación](investigacion.qmd).
 
 ## Lo que no soy
 
-No soy una enciclopedia ni una profesora que habla desde lo alto de una tarima. Soy alguien que lee, se hace preguntas y comparte lo que va encontrando. A veces me equivoco, y cuando alguien me lo señala con argumentos, lo agradezco y lo corrijo.
+No soy una enciclopedia ni hablo desde lo alto de una tarima. Leo, me hago preguntas y comparto lo que voy encontrando. A veces me equivoco, y cuando alguien me lo señala con argumentos, lo agradezco y lo corrijo.
 
-También soy alguien que puede pasarse una tarde con las instituciones de la República tardía y, al día siguiente, grabar un vídeo sobre las manías de un emperador. No son dos personas distintas. Es la misma curiosidad.
+Puedo pasarme una tarde con las instituciones de la República tardía y grabar al día siguiente un vídeo sobre las manías de un emperador. No son dos personas distintas, es la misma curiosidad.
 
 ## Y Mini Odi
 
-Mini Odi es mi pequeño compañero de aventuras. Es un pato de ganchillo con muy buen gusto para las camisetas. En el mapa de la portada corre detrás de mí, con su capa y su corona de laurel, y si llegas al final de cualquier página puede que te lo encuentres asomándose.
+Mini Odi es mi pequeño compañero de aventuras, un pato que tejí yo misma a ganchillo y que tiene muy buen gusto para las camisetas. En el mapa de la portada corre detrás de mí con su capa y su corona de laurel, y en cualquier página de la web te lo puedes encontrar en una esquina. Si le haces clic, te dice algo. Y si lo arrastras, se va contigo a donde quieras.
 
 ```{=html}
 <p style="margin-top:2.5rem">

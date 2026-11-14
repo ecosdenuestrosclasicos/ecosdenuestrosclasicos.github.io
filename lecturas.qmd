@@ -1,47 +1,90 @@
 ---
 title: "Lecturas y fuentes"
-subtitle: "Los autores con los que converso más a menudo"
-description: "Fichero de autores clásicos y contemporáneos que aparecen en Ecos, y las lecturas conjuntas del proyecto."
+subtitle: "Lo que leo, lo que leemos juntos y lo que te recomendaría"
+description: "Lecturas conjuntas, recomendaciones personales y fichero de autores antiguos y contemporáneos que aparecen en Ecos."
 ---
 
-En redes casi nunca cabe la referencia completa. Aquí sí. Este fichero recoge los autores que más aparecen en Ecos y en qué parte del proyecto los he trabajado. Irá creciendo con cada lectura.
+En redes casi nunca cabe la referencia completa, y aquí sí. Esta página reúne las lecturas que hacemos juntos, los libros que recomendaría a cualquiera que me pregunte y los autores que más aparecen en Ecos. Irá creciendo con cada cosa que lea.
 
-Si quieres leer los textos originales, buena parte de ellos están disponibles con traducción inglesa en la [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/), de la Universidad de Tufts, que es la edición digital que más uso.
+Para los textos originales me baso casi siempre en la [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/), de la Universidad de Tufts. Tiene buena parte de los autores griegos y latinos con su traducción inglesa, y es gratuita.
 
 ## Lecturas conjuntas
+
+Leemos un libro entero entre todos, poco a poco y con el contexto delante.
 
 ```{=html}
 <div class="fichero">
   <article class="ficha">
     <span class="signatura">LEC. 01 · Suetonio</span>
     <h3><a href="lecturas/doce-cesares.html"><cite>Los doce césares</cite></a></h3>
-    <p>Leímos juntos las vidas de los césares, de Julio César a Domiciano, libro a libro y con el contexto de cada reinado.</p>
+    <p>Las vidas de los césares, de Julio César a Domiciano, libro a libro y con el contexto de cada reinado.</p>
     <span class="relacion">Lectura conjunta</span>
+  </article>
+</div>
+```
+
+## Te recomiendo
+
+Si me preguntas qué leer, te diría alguno de estos. No son una lista de imprescindibles. Son libros que, por una razón u otra, me han cambiado la forma de mirar algo.
+
+<!--
+  ISABEL: los «por qué» de cada recomendación son un borrador. Cámbialos
+  para que digan exactamente lo que tú piensas de cada libro, y quita o
+  añade los que quieras.
+-->
+
+```{=html}
+<div class="fichero">
+  <article class="ficha">
+    <span class="signatura">REC. 01 · Salustio</span>
+    <h3><cite>La conjuración de Catilina</cite></h3>
+    <p>Porque es corta, se lee como una novela política y casi cada capítulo da para una discusión. Le he dedicado mi trabajo de fin de grado y todavía le encuentro cosas nuevas. Empieza por los discursos de César y Catón (capítulos 51 y 52).</p>
+    <span class="relacion">Para entender una república en crisis</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">REC. 02 · Aristóteles</span>
+    <h3><cite>Ética a Nicómaco</cite></h3>
+    <p>Por el libro II, donde Aristóteles explica que la virtud no se tiene, se hace a base de costumbre, como quien aprende a tocar la cítara tocándola. Y por los libros VIII y IX, sobre la amistad, que son de lo más bonito que se ha escrito sobre el tema.</p>
+    <span class="relacion">Para pensar cómo vivir</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">REC. 03 · Séneca</span>
+    <h3><cite>Cartas a Lucilio</cite></h3>
+    <p>Por la primera carta, que empieza con un «reclámate a ti mismo» (<i lang="la">vindica te tibi</i>) y va de cómo se nos escapa el tiempo sin darnos cuenta. Son cartas breves, para leer una cada noche, escritas por alguien que sabía mucho de poder y de sus peligros.</p>
+    <span class="relacion">Para el día a día</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">REC. 04 · Dostoievski</span>
+    <h3><cite>Crimen y castigo</cite></h3>
+    <p>Porque Raskólnikov se convence de que hay personas extraordinarias a las que les está permitido saltarse las normas, y la novela entera es el desmontaje de esa idea. Cuando leo a Salustio describiendo a Catilina, me acuerdo mucho de él.</p>
+    <span class="relacion">Para salir de la Antigüedad</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">REC. 05 · Nietzsche</span>
+    <h3><cite>El nacimiento de la tragedia</cite></h3>
+    <p>Porque antes de ser el filósofo que todos conocemos, Nietzsche fue catedrático de Filología Clásica en Basilea, y este es su libro sobre los griegos. Es discutible de principio a fin, y por eso mismo merece la pena.</p>
+    <span class="relacion">Para discutir con los griegos</span>
   </article>
 </div>
 ```
 
 ## Autores antiguos
 
+Los que más aparecen en Ecos, y en qué parte del proyecto los he trabajado.
+
 ```{=html}
 <div class="fichero">
   <article class="ficha">
-    <span class="signatura">Lat. · s. I a. n. e.</span>
-    <h3>Salustio</h3>
-    <p><cite>Bellum Catilinae</cite> y <cite>Bellum Iugurthinum</cite>. Un historiador obsesionado con la decadencia moral de la República, y uno de los que mejor escribe sobre ella.</p>
-    <span class="relacion">Mi trabajo de fin de grado</span>
+    <span class="signatura">Gr. · época arcaica</span>
+    <h3>Homero</h3>
+    <p><cite>Odisea</cite>. Un viaje de vuelta a casa que dura diez años y una galería de personajes que da para muchas conversaciones.</p>
+    <span class="relacion">Serie sobre la Odisea</span>
   </article>
   <article class="ficha">
-    <span class="signatura">Lat. · s. I a. n. e.</span>
-    <h3>Cicerón</h3>
-    <p>Las <cite>Catilinarias</cite>: la versión de la conjuración contada por quien la combatió desde el consulado, con todo su interés político.</p>
-    <span class="relacion">Estudio de confianza institucional</span>
-  </article>
-  <article class="ficha">
-    <span class="signatura">Lat. · ss. I–II n. e.</span>
-    <h3>Suetonio</h3>
-    <p><cite>De vita Caesarum</cite>. Biografías llenas de detalles, rumores y manías imperiales que hay que leer con lupa.</p>
-    <span class="relacion">Lectura conjunta</span>
+    <span class="signatura">Gr. · s. V a. n. e.</span>
+    <h3>Heródoto</h3>
+    <p><cite>Historia</cite>. Las guerras entre griegos y persas, contadas por alguien que quería saber cómo vivían los demás pueblos y no siempre distinguía lo que había visto de lo que le habían contado.</p>
+    <span class="relacion">Grecia y sus vecinos</span>
   </article>
   <article class="ficha">
     <span class="signatura">Gr. · s. V a. n. e.</span>
@@ -50,32 +93,81 @@ Si quieres leer los textos originales, buena parte de ellos están disponibles c
     <span class="relacion">Serie sobre Tucídides y la guerra</span>
   </article>
   <article class="ficha">
-    <span class="signatura">Gr. · época arcaica</span>
-    <h3>Homero</h3>
-    <p><cite>Odisea</cite>. Un viaje de vuelta a casa que dura diez años y una galería de personajes que da para muchas conversaciones.</p>
-    <span class="relacion">Serie sobre la Odisea</span>
-  </article>
-  <article class="ficha">
-    <span class="signatura">Gr. · s. II a. n. e.</span>
-    <h3>Polibio</h3>
-    <p>Un griego que explica a los griegos cómo Roma llegó a dominar el Mediterráneo, y por qué su constitución funcionaba.</p>
-    <span class="relacion">Instituciones romanas</span>
+    <span class="signatura">Gr. · ss. V–IV a. n. e.</span>
+    <h3>Aristófanes</h3>
+    <p>Comedias que se ríen de los políticos, de los filósofos y de la propia democracia ateniense delante de los atenienses. Una fuente estupenda para saber qué se podía decir en público.</p>
+    <span class="relacion">Democracia ateniense</span>
   </article>
   <article class="ficha">
     <span class="signatura">Gr. · ss. V–IV a. n. e.</span>
     <h3>Platón y Aristóteles</h3>
-    <p>La crítica a la democracia, la pregunta por la mejor forma de gobierno y una buena parte del vocabulario político que todavía usamos.</p>
+    <p>La crítica a la democracia, la pregunta por la mejor forma de gobierno y buena parte del vocabulario político que todavía usamos.</p>
     <span class="relacion">Democracia ateniense y filósofos griegos</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · s. II a. n. e.</span>
+    <h3>Polibio</h3>
+    <p>Un griego que explica a los griegos cómo llegó Roma a dominar el Mediterráneo y por qué, según él, su constitución funcionaba tan bien.</p>
+    <span class="relacion">Instituciones romanas</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · s. I a. n. e.</span>
+    <h3>Cicerón</h3>
+    <p>Las <cite>Catilinarias</cite>, la conjuración contada por quien la combatió desde el consulado. Y sus cartas, que son lo más parecido que tenemos a leerle el móvil a un político romano.</p>
+    <span class="relacion">Estudio de confianza institucional</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · s. I a. n. e.</span>
+    <h3>Salustio</h3>
+    <p><cite>Bellum Catilinae</cite> y <cite>Bellum Iugurthinum</cite>. Un historiador obsesionado con la decadencia moral de la República y uno de los que mejor escribe sobre ella.</p>
+    <span class="relacion">Mi trabajo de fin de grado</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · ss. I a. n. e.–I n. e.</span>
+    <h3>Tito Livio</h3>
+    <p><cite>Ab urbe condita</cite>. La historia de Roma desde su fundación, llena de ejemplos de virtud y de vicio pensados para que los romanos de Augusto se miraran en ellos.</p>
+    <span class="relacion">La República romana</span>
   </article>
   <article class="ficha">
     <span class="signatura">Lat. · s. I n. e.</span>
     <h3>Séneca</h3>
-    <p>Las cartas a Lucilio: filosofía para el día a día, escrita por alguien con una relación bastante complicada con el poder.</p>
+    <p>Las cartas a Lucilio, filosofía para el día a día escrita por alguien con una relación bastante complicada con el poder.</p>
     <span class="relacion">Reflexiones</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Gr. · ss. I–II n. e.</span>
+    <h3>Plutarco</h3>
+    <p><cite>Vidas paralelas</cite>. Un griego y un romano emparejados, vida a vida, para comparar su carácter. Muchas de las anécdotas que conocemos de la Antigüedad vienen de aquí.</p>
+    <span class="relacion">Grecia y Roma</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · ss. I–II n. e.</span>
+    <h3>Tácito</h3>
+    <p><cite>Anales</cite> e <cite>Historias</cite>. Los primeros emperadores vistos por un senador que no se fía de ninguno.</p>
+    <span class="relacion">Los emperadores romanos</span>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Lat. · ss. I–II n. e.</span>
+    <h3>Suetonio</h3>
+    <p><cite>De vita Caesarum</cite>. Biografías llenas de detalles, rumores y manías imperiales que hay que leer con lupa.</p>
+    <span class="relacion">Lectura conjunta</span>
   </article>
 </div>
 ```
 
 ## Autores contemporáneos
 
-Para pensar las instituciones vuelvo una y otra vez a cuatro autores: **Douglass North**, por su forma de entender las instituciones como reglas del juego; **Daron Acemoglu**, por la relación entre instituciones y prosperidad; **Francis Fukuyama**, por su historia del orden político; y **Joseph Henrich**, por su manera de unir cultura, psicología e historia.
+Para pensar las instituciones vuelvo una y otra vez a cuatro autores. Douglass North, por su forma de entender las instituciones como las reglas del juego. Daron Acemoglu, por la relación entre instituciones y prosperidad que estudia con James Robinson en *Por qué fracasan los países*. Francis Fukuyama, por su historia del orden político. Y Joseph Henrich, por su manera de unir cultura, psicología e historia.
+
+<!--
+  ISABEL: estos son los autores que he añadido. Quita los que no hayas
+  leído o no quieras recomendar.
+-->
+
+Para la historia de Roma y de Grecia me gusta tener cerca a otros:
+
+- **Mary Beard**, *SPQR*. Una historia de Roma que se pregunta todo el rato cómo sabemos lo que sabemos.
+- **Ronald Syme**, *La revolución romana*. El paso de la República a Augusto contado como una lucha entre familias y clientelas.
+- **Moses I. Finley**, *Vieja y nueva democracia*. Qué tenía de democrática Atenas y qué no tiene la nuestra.
+- **Elinor Ostrom**, *El gobierno de los bienes comunes*. Cómo se ponen de acuerdo las comunidades para gestionar lo que es de todos, sin Estado ni mercado.
+- **Irene Vallejo**, *El infinito en un junco*. La historia de los libros en el mundo antiguo, para quien quiera empezar por algo que se lea de un tirón.

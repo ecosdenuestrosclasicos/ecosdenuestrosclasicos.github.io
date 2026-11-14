@@ -11,13 +11,26 @@ Ecos no sería lo mismo sin la gente que lo sigue. Hay quien comenta cada public
 
 ## Propón un clásico o hazme una pregunta
 
-¿Hay un autor, un episodio o un personaje del que te gustaría que hablase? ¿Algo de un vídeo que no te ha quedado claro, o con lo que no estás de acuerdo? Escríbeme. Leo todos los correos, y las mejores preguntas acabarán convertidas en vídeos o en textos de esta web (si me das permiso para citarte).
+¿Hay un autor, un episodio o un personaje del que te gustaría que hablase? ¿Algo de un vídeo que no te ha quedado claro, o con lo que no estás de acuerdo? Escríbeme. Leo todos los mensajes, y las mejores preguntas acaban convertidas en vídeos o en textos de esta web, siempre que me des permiso para citarte.
 
 ```{=html}
-<p class="botonera">
-  <a class="boton lleno" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Propuesta%20de%20cl%C3%A1sico">Proponer un tema</a>
-  <a class="boton" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Pregunta%20para%20Ecos">Hacer una pregunta</a>
-</p>
+<form class="form-correo caja-propuesta">
+  <fieldset class="form-tipo">
+    <legend>¿Qué quieres hacer?</legend>
+    <label><input type="radio" name="etiqueta" value="Tema" checked> Proponer un tema</label>
+    <label><input type="radio" name="etiqueta" value="Pregunta"> Hacer una pregunta</label>
+    <label><input type="radio" name="etiqueta" value="Corrección"> Corregir algo</label>
+  </fieldset>
+  <label for="com-titulo">En pocas palabras</label>
+  <input id="com-titulo" name="titulo" type="text" placeholder="Por ejemplo, ¿quién votaba en Atenas?" required>
+  <label for="com-mensaje">Cuéntamelo con calma <span>(opcional)</span></label>
+  <textarea id="com-mensaje" name="mensaje" rows="4"></textarea>
+  <label for="com-nombre">Tu nombre <span>(opcional)</span></label>
+  <input id="com-nombre" name="nombre" type="text" autocomplete="name">
+  <button class="boton lleno" type="submit">Enviar</button>
+  <p class="form-nota">Al enviarlo se abre tu correo con el mensaje ya preparado. Solo tienes que darle a enviar.</p>
+  <p class="form-aviso" hidden>Se ha abierto tu programa de correo. Si no aparece, escríbeme directamente a <a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a>.</p>
+</form>
 ```
 
 También puedes hacerlo en los comentarios de [Instagram](https://www.instagram.com/ecosdenuestrosclasicos/) o de [YouTube](https://www.youtube.com/@Ecosdenuestrosclásicos), donde suelo contestar.
@@ -34,12 +47,12 @@ También puedes hacerlo en los comentarios de [Instagram](https://www.instagram.
 
 ## Cómo conversamos aquí
 
-Pocas normas, y bastante de sentido común:
+Pocas normas, y bastante de sentido común.
 
 - Se puede discrepar de todo, con argumentos y con respeto.
-- Si citas una fuente, mejor con la referencia. Si te equivocas, no pasa nada: a mí también me pasa.
+- Si citas una fuente, mejor con la referencia. Y si te equivocas no pasa nada, a mí también me pasa.
 - Nada de insultos, de spam ni de ataques personales. Esos mensajes se borran.
 
 ## Comentarios en los artículos
 
-Estoy preparando un espacio de comentarios debajo de las investigaciones y las lecturas. Mientras tanto, cualquier comentario sobre un texto de la web me lo puedes mandar por correo y lo contesto encantada.
+Siempre tengo algún artículo o algún paper entre manos, y me gustaría que cada uno tuviera debajo su propio espacio de comentarios. Lo estoy preparando. Mientras tanto, si quieres comentar cualquier texto de la web, mándamelo con el formulario de arriba y te contesto encantada.

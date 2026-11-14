@@ -90,6 +90,16 @@ h3 { font-size: 1.35rem; font-style: italic; }
 .quarto-title-meta-heading { font-family: var(--garamond); text-transform: none !important; letter-spacing: 0 !important; color: var(--oliva); }
 
 main.content p, main.content li { hyphens: auto; -webkit-hyphens: auto; }
+/* Texto justificado en toda la web, con guiones para que no queden huecos */
+main.content p, main.content li, .portada p, .ficha p {
+  text-align: justify; text-justify: inter-word;
+  hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 6 3 3;
+}
+/* Lo que va centrado o es una línea suelta no se justifica */
+.portada-cabecera p, .referencia, .pie-foto, .botonera, .lamina figcaption,
+.patreon-texto p:last-child, .colab-correo, .colab-correo-titulo, .contacto-correo,
+.cita .original, .destacado-cita .original, .destacado-tipo, .ficha .signatura,
+.figure-caption, figcaption { text-align: inherit; hyphens: manual; }
 #quarto-content main.content { max-width: 44rem; }
 .page-columns .content p, .page-columns .content li { max-width: var(--medida); }
 
@@ -231,13 +241,16 @@ table { font-size: .93rem; }
 
 /* ---------- Mini Odi asomándose ---------- */
 .miniodi {
-  position: fixed; right: 1rem; bottom: -90px; z-index: 30;
-  width: 96px; height: 73px; padding: 0; border: 0; background: none; cursor: pointer;
-  transition: bottom .35s ease;
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 30;
+  width: 96px; height: 73px; padding: 0; border: 0; background: none;
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+  opacity: 0; transition: opacity .3s ease, transform .2s ease;
 }
-.miniodi img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(40,35,33,.35)); }
-.miniodi.visible { bottom: -30px; }
-.miniodi:hover, .miniodi:focus-visible, .miniodi.abierto { bottom: 1rem; }
+.miniodi.visible { opacity: 1; }
+.miniodi img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(40,35,33,.35)); pointer-events: none; }
+.miniodi:hover { transform: translateY(-4px) rotate(-3deg); }
+.miniodi.arrastrando { cursor: grabbing; transform: scale(1.08) rotate(-6deg); transition: none; }
+.miniodi.arrastrando img { filter: drop-shadow(0 12px 12px rgba(40,35,33,.35)); }
 .miniodi-bocadillo {
   position: fixed; right: 1.2rem; bottom: 6.2rem; z-index: 31; max-width: 15rem;
   background: #FBF7EE; border: 1px solid var(--bronce); padding: .7rem .9rem; font-size: .95rem;
@@ -427,3 +440,44 @@ table { font-size: .93rem; }
   .lamina-pista { display: block; }
 }
 .error404 img { max-width: 170px; }
+
+/* ---------- Series (vídeos) ---------- */
+.series { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.4rem; margin: 1.6rem 0 2.4rem; }
+.serie { background: #FBF7EE; border: 1px solid #DCCDB3; border-left: 3px solid var(--granate); padding: 1rem 1.2rem 1.1rem; }
+.serie h3 { margin: 0 0 .5rem; font-size: 1.25rem; }
+.serie p { font-size: .98rem; margin: 0 0 .6rem; }
+.serie .serie-temas { font-family: var(--maquina); font-size: .78rem; color: var(--granate); text-align: left; hyphens: manual; margin: 0; }
+
+/* ---------- Formularios que abren el correo ---------- */
+.caja-propuesta {
+  background: var(--pergamino); border: 1px solid #D8C7A8; padding: 1.4rem 1.5rem 1.2rem;
+  margin: 1.6rem 0 2rem; max-width: 36rem; display: grid; gap: .35rem;
+}
+.caja-propuesta h3 { margin: 0 0 .3rem; }
+.caja-propuesta p { margin: 0 0 .5rem; font-size: .98rem; }
+.caja-propuesta label { font-style: italic; color: var(--burdeos); margin-top: .45rem; }
+.caja-propuesta label span { color: var(--oliva); font-size: .9em; }
+.caja-propuesta input[type="text"], .caja-propuesta textarea {
+  font: inherit; background: #FBF7EE; border: 1px solid #CDBFA6; border-radius: 2px; padding: .5rem .65rem; width: 100%; color: var(--tinta);
+}
+.caja-propuesta input:focus, .caja-propuesta textarea:focus { outline: 2px solid var(--granate); outline-offset: 1px; }
+.caja-propuesta button { justify-self: start; margin-top: .9rem; cursor: pointer; }
+.form-tipo { border: 0; padding: 0; margin: 0 0 .3rem; display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.form-tipo legend { font-family: var(--fell); font-size: 1.15rem; color: var(--burdeos); margin-bottom: .3rem; }
+.form-tipo label { font-style: normal; color: var(--tinta); margin: 0; cursor: pointer; }
+.form-tipo input { accent-color: var(--granate); margin-right: .3rem; }
+.form-nota, .form-aviso { font-size: .9rem !important; color: var(--oliva); margin-top: .6rem !important; }
+
+/* ---------- Colaboraciones ---------- */
+.colab-boton { margin: .2rem 0 .9rem; }
+.colab-contacto p { text-align: left; }
+.colab-ofertas .ficha > a { display: inline-block; margin-top: .2rem; padding-bottom: .9rem; }
+.contacto-motivos .ficha > a { display: inline-block; padding-bottom: .9rem; }
+
+/* Donativos: aviso mientras se configura PayPal */
+.donativo-pronto {
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  max-width: var(--medida); margin: 1.4rem 0 2rem; padding: 1rem 1.2rem;
+  border: 1px dashed var(--bronce); background: #FBF7EE;
+}
+.donativo-pronto p { margin: 0; flex: 1 1 18rem; font-size: .98rem; }

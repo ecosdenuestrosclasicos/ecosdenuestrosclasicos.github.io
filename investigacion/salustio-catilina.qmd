@@ -13,8 +13,7 @@ image: ../imagenes/mapa-ruta.jpg
 
 <!--
   ISABEL: revisa la fecha (puse 30 de junio de 2026 como referencia
-  porque terminaste el grado en junio). Cuando quieras publicar los
-  resultados, añádelos en el apartado «Resultados».
+  porque terminaste el grado en junio).
 -->
 
 ::: {.cita}
@@ -27,27 +26,22 @@ image: ../imagenes/mapa-ruta.jpg
 
 ## La pregunta
 
-¿Se puede seguir el deterioro de una república a través de las palabras con las que se describe a sí misma? En el discurso que Salustio pone en boca de Catón, el problema no es solo que haya una conjuración: es que el vocabulario político se ha vaciado. Llamar generosidad a repartir lo ajeno o valentía a la audacia para el mal es ya un síntoma.
+El 5 de diciembre del 63 a. n. e. el Senado debate qué hacer con los cómplices de Catilina, que ya están detenidos. César propone que no se les ejecute. Catón le contesta con el discurso que Salustio recoge en el capítulo 52, y en mitad de ese discurso se queja de que Roma ha perdido los nombres verdaderos de las cosas. A repartir los bienes ajenos lo llaman generosidad (*bona aliena largiri liberalitas*) y a la audacia para el mal, valentía (*malarum rerum audacia fortitudo*). Por eso, dice, la república está en una situación límite (*eo res publica in extremo sita est*).
 
-Mi trabajo de fin de grado parte de ahí y estudia el deterioro institucional de la República romana tardía a través del *Bellum Catilinae*.
+Para Catón el problema no es solo la conjuración. Es que el vocabulario político se ha vaciado. Mi trabajo de fin de grado se pregunta si ese deterioro se puede seguir en el propio texto, en las palabras con las que Salustio describe una república que se estropea.
 
 ## Las fuentes
 
-- Salustio, *Bellum Catilinae* (*La conjuración de Catilina*), texto latino.
-- Como contraste, las *Catilinarias* de Cicerón, la otra gran versión de los hechos, escrita desde dentro del conflicto.
+La fuente principal es el texto latino del *Bellum Catilinae* de Salustio. Trabajo con la edición de Axel W. Ahlberg (1919), que es la que reproduce la [Perseus Digital Library](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0123).
+
+Como contraste uso las cuatro *Catilinarias* de Cicerón, la otra gran versión de los hechos. Las dos fuentes tienen intereses muy distintos. Cicerón habla en pleno conflicto, como cónsul, y necesita justificar lo que está haciendo. Salustio escribe unos veinte años después, tras la muerte de César, y convierte el episodio en una lección sobre la decadencia moral de Roma. Ninguno de los dos es un testigo neutral, y el trabajo lo tiene en cuenta en todo momento.
 
 ## El enfoque
 
-El trabajo combina tres miradas:
+Parto de la economía institucional, que entiende las instituciones como las reglas del juego de una sociedad. Unas están escritas y otras no, y las segundas (la costumbre, el *mos maiorum*, lo que se da por hecho) suelen ser las primeras en romperse. Mis referencias son Douglass North, Daron Acemoglu, Francis Fukuyama y Joseph Henrich.
 
-1. **Interpretación histórica.** Situar el texto: Salustio escribe años después de los hechos y con una intención moralizante clara. No es un testigo neutral.
-2. **Economía institucional.** Leer la crisis en términos de reglas formales, normas informales y su erosión, con autores como Douglass North, Daron Acemoglu, Francis Fukuyama y Joseph Henrich como marco.
-3. **Métodos cuantitativos de análisis textual.** Recuento de términos relacionados con la discordia, la sedición, la corrupción, la avaricia, el Senado, la República y las normas políticas romanas, y modelos estadísticos de recuento para analizarlos.
-
-## Resultados
-
-El texto completo y los resultados se publicarán aquí, con el código en R para reproducir el análisis.
+Con ese marco leo el texto de dos maneras. Por un lado, de cerca, situándolo en su contexto y en la intención de su autor. Por otro, con métodos cuantitativos. Cuento cuántas veces aparecen los términos relacionados con la discordia, la sedición, la corrupción y la avaricia, y también los que nombran las instituciones (el Senado, la república, las normas políticas romanas), y analizo esos recuentos con modelos estadísticos en R.
 
 ## Lo que viene después
 
-Este trabajo abre dos líneas que quiero seguir: el análisis de grandes corpus históricos como datos y el estudio del lenguaje político en contextos de cambio institucional. Las tienes en [Investigación](../investigacion.qmd).
+El trabajo completo no lo voy a publicar en esta web. Lo que sí irá apareciendo aquí son las líneas que abre y que quiero seguir. Una es el análisis de grandes corpus históricos como datos. La otra, el estudio del lenguaje político en momentos de cambio institucional. Las dos están en [Investigación](../investigacion.qmd).

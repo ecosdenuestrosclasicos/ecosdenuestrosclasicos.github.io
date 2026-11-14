@@ -12,7 +12,7 @@ listing:
   date-format: "D MMM YYYY"
 ---
 
-Publico vídeos breves en Instagram, TikTok y Facebook, y vídeos más largos en YouTube. Aquí iré reuniendo los episodios con lo que no cabe en el vídeo: las fuentes, los pasajes citados y alguna lectura para seguir.
+Publico vídeos breves en Instagram, TikTok y Facebook, y vídeos más largos en YouTube. Aquí iré reuniendo los episodios con todo lo que no cabe en el vídeo, como las fuentes, los pasajes citados y alguna lectura para seguir.
 
 ```{=html}
 <div class="plataformas">
@@ -25,16 +25,45 @@ Publico vídeos breves en Instagram, TikTok y Facebook, y vídeos más largos en
 
 ## Series y temas
 
-- **Los emperadores romanos** y cómo nos los han contado.
-- **La *Odisea*** y sus personajes.
-- **La República romana**: instituciones, conflictos y crisis.
-- **La democracia ateniense**, con sus logros y sus exclusiones.
-- **Tucídides y la guerra.**
-- **El ostracismo**: votar para expulsar a alguien de la ciudad.
-- **Los filósofos griegos.**
-- **Costumbres y prácticas** de Grecia y Roma.
-- **Grecia y Roma**, y lo que se tomaron la una de la otra.
-- **Lecturas comentadas**, como [*Los doce césares*](lecturas/doce-cesares.qmd).
+Casi todo lo que publico cae en alguno de estos cuatro grandes bloques.
+
+```{=html}
+<div class="series">
+  <section class="serie">
+    <h3>Roma, de la República al Imperio</h3>
+    <p>Cómo funcionaban las instituciones de la República, por qué entraron en crisis y quiénes fueron los emperadores que vinieron después. Y cómo nos los han contado, que no siempre es lo mismo.</p>
+    <p class="serie-temas">La República romana · Los emperadores · <a href="lecturas/doce-cesares.html"><cite>Los doce césares</cite></a></p>
+  </section>
+  <section class="serie">
+    <h3>Atenas y la política griega</h3>
+    <p>La democracia ateniense con sus logros y sus exclusiones, el ostracismo, que era votar para expulsar a alguien de la ciudad, y Tucídides contando una guerra que vivió en primera persona.</p>
+    <p class="serie-temas">Democracia ateniense · El ostracismo · Tucídides y la guerra</p>
+  </section>
+  <section class="serie">
+    <h3>Textos, mitos y filosofía</h3>
+    <p>La <cite>Odisea</cite> y sus personajes, los filósofos griegos y las lecturas comentadas, que es cuando leemos un libro entero juntos.</p>
+    <p class="serie-temas">La <cite>Odisea</cite> · Filósofos griegos · Lecturas comentadas</p>
+  </section>
+  <section class="serie">
+    <h3>La vida en Grecia y Roma</h3>
+    <p>Costumbres y prácticas de todos los días, lo que Roma le tomó a Grecia y las piezas de museo que tengo la suerte de ver de cerca.</p>
+    <p class="serie-temas">Costumbres · Grecia y Roma · Museos y arqueología</p>
+  </section>
+</div>
+
+<form class="form-correo caja-propuesta" data-etiqueta="Serie">
+  <h3>¿Qué serie o tema te gustaría ver?</h3>
+  <p>Cuéntame qué te gustaría que tratara. Al enviarlo se abrirá tu correo con el mensaje ya preparado, y a mí me llega con la etiqueta de propuesta de serie.</p>
+  <label for="serie-titulo">Serie o tema</label>
+  <input id="serie-titulo" name="titulo" type="text" placeholder="Por ejemplo, las mujeres en la política romana" required>
+  <label for="serie-mensaje">¿Por qué te interesa? <span>(opcional)</span></label>
+  <textarea id="serie-mensaje" name="mensaje" rows="3"></textarea>
+  <label for="serie-nombre">Tu nombre <span>(opcional)</span></label>
+  <input id="serie-nombre" name="nombre" type="text" autocomplete="name">
+  <button class="boton lleno" type="submit">Recomendar</button>
+  <p class="form-aviso" hidden>Se ha abierto tu programa de correo. Si no aparece, escríbeme directamente a <a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a>.</p>
+</form>
+```
 
 ## Catálogo de episodios
 

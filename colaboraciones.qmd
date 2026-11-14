@@ -1,42 +1,70 @@
 ---
 title: "Prensa y colaboraciones"
-subtitle: "Para editoriales, museos, proyectos culturales y marcas"
-description: "Qué es Ecos de nuestros clásicos, con qué tipo de proyectos colabora y cómo contactar."
+subtitle: "Entrevistas, proyectos culturales, editoriales y marcas"
+description: "Qué es Ecos de nuestros clásicos, qué tipo de colaboraciones hace y cómo contactar para entrevistas y proyectos."
 image: imagenes/mapa-ruta.jpg
 ---
 
 :::: {.colab-cabecera}
 ::: {.colab-texto}
-**Ecos de nuestros clásicos** es un proyecto independiente de divulgación sobre Grecia y Roma creado por Isabel en noviembre de 2025. Combina vídeos breves, episodios largos, lecturas comentadas e investigación con fuentes, y se publica en Instagram, TikTok, YouTube y Facebook.
+**Ecos de nuestros clásicos** es un proyecto independiente de divulgación sobre Grecia y Roma que creé en noviembre de 2025. Hablo de instituciones, poder, literatura y filosofía antiguas con las fuentes delante, en vídeos breves, episodios largos, carruseles, lecturas conjuntas e investigación con datos. Lo publico en Instagram, TikTok, YouTube y Facebook.
 
-Su público es gente curiosa que quiere entender el mundo clásico con rigor y sin solemnidad: lectores, estudiantes, docentes y personas que, simplemente, disfrutan con la historia y los libros.
+Detrás estoy yo, Isabel, economista con estudios de Filología Clásica. Me sigue gente curiosa que quiere entender el mundo clásico con rigor y sin solemnidad, como lectores, estudiantes, docentes y personas a las que simplemente les gustan la historia y los libros.
 :::
 ::: {.colab-contacto}
 ```{=html}
-<p class="colab-correo-titulo">Escríbeme a</p>
-<p class="colab-correo"><a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=Colaboraci%C3%B3n%20con%20Ecos">ecosdenuestrosclasicos@gmail.com</a></p>
+<p class="colab-correo-titulo">Para prensa y colaboraciones</p>
+<p class="colab-correo"><a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Colaboraci%C3%B3n%5D%20">ecosdenuestrosclasicos@gmail.com</a></p>
+<p><a class="boton lleno colab-boton" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Colaboraci%C3%B3n%5D%20">Escribir ahora</a></p>
 <p class="colab-nota">Las cifras actualizadas de audiencia y alcance de cada plataforma, a petición.</p>
 ```
 :::
 ::::
 
+## Qué podemos hacer juntos
+
+```{=html}
+<div class="fichero colab-ofertas">
+  <article class="ficha">
+    <span class="signatura">Prensa</span>
+    <h3>Entrevistas y medios</h3>
+    <p>Si preparas un artículo, un programa de radio o un pódcast sobre historia antigua, divulgación o el cruce entre humanidades y datos, puedo participar o ayudarte a dar forma al tema.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Prensa%5D%20">Proponer una entrevista</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Cultura</span>
+    <h3>Museos y proyectos culturales</h3>
+    <p>Visitas a exposiciones, piezas comentadas, contenidos para proyectos educativos o divulgativos. Contar de cerca lo que se puede ver en un museo es de lo que más disfruto.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Colaboraci%C3%B3n%5D%20">Proponer un proyecto</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Editorial</span>
+    <h3>Libros y textos</h3>
+    <p>Reseñas y lecturas comentadas de libros de historia, humanidades y pensamiento, artículos, prólogos y proyectos de escritura.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Editorial%5D%20">Proponer un libro</a>
+  </article>
+  <article class="ficha">
+    <span class="signatura">Charlas</span>
+    <h3>Charlas y encuentros</h3>
+    <p>Charlas en centros educativos, bibliotecas, asociaciones o festivales sobre Grecia, Roma y sus instituciones.</p>
+    <a href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Charla%5D%20">Proponer una charla</a>
+  </article>
+</div>
+```
+
 ## Con quién me gusta trabajar
 
-Prefiero las colaboraciones que tienen sentido cultural, editorial o narrativo. Me encaja especialmente trabajar con:
-
-- **Editoriales** de historia, humanidades, pensamiento y literatura.
-- **Museos y exposiciones.**
-- **Artesanos y creadores** vinculados al patrimonio.
-- **Reproducciones arqueológicas** y piezas inspiradas en la Antigüedad.
-- **Proyectos culturales y educativos.**
-- **Marcas** cuyos productos pueda incorporar de forma natural a lo que cuento.
+Me encajan las colaboraciones que tienen sentido cultural, editorial o narrativo. Editoriales de historia, humanidades, pensamiento y literatura, museos y exposiciones, proyectos culturales y educativos, artesanos y creadores vinculados al patrimonio, reproducciones arqueológicas y piezas inspiradas en la Antigüedad. Y marcas, solo cuando son afines al proyecto y su producto encaja de forma natural en lo que cuento.
 
 ## Cómo me gusta trabajar
 
-Prefiero una colaboración bien pensada a muchas publicaciones publicitarias. Me interesa crear algo que tenga valor para mi comunidad y para quien colabora conmigo, con acuerdos claros y respetando mi independencia editorial: lo que cuento sobre historia lo decido yo.
+Prefiero una colaboración bien pensada a muchas publicaciones publicitarias. Me interesa crear algo que tenga valor para mi comunidad y para quien colabora conmigo, con acuerdos claros y respetando mi independencia editorial. Lo que cuento sobre historia lo decido yo.
 
-Los códigos de descuento por comisión y las campañas muy comerciales no suelen encajar con Ecos. Si tienes una idea original que una tu proyecto con el mundo clásico, en cambio, me encantará escucharla.
+Los códigos de descuento por comisión y las campañas muy comerciales no suelen encajar con Ecos. Si tienes una idea original que una tu proyecto con el mundo clásico, en cambio, me encantará escucharla. Escríbeme con el contexto, la idea y los plazos, y te contesto lo antes posible.
 
-## Para prensa
-
-Si estás preparando un artículo, un programa o un pódcast sobre divulgación, historia antigua o el cruce entre humanidades y datos, puedo ayudarte con el tema o participar. Escríbeme con el contexto y los plazos.
+```{=html}
+<p class="botonera">
+  <a class="boton lleno" href="mailto:ecosdenuestrosclasicos@gmail.com?subject=%5BEcos%20%C2%B7%20Colaboraci%C3%B3n%5D%20">Escribirme para colaborar</a>
+  <a class="boton" href="sobre-mi.html">Saber más sobre mí</a>
+</p>
+```

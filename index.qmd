@@ -52,7 +52,8 @@ toc: false
   <div class="destacado-texto">
     <p class="destacado-tipo"><span class="sello terminado">Investigación terminada</span></p>
     <h2 id="destacado-titulo">Cuando una república se queda sin palabras</h2>
-    <p>Catón se queja en el Senado de que en Roma ya nadie llama a las cosas por su nombre: regalar lo ajeno se llama generosidad y la audacia para el mal, valentía. Mi trabajo de fin de grado partió de ahí. Leí la <cite>Conjuración de Catilina</cite> de Salustio contando palabras (discordia, avaricia, Senado, república) para ver cómo cambia el vocabulario político de un texto que habla, precisamente, de una república que se deteriora.</p>
+    <p>Diciembre del 63 a. n. e. El Senado discute qué hacer con los cómplices de Catilina y Catón se levanta para quejarse de que en Roma ya nadie llama a las cosas por su nombre. A repartir lo ajeno lo llaman generosidad, y a la audacia para el mal, valentía.</p>
+    <p>De esa queja salió mi trabajo de fin de grado. Quería saber si el deterioro de una república se puede seguir en las palabras con las que se describe a sí misma. Para comprobarlo leí la <cite>Conjuración de Catilina</cite> de Salustio contando términos como <i>discordia</i>, <i>avaritia</i>, <i>senatus</i> o <i>res publica</i>, y usé las <cite>Catilinarias</cite> de Cicerón como contrapunto.</p>
     <p><a class="boton" href="investigacion/salustio-catilina.html">Leer la ficha del trabajo</a></p>
   </div>
 </section>
@@ -80,10 +81,10 @@ toc: false
       <p class="pregunta">Tucídides escribe para lectores que todavía no existen. ¿Qué pasa con una historia pensada para durar cuando todo lo que leemos está hecho para consumirse hoy?</p>
     </article>
     <article class="cita">
-      <p class="original" lang="la">Concordia parvae res crescunt, discordia maximae dilabuntur.</p>
-      <p class="traduccion">Con la concordia crecen las cosas pequeñas; con la discordia se desmoronan las más grandes.</p>
+      <p class="original" lang="la">Nam concordia parvae res crescunt, discordia maximae dilabuntur.</p>
+      <p class="traduccion">Porque con la concordia crecen las cosas pequeñas y con la discordia se desmoronan las más grandes.</p>
       <p class="referencia">Micipsa, en Salustio, <cite>Bellum Iugurthinum</cite> 10.6</p>
-      <p class="pregunta">Lo dice un rey moribundo a sus herederos, que acabarán matándose entre ellos. ¿Basta con saber que la discordia destruye para evitarla?</p>
+      <p class="pregunta">Lo dice el rey Micipsa en su lecho de muerte, a Yugurta y a sus dos hijos. Yugurta acabará matando a los dos. ¿Basta con saber que la discordia destruye para evitarla?</p>
     </article>
   </div>
 </section>

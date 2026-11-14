@@ -1,0 +1,24 @@
+<!-- Formularios que abren un correo ya preparado, con una etiqueta en el asunto
+     (por ejemplo «[Ecos · Tema]») para poder filtrarlos en Gmail. -->
+<script>
+(function () {
+  var CORREO = 'ecosdenuestrosclasicos@gmail.com';
+  document.querySelectorAll('form.form-correo').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var dato = function (n) { var c = f.elements[n]; return c ? c.value.trim() : ''; };
+      var etiqueta = dato('etiqueta') || f.dataset.etiqueta || 'Mensaje';
+      var titulo = dato('titulo');
+      var mensaje = dato('mensaje');
+      var nombre = dato('nombre');
+      if (!titulo && !mensaje) { f.querySelector('textarea, input').focus(); return; }
+      var asunto = '[Ecos · ' + etiqueta + '] ' + (titulo || mensaje.slice(0, 60));
+      var cuerpo = (titulo ? titulo + '\n\n' : '') + mensaje + (nombre ? '\n\n— ' + nombre : '');
+      window.location.href = 'mailto:' + CORREO + '?subject=' + encodeURIComponent(asunto) +
+        '&body=' + encodeURIComponent(cuerpo);
+      var aviso = f.querySelector('.form-aviso');
+      if (aviso) aviso.hidden = false;
+    });
+  });
+})();
+</script>

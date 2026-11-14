@@ -1,6 +1,7 @@
-<!-- Mini Odi: aparece solo cuando llegas al final de una página -->
-<button class="miniodi" type="button" aria-label="Mini Odi quiere decirte algo" aria-expanded="false" aria-controls="miniodi-bocadillo">
-  <img src="/imagenes/miniodi-ruta.webp" alt="">
+<!-- Mini Odi: vive en la esquina de abajo a la derecha. Se puede arrastrar por toda
+     la pantalla (ratón o dedo) y, si le haces clic sin moverlo, dice una frase. -->
+<button class="miniodi" type="button" aria-label="Mini Odi quiere decirte algo. Puedes arrastrarlo por la pantalla." aria-expanded="false" aria-controls="miniodi-bocadillo">
+  <img src="/imagenes/miniodi-ruta.webp" alt="" draggable="false">
 </button>
 <div class="miniodi-bocadillo" id="miniodi-bocadillo" role="status" hidden></div>
 <script>
@@ -10,21 +11,88 @@
   var frases = [
     'Shh. Voy por el canto XII y acaban de aparecer las sirenas.',
     'En el mapa de la portada salgo corriendo detrás de Isabel. Como siempre.',
-    'No me preguntes por Catilina. Isabel ya me ha leído la conjuración tres veces.'
+    'No me preguntes por Catilina. Isabel ya me ha leído la conjuración tres veces.',
+    'Llévame a donde quieras. Ulises tardó diez años en volver a casa; yo tengo prisa.',
+    'Isabel me tejió a ganchillo. La capa granate la elegí yo.'
   ], i = Math.floor(Math.random() * frases.length);
-  function alFinal() {
-    var abajo = window.innerHeight + window.scrollY >= document.body.scrollHeight - 420;
-    b.classList.toggle('visible', abajo);
-    if (!abajo) cerrar();
+
+  var pos = null;              // posición elegida por quien visita la web
+  try { pos = JSON.parse(sessionStorage.getItem('miniodi-pos')); } catch (e) {}
+
+  function limitar(x, y) {
+    var w = b.offsetWidth, h = b.offsetHeight;
+    return {
+      x: Math.min(Math.max(0, x), window.innerWidth - w),
+      y: Math.min(Math.max(0, y), window.innerHeight - h)
+    };
+  }
+  function colocar() {
+    if (!pos) return;
+    var p = limitar(pos.x, pos.y);
+    b.style.left = p.x + 'px'; b.style.top = p.y + 'px';
+    b.style.right = 'auto'; b.style.bottom = 'auto';
+    if (!t.hidden) colocarBocadillo();
+  }
+  function colocarBocadillo() {
+    var r = b.getBoundingClientRect(), tw = t.offsetWidth, th = t.offsetHeight;
+    var x = Math.min(Math.max(8, r.left + r.width / 2 - tw / 2), window.innerWidth - tw - 8);
+    var y = r.top - th - 10;
+    if (y < 8) y = r.bottom + 10;
+    t.style.left = x + 'px'; t.style.top = y + 'px';
+    t.style.right = 'auto'; t.style.bottom = 'auto';
   }
   function cerrar() { t.hidden = true; b.classList.remove('abierto'); b.setAttribute('aria-expanded', 'false'); }
-  b.addEventListener('click', function () {
+  function hablar() {
     if (!t.hidden) { cerrar(); return; }
     t.textContent = frases[i]; i = (i + 1) % frases.length;
     t.hidden = false; b.classList.add('abierto'); b.setAttribute('aria-expanded', 'true');
+    colocarBocadillo();
+  }
+
+  // Arrastrar
+  var inicio = null, movido = false;
+  b.addEventListener('pointerdown', function (e) {
+    if (e.button !== 0) return;
+    var r = b.getBoundingClientRect();
+    inicio = { px: e.clientX, py: e.clientY, dx: e.clientX - r.left, dy: e.clientY - r.top };
+    movido = false;
+    b.setPointerCapture(e.pointerId);
+  });
+  b.addEventListener('pointermove', function (e) {
+    if (!inicio) return;
+    if (!movido && Math.abs(e.clientX - inicio.px) + Math.abs(e.clientY - inicio.py) < 6) return;
+    if (!movido) { movido = true; b.classList.add('arrastrando'); cerrar(); }
+    pos = { x: e.clientX - inicio.dx, y: e.clientY - inicio.dy };
+    colocar();
+  });
+  function soltar() {
+    if (!inicio) return;
+    inicio = null; b.classList.remove('arrastrando');
+    if (movido && pos) {
+      pos = limitar(pos.x, pos.y);
+      try { sessionStorage.setItem('miniodi-pos', JSON.stringify(pos)); } catch (e) {}
+    }
+  }
+  b.addEventListener('pointerup', soltar);
+  b.addEventListener('pointercancel', soltar);
+  b.addEventListener('click', function (e) {
+    if (movido) { e.preventDefault(); movido = false; return; }
+    hablar();
+  });
+
+  // Con teclado: flechas para moverlo
+  b.addEventListener('keydown', function (e) {
+    var paso = e.shiftKey ? 60 : 20, d = { ArrowLeft: [-paso, 0], ArrowRight: [paso, 0], ArrowUp: [0, -paso], ArrowDown: [0, paso] }[e.key];
+    if (!d) return;
+    e.preventDefault();
+    var r = b.getBoundingClientRect();
+    pos = limitar(r.left + d[0], r.top + d[1]); colocar();
+    try { sessionStorage.setItem('miniodi-pos', JSON.stringify(pos)); } catch (e2) {}
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
-  window.addEventListener('scroll', alFinal, { passive: true });
-  alFinal();
+  document.addEventListener('pointerdown', function (e) { if (!b.contains(e.target) && !t.contains(e.target)) cerrar(); });
+  window.addEventListener('resize', colocar);
+  colocar();
+  b.classList.add('visible');
 })();
 </script>

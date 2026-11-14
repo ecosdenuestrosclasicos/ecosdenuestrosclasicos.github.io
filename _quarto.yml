@@ -83,7 +83,9 @@ format:
       light: [cosmo, assets/ecos.scss]
     css: assets/ecos.css
     include-in-header: assets/cabecera.html
-    include-after-body: assets/miniodi.html
+    include-after-body:
+      - assets/miniodi.html
+      - assets/formularios.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
