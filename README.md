@@ -91,7 +91,14 @@ Los comentarios están preparados pero **desactivados**, porque necesitan que ha
 
 ## 6. El mapa de la portada
 
-Está dibujado en SVG a partir de las costas de [Natural Earth](https://www.naturalearthdata.com) (dominio público, escala 1:10m), con las coordenadas reales de cada lugar. La ruta va siempre por mar y cruza el istmo de Corinto entre Delfos y Atenas, como hacían los barcos por el *díolkos*. Si quieres cambiar o añadir lugares, el programa que lo genera está en `herramientas/hacer_mapa.py`; el resultado se guarda en `assets/mapa-ruta.md`.
+Es la ilustración original de Isabel con el mapa corregido. El marco, las columnas, los laureles, el globo, los libros, el casco, la rosa de los vientos, los monumentos, el barco y los personajes están recortados de esa ilustración. Debajo hay un mapa real del Mediterráneo (costas, ríos y lagos de [Natural Earth](https://www.naturalearthdata.com), dominio público, escala 1:10m), y cada monumento está junto a su lugar real: el acueducto en Segovia, el Coliseo en Roma, el Partenón en Atenas, la Biblioteca de Celso en Éfeso, las pirámides en Guiza y el Tesoro en Petra.
+
+La ruta es circular y va en barco: Sagunto, Roma, Pompeya, Siracusa, Ítaca, Atenas (cruzando el istmo de Corinto), Troya, Éfeso, Alejandría, Cartago y de vuelta a Sagunto. Segovia, Guiza y Petra son escapadas a pie, con línea de puntos. El barquito recorre la ruta en la web (se queda quieto si el sistema pide menos movimiento).
+
+- `imagenes/mapa-ilustrado.jpg`: el fondo (marco, mapa, monumentos y personajes).
+- `assets/mapa-ruta.md`: la capa con la ruta, los nombres y el barco.
+- `imagenes/mapa-ruta.jpg`: el mapa completo en una sola imagen, para redes.
+- `herramientas/`: los programas que lo generan.
 
 ## 7. Pendiente
 
