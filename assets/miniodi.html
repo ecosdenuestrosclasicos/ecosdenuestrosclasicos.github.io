@@ -112,6 +112,7 @@
   }
   function cerrar() { t.hidden = true; b.classList.remove('abierto'); b.setAttribute('aria-expanded', 'false'); }
   function hablar() {
+    if (typeof despierto !== 'undefined') despierto = false;
     if (!t.hidden) { cerrar(); return; }
     pintar(FRASES[orden[i]]); i = (i + 1) % orden.length;
     t.hidden = false; b.classList.add('abierto'); b.setAttribute('aria-expanded', 'true');
@@ -196,6 +197,45 @@
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
   document.addEventListener('pointerdown', function (e) { if (!b.contains(e.target) && !t.contains(e.target)) cerrar(); });
+
+  /* ---------- Si llevas 10 segundos sin moverte, Mini Odi te llama la atención ---------- */
+  var DESPERTAR = [
+    '¿Te has quedado empanado? Pasa, pasa, que esto no es el Senado y aquí no hace falta pedir la palabra.',
+    '¡Eh! ¿Sigues ahí o te ha mirado Medusa?',
+    'Diez segundos sin moverte. Ni las cariátides del Erecteion aguantan tan quietas. Bueno, ellas sí.',
+    '¿Contemplando el ser, como Parménides? Yo también, pero me aburro enseguida.',
+    'Si te has quedado pensando, me parece perfecto: Isa dice que a los clásicos hay que leerlos despacio.',
+    '¿Te has dormido? Hipnos es amigo mío, pero aquí se viene a leer.',
+    'Hola, hola… ¿Hay alguien en esta caverna? Que no cunda el pánico: las sombras son de la web.',
+    'Quieto como un hoplita en la falange. Muy bien. Ahora haz clic en algo.',
+    '¿Buscas algo? La lupa de arriba busca en toda la web. De nada.',
+    '¿No sabes qué leer? En «Lecturas y fuentes» tienes las recomendaciones de Isa.',
+    '¿Te has quedado empanado? Tranquilo, Ulises tardó diez años en volver a casa.',
+    'Psst… ¿quieres saber la palabra secreta del libro? Yo tampoco te la puedo decir. Pero puedes apostar.',
+    '¿Sigues ahí? Isa ya habría leído medio canto de la Odisea en este rato.',
+    'Si te aburres, arrástrame por la pantalla. Me encanta viajar.',
+    '¿Pensando en apoyar el proyecto? Abajo del todo está el botón. Lo digo por nada.'
+  ];
+  var ordenD = DESPERTAR.map(function (_, k) { return k; }).sort(function () { return Math.random() - .5; }), iD = 0;
+  var tInactivo = null, despierto = false, tCerrarD = null;
+  function despertar() {
+    if (document.hidden || !t.hidden || inicio || paseando) { tInactivo = setTimeout(despertar, 3000); return; }
+    if (!reducido) gesto('saltito', 900);
+    pintar({ t: DESPERTAR[ordenD[iD]] }); iD = (iD + 1) % ordenD.length;
+    t.hidden = false; b.classList.add('abierto'); b.setAttribute('aria-expanded', 'true');
+    colocarBocadillo(); quieto(9000); despierto = true;
+    clearTimeout(tCerrarD);
+    tCerrarD = setTimeout(function () { if (despierto) { cerrar(); despierto = false; } }, 8000);
+  }
+  function actividad() {
+    clearTimeout(tInactivo);
+    tInactivo = setTimeout(despertar, 10000);
+  }
+  ['mousemove', 'mousedown', 'keydown', 'scroll', 'touchstart', 'wheel'].forEach(function (ev) {
+    window.addEventListener(ev, actividad, { passive: true });
+  });
+  actividad();
+
   window.addEventListener('resize', colocar);
   colocar();
   b.classList.add('visible');
