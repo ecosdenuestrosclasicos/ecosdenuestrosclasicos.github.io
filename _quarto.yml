@@ -96,6 +96,7 @@ format:
       - assets/miniodi.html
       - assets/formularios.html
       - assets/apoyo.html
+      - assets/aniversario.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true

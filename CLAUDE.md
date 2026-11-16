@@ -16,7 +16,7 @@ La web vive en **https://ecosdenuestrosclasicos.com** (comprado en DonDominio, n
 GoatCounter (sin cookies), cuenta `ecosdenuestrosclasicos`: panel en https://ecosdenuestrosclasicos.goatcounter.com. El script está en `assets/cabecera.html`. Útil para dar cifras reales en la página de colaboraciones.
 
 ## Aniversario
-Franja en la portada (`index.qmd`, clase `franja-aniversario`) que solo se ve del 22 al 30 de noviembre de 2026 (lo controla un script). Cambiar `ENLACE-VIDEO` por el enlace del vídeo del domingo 22.
+Franja granate arriba del todo en todas las páginas, debajo del menú (`assets/aniversario.html`, incluida en `_quarto.yml`; estilos `.franja-aniversario` en `ecos.css`). Se ve del 9 al 30 de noviembre de 2026: antes del 23 cuenta los días que faltan, el 23 felicita y después enlaza al vídeo. Lleva la cita ἀρχὴ ἥμισυ παντός (Aristóteles, *Política* V, 1303b) · *Dimidium facti qui coepit habet* (Horacio, *Epístolas* I, 2, 40). Cuando esté el vídeo del domingo 22, cambiar la variable `VIDEO` del script por su enlace. Se puede cerrar con la ×; vuelve a salir en la siguiente visita.
 
 ## Estructura
 - Páginas: `index.qmd` (portada, `page-layout: custom`, HTML en bloques `{=html}`), `proyecto`, `sobre-mi`, `biblioteca` (listado con buscador de investigacion/, lecturas/, cuadernos/ y videos/), `investigacion`, `lecturas`, `videos`, `comunidad`, `apoyame`, `colaboraciones`, `contacto`, `privacidad`, `404`.

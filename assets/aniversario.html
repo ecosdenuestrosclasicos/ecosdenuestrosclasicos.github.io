@@ -1,0 +1,52 @@
+<!-- Franja del primer aniversario (23 de noviembre de 2026).
+     Sale arriba del todo en todas las páginas, debajo del menú, del 9 al 30 de noviembre de 2026.
+     Antes del día 23 cuenta los días que faltan; el 23 felicita; después enlaza al vídeo.
+     Cuando esté el vídeo, cambia VIDEO por su enlace. -->
+<script>
+(function () {
+  var VIDEO = "https://www.youtube.com/@Ecosdenuestrosclásicos";
+  var hoy = new Date(); hoy.setHours(0, 0, 0, 0);
+  var dia = new Date(2026, 10, 23);
+  var ini = new Date(2026, 10, 9), fin = new Date(2026, 11, 1);
+  if (hoy < ini || hoy >= fin) return;
+  try { if (sessionStorage.getItem("ecos-aniversario-cerrada") === "1") return; } catch (e) {}
+
+  var faltan = Math.round((dia - hoy) / 86400000);
+  var titular, extra = "";
+  if (faltan > 1) {
+    titular = "El 23 de noviembre Ecos cumple su primer año";
+    extra = '<span class="aniv-cuenta">faltan ' + faltan + ' días</span>';
+  } else if (faltan === 1) {
+    titular = "Mañana, 23 de noviembre, Ecos cumple su primer año";
+    extra = '<a class="aniv-enlace" href="' + VIDEO + '">Ver el vídeo del aniversario</a>';
+  } else if (faltan === 0) {
+    titular = "Hoy Ecos cumple su primer año. Gracias por estar aquí";
+    extra = '<a class="aniv-enlace" href="' + VIDEO + '">Ver el vídeo del aniversario</a>';
+  } else {
+    titular = "Ecos acaba de cumplir su primer año. Gracias por estar aquí";
+    extra = '<a class="aniv-enlace" href="' + VIDEO + '">Ver el vídeo del aniversario</a>';
+  }
+
+  var f = document.createElement("aside");
+  f.className = "franja-aniversario";
+  f.setAttribute("aria-label", "Primer aniversario de Ecos");
+  f.innerHTML =
+    '<div class="aniv-dentro">' +
+      '<p class="aniv-titular"><span class="aniv-anno">I</span>' + titular + extra + '</p>' +
+      '<p class="aniv-cita"><span lang="grc">ἀρχὴ ἥμισυ παντός</span> · <span lang="la">Dimidium facti qui coepit habet</span></p>' +
+      '<p class="aniv-trad">«Empezar ya es la mitad de todo». Lo decían los griegos (Aristóteles lo recoge en la <em>Política</em>) y Horacio le dio su eco en latín (<em>Epístolas</em> I, 2, 40).</p>' +
+    '</div>' +
+    '<button class="aniv-cerrar" type="button" aria-label="Cerrar la franja del aniversario">×</button>';
+
+  function poner() {
+    var destino = document.getElementById("quarto-content");
+    if (!destino || !destino.parentNode) return;
+    destino.parentNode.insertBefore(f, destino);
+    f.querySelector(".aniv-cerrar").addEventListener("click", function () {
+      f.remove();
+      try { sessionStorage.setItem("ecos-aniversario-cerrada", "1"); } catch (e) {}
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", poner); else poner();
+})();
+</script>
