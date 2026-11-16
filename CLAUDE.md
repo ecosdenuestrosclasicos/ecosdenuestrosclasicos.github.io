@@ -18,6 +18,11 @@ GoatCounter (sin cookies), cuenta `ecosdenuestrosclasicos`: panel en https://eco
 ## Aniversario
 Franja granate arriba del todo en todas las páginas, debajo del menú (`assets/aniversario.html`, incluida en `_quarto.yml`; estilos `.franja-aniversario` en `ecos.css`). Se ve del 9 al 30 de noviembre de 2026: antes del 23 cuenta los días que faltan, el 23 felicita y después enlaza al vídeo. Lleva la cita ἀρχὴ ἥμισυ παντός (Aristóteles, *Política* V, 1303b) · *Dimidium facti qui coepit habet* (Horacio, *Epístolas* I, 2, 40). Cuando esté el vídeo del domingo 22, cambiar la variable `VIDEO` del script por su enlace. Se puede cerrar con la ×; vuelve a salir en la siguiente visita.
 
+## Palabras, efemérides y compartir
+- `palabras.qmd`: «Las palabras del zurrón», las 14 palabras del mapa como entradas de diccionario (forma, genitivo y género según LSJ y *Cambridge Greek Lexicon*; latín según Lewis & Short), con citas en lengua original, traducción y fuentes. Cada palabra tiene un ancla (`#hybris`, `#nostos`…) y el mapa enlaza a ellas (tabla `ANCLA` en `assets/mapa-ruta.md`).
+- `assets/tal-dia.md` + `assets/efemerides.js`: caja «Tal día como hoy» de la portada. Calcula cada día la fecha romana (Kalendas, Nonas, Idus, bisiesto) y muestra la efeméride del día o, si no hay, la próxima. Para añadir efemérides, una línea más en `efemerides.js`, siempre con fuente antigua y solo fechas bien documentadas.
+- `assets/compartir.html`: botones de compartir (WhatsApp, Facebook, X, copiar enlace y el menú del móvil) al final de cada página, menos portada, enlaces y 404. Son enlaces simples, sin scripts de terceros.
+
 ## Estructura
 - Páginas: `index.qmd` (portada, `page-layout: custom`, HTML en bloques `{=html}`), `proyecto`, `sobre-mi`, `biblioteca` (listado con buscador de investigacion/, lecturas/, cuadernos/ y videos/), `investigacion`, `lecturas`, `videos`, `comunidad`, `apoyame`, `colaboraciones`, `contacto`, `privacidad`, `404`.
 - `assets/ecos.css`: todos los estilos. `assets/ecos.scss`: variables del tema. Las fuentes están alojadas en `assets/fuentes/`: IM Fell English para títulos, EB Garamond para el texto (incluye griego politónico) y Special Elite solo para las signaturas de las fichas y los sellos.

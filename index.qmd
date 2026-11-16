@@ -26,6 +26,8 @@ toc: false
 
 {{< include assets/mapa-ruta.md >}}
 
+{{< include assets/tal-dia.md >}}
+
 ```{=html}
 
 <section class="paradas" aria-labelledby="paradas-titulo">

@@ -10,6 +10,7 @@ project:
     - assets/fuentes/
     - assets/giscus-ecos.css
     - robots.txt
+    - assets/efemerides.js
     - favicon.ico
     - apple-touch-icon.png
     - assets/favicon-48.png
@@ -56,6 +57,8 @@ website:
             href: investigacion.qmd
           - text: "Lecturas y fuentes"
             href: lecturas.qmd
+          - text: "Las palabras del zurrón"
+            href: palabras.qmd
           - text: "Vídeos y episodios"
             href: videos.qmd
       - text: "Comunidad"
@@ -104,6 +107,7 @@ format:
       - assets/formularios.html
       - assets/apoyo.html
       - assets/aniversario.html
+      - assets/compartir.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true

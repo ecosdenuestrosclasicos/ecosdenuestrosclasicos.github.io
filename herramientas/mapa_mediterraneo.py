@@ -133,7 +133,7 @@ L = {
 }
 ANT = {"Valencia": "Valentia", "Atenas": "Ἀθῆναι", "Delfos": "Δελφοί", "Troya": "Ἴλιον", "Éfeso": "Ἔφεσος", "Ítaca": "Ἰθάκη",
        "Roma": "Roma", "Pompeya": "Pompeii", "Siracusa": "Συράκουσαι", "Sagunto": "Saguntum",
-       "Alejandría": "Ἀλεξάνδρεια", "Cartago": "Carthago", "Segovia": "Segovia", "Giza": "Γίζα", "Petra": "Πέτρα"}
+       "Alejandría": "Ἀλεξάνδρεια", "Cartago": "Carthago", "Segovia": "Segovia", "Giza": "Πυραμίδες", "Petra": "Πέτρα"}
 # etiqueta: dx, dy, anclaje
 ET = {"Valencia": (-12, 24, "end"), "Sagunto": (10, -12, "start"), "Roma": (10, 14, "start"), "Pompeya": (11, 13, "start"),
       "Siracusa": (-10, 19, "end"), "Ítaca": (-10, 4, "end"), "Delfos": (-2, -12, "middle"),

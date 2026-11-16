@@ -688,3 +688,80 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
   .aniv-titular { font-size: 1.1rem; }
   .aniv-trad { font-size: .86rem; }
 }
+
+/* ---- Las palabras del zurrón (palabras.qmd) ---- */
+.palabras-indice { margin: 1.6rem 0 2.4rem; padding: .9rem 0; border-top: 1px solid var(--pergamino); border-bottom: 1px solid var(--pergamino);
+  font-family: var(--garamond); font-style: italic; font-size: 1.05rem; line-height: 2; }
+.palabras-indice a { margin-right: .35rem; white-space: nowrap; text-decoration: none; border-bottom: 1px dotted var(--bronce); }
+.palabras-indice a + a::before { content: "·"; color: var(--bronce); margin-right: .55rem; font-style: normal; display: inline-block; }
+.palabras-indice a[lang="grc"] { font-style: normal; }
+.palabra { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); column-gap: 1.8rem; padding: 2rem 0 1.6rem;
+  border-top: 1px solid var(--pergamino); scroll-margin-top: 5rem; }
+.palabra:first-child { border-top: 0; }
+.palabra-margen { display: flex; flex-direction: column; align-items: flex-end; text-align: right; padding-top: .55rem; }
+.palabra-num { font-family: var(--fell); font-size: .95rem; color: var(--bronce-osc); min-width: 2rem; height: 2rem; line-height: 1.85rem;
+  padding: 0 .35rem; border: 1px solid var(--bronce); border-radius: 1rem; text-align: center; margin-bottom: .6rem; }
+.palabra-lugar { font-family: var(--garamond); font-style: italic; font-size: 1.05rem; color: var(--granate); line-height: 1.25; }
+.palabra-lugar[lang="grc"] { font-style: normal; }
+.palabra-hoy { font-family: var(--garamond); font-size: .88rem; color: var(--oliva); }
+.palabra-cuerpo { min-width: 0; }
+.palabra-cuerpo h2.palabra-forma { font-family: var(--garamond); font-size: 2.5rem; line-height: 1.1; margin: 0; color: var(--granate); letter-spacing: .01em; }
+.palabra-cuerpo h2.palabra-forma[lang="la"] { font-style: italic; }
+.palabra-lema { margin: .3rem 0 1rem !important; font-size: 1rem; color: var(--oliva); }
+.palabra-lema .translit { font-style: italic; color: var(--tinta); }
+.palabra-lema [lang="grc"], .palabra-lema [lang="la"] { color: var(--tinta); }
+.palabra-cuerpo blockquote { margin: 1rem 0 .3rem; padding: .1rem 0 .1rem 1.1rem; border-left: 2px solid var(--bronce);
+  font-family: var(--garamond); font-size: 1.22rem; line-height: 1.45; color: var(--burdeos); }
+.palabra-cuerpo blockquote[lang="la"] { font-style: italic; }
+.palabra-trad { margin-top: 0 !important; padding-left: 1.2rem; font-size: .98rem; color: var(--oliva); }
+.palabra-fuentes { margin-top: 1rem !important; font-size: .88rem; color: var(--oliva); }
+@media (max-width: 640px) {
+  .palabra { grid-template-columns: 1fr; padding-top: 1.6rem; }
+  .palabra-margen { flex-direction: row; align-items: baseline; justify-content: flex-start; gap: .6rem; text-align: left; padding-top: 0; margin-bottom: .4rem; }
+  .palabra-num { margin-bottom: 0; height: 1.7rem; line-height: 1.55rem; font-size: .85rem; }
+  .palabra-cuerpo h2.palabra-forma { font-size: 2.1rem; }
+}
+.palabra-cuerpo blockquote[lang="grc"] { font-style: normal; }
+.mapa-zurron-enlace { margin: .6rem 0 0 !important; font-size: .95rem; }
+.mapa-zurron-enlace a { font-style: italic; }
+#mapa { scroll-margin-top: 5rem; }
+
+/* ---- Tal día como hoy (assets/tal-dia.md, portada) ---- */
+.tal-dia { margin: 4.5rem auto 0; max-width: 56rem; display: grid; grid-template-columns: 16rem minmax(0, 1fr);
+  background: #FBF7EF; border: 1px solid rgba(167,134,88,.6); }
+.tal-dia[hidden] { display: none; }
+.tal-dia p { margin: 0; max-width: none; }
+.tal-dia-fecha { background: var(--pergamino); border-right: 3px double var(--bronce); padding: 1.6rem 1.2rem;
+  display: flex; flex-direction: column; justify-content: center; text-align: center; }
+.tal-dia-etiqueta { font-family: var(--garamond); font-style: italic; font-size: .95rem; color: var(--oliva); }
+.tal-dia-romana { font-family: var(--fell); font-size: 1.9rem; line-height: 1.15; color: var(--granate); margin: .35rem 0 .25rem !important; }
+.tal-dia-larga { font-family: var(--garamond); font-style: italic; font-size: .92rem; color: var(--burdeos); line-height: 1.3; }
+.tal-dia-hoy { margin-top: .55rem !important; font-family: var(--garamond); font-size: .95rem; color: var(--oliva);
+  border-top: 1px solid rgba(167,134,88,.6); padding-top: .5rem; }
+.tal-dia-suceso { padding: 1.6rem 2rem 1.5rem; }
+.tal-dia-cuando { font-family: var(--maquina); font-size: .82rem; color: var(--oliva); }
+.portada .tal-dia-que { font-size: 1.65rem; line-height: 1.2; margin: .35rem 0 .5rem; color: var(--burdeos); }
+.tal-dia-texto { font-size: 1.05rem; }
+.tal-dia-fuente { margin-top: .7rem !important; font-size: .88rem; font-style: italic; color: var(--oliva); }
+@media (max-width: 700px) {
+  .tal-dia { grid-template-columns: 1fr; }
+  .tal-dia-fecha { border-right: 0; border-bottom: 3px double var(--bronce); padding: 1.2rem 1rem; }
+  .tal-dia-suceso { padding: 1.3rem 1.2rem 1.2rem; }
+  .portada .tal-dia-que { font-size: 1.4rem; }
+}
+
+/* ---- Compartir (assets/compartir.html) ---- */
+.compartir { margin: 3rem 0 1rem; padding: 1.1rem 0 0; border-top: 1px solid rgba(167,134,88,.55); }
+.compartir p.compartir-titulo { margin: 0 0 .7rem; font-family: var(--garamond); font-style: italic; font-size: 1.02rem; color: var(--oliva); max-width: none; }
+.compartir-botones { display: flex; flex-wrap: wrap; gap: .5rem; }
+.compartir-boton { display: inline-block; font-family: var(--garamond); font-size: .98rem; line-height: 1; padding: .55rem .95rem;
+  border: 1px solid var(--granate); border-radius: 2rem; background: transparent; color: var(--granate) !important;
+  text-decoration: none !important; cursor: pointer; transition: background .15s ease, color .15s ease; }
+.compartir-boton:hover, .compartir-boton:focus-visible { background: var(--granate); color: var(--marfil) !important; }
+.compartir-movil { background: var(--granate); color: var(--marfil) !important; }
+@media (prefers-reduced-motion: reduce) { .compartir-boton { transition: none; } }
+.tal-dia-fecha p { text-align: center !important; hyphens: none; }
+.tal-dia-romana { font-size: 1.75rem; }
+.palabras p, .palabras blockquote { max-width: none; }
+.palabras .palabra { margin: 0; }
+.palabra-cuerpo > :last-child { margin-bottom: 0 !important; }

@@ -1,0 +1,44 @@
+<!-- Botones para compartir al final de cada página (menos portada, enlaces y 404).
+     Son enlaces normales: no cargan nada de WhatsApp, Facebook ni X hasta que alguien pulsa. -->
+<script>
+(function () {
+  function poner() {
+    var main = document.querySelector('main.content');
+    if (!main || document.querySelector('.portada') || document.body.classList.contains('pagina-enlaces')) return;
+    if (/\/404(\.html)?$/.test(location.pathname)) return;
+
+    var url = location.href.split('#')[0];
+    var titulo = document.title.replace(/\s+–\s+Ecos de nuestros clásicos$/, '');
+    var texto = titulo + ' · Ecos de nuestros clásicos';
+    var u = encodeURIComponent(url), t = encodeURIComponent(texto);
+
+    var caja = document.createElement('aside');
+    caja.className = 'compartir';
+    caja.setAttribute('aria-label', 'Compartir esta página');
+    caja.innerHTML =
+      '<p class="compartir-titulo">¿Conoces a alguien a quien le guste esto? Pásaselo:</p>' +
+      '<div class="compartir-botones">' +
+        (navigator.share ? '<button type="button" class="compartir-boton compartir-movil">Compartir</button>' : '') +
+        '<a class="compartir-boton" href="https://wa.me/?text=' + t + '%20' + u + '" target="_blank" rel="noopener">WhatsApp</a>' +
+        '<a class="compartir-boton" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener">Facebook</a>' +
+        '<a class="compartir-boton" href="https://x.com/intent/post?text=' + t + '&url=' + u + '" target="_blank" rel="noopener">X</a>' +
+        '<button type="button" class="compartir-boton compartir-copiar">Copiar enlace</button>' +
+      '</div>';
+
+    var antes = main.querySelector('.giscus, #quarto-appendix');
+    if (antes && antes.parentNode === main) main.insertBefore(caja, antes); else main.appendChild(caja);
+
+    var movil = caja.querySelector('.compartir-movil');
+    if (movil) movil.addEventListener('click', function () {
+      navigator.share({ title: texto, url: url }).catch(function () {});
+    });
+    var copiar = caja.querySelector('.compartir-copiar');
+    copiar.addEventListener('click', function () {
+      function hecho() { copiar.textContent = 'Enlace copiado'; setTimeout(function () { copiar.textContent = 'Copiar enlace'; }, 2200); }
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(hecho, function () { window.prompt('Copia este enlace:', url); });
+      else window.prompt('Copia este enlace:', url);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', poner); else poner();
+})();
+</script>

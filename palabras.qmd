@@ -1,0 +1,204 @@
+---
+title: "Las palabras del zurrón"
+subtitle: "Catorce palabras antiguas, una por cada parada de la odisea de Ecos"
+description: "Qué significan y de dónde vienen hybris, nóstos, kléos, demokratía, fides, res publica y las demás palabras del mapa de Ecos de nuestros clásicos, con su forma de diccionario y sus fuentes antiguas."
+image: imagenes/mapa-ruta.jpg
+toc: false
+---
+
+En el [mapa de la portada](index.html#mapa) cada parada te regala una palabra para el zurrón. Aquí están las catorce, en el orden de la ruta, con lo que significan, de dónde vienen y dónde aparecen en los textos antiguos.
+
+Cada palabra lleva arriba su forma de diccionario: el nominativo, la terminación del genitivo y el género, como la encontrarías si la buscaras tú. Para el griego sigo el *Greek-English Lexicon* de Liddell, Scott y Jones (LSJ) y el *Cambridge Greek Lexicon* (2021); para el latín, el diccionario de Lewis y Short. Las traducciones de las citas son mías.
+
+```{=html}
+<nav class="palabras-indice" aria-label="Las catorce palabras">
+  <a href="#valentia">valentia</a> <a href="#fides">fides</a> <a href="#aquaeductus">aquaeductus</a> <a href="#res-publica">res publica</a> <a href="#domus">domus</a> <a href="#hybris" lang="grc">ὕβρις</a> <a href="#nostos" lang="grc">νόστος</a> <a href="#demokratia" lang="grc">δημοκρατία</a> <a href="#kleos" lang="grc">κλέος</a> <a href="#biblion" lang="grc">βιβλίον</a> <a href="#pharos" lang="grc">φάρος</a> <a href="#pyramis" lang="grc">πυραμίς</a> <a href="#petra" lang="grc">πέτρα</a> <a href="#qart-hadasht">qrt ḥdšt</a>
+</nav>
+
+<div class="palabras">
+
+<article class="palabra" id="valentia">
+  <div class="palabra-margen"><span class="palabra-num">I</span><span class="palabra-lugar">Valentia</span><span class="palabra-hoy">Valencia, casa</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="la">valentia</h2>
+    <p class="palabra-lema"><span lang="la">valentia, -ae</span>, f. · vigor, fuerza</p>
+    <p>Viene de <i lang="la">valeo</i>, «estar fuerte, tener salud», el mismo verbo del saludo <i lang="la">vale</i> con el que los romanos cerraban sus cartas. Como nombre común es una palabra rara, de latín arcaico y tardío; como nombre de ciudad, en cambio, se repite por todo el Imperio: hubo una Valentia en Hispania, otra en la Galia (hoy Valence) y otra en el sur de Italia (Vibo Valentia).</p>
+    <p>La nuestra la fundó el cónsul Décimo Junio Bruto en el 138 a. n. e. para los soldados que habían combatido en Hispania en tiempos de Viriato:</p>
+    <blockquote lang="la">Iunius Brutus consul in Hispania iis qui sub Viriatho militaverant agros et oppidum dedit, quod vocatum est Valentia.</blockquote>
+    <p class="palabra-trad">«El cónsul Junio Bruto dio en Hispania tierras y una ciudad a quienes habían servido en tiempos de Viriato; se llamó Valentia».</p>
+    <p>Un detalle precioso: Solino, un compilador del siglo III n. e., recoge que, según algunos, Valentia había sido el nombre antiguo de Roma, y que <span lang="grc">Ῥώμη</span>, «fuerza» en griego, era su traducción.</p>
+    <p class="palabra-fuentes">Fuentes: Livio, <i>Periochae</i> 55; Pomponio Mela, <i>Chorographia</i> 2, 6; Solino 1, 1. Diccionario: Lewis &amp; Short, s. v. <i>valentia</i>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="fides">
+  <div class="palabra-margen"><span class="palabra-num">II</span><span class="palabra-lugar">Saguntum</span><span class="palabra-hoy">Sagunto</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="la">fides</h2>
+    <p class="palabra-lema"><span lang="la">fides, -ei</span>, f. · lealtad, palabra dada, confianza</p>
+    <p>Para un romano, <i lang="la">fides</i> era la base de cualquier trato: cumplir lo pactado con un aliado, con un cliente o con un dios. Tenía hasta templo propio en el Capitolio, junto al de Júpiter. Comparte raíz indoeuropea con el griego <span lang="grc">πείθω</span>, «convencer», y de ella vienen «fe», «fiel» y «confianza».</p>
+    <p>Sagunto se convirtió en el ejemplo de <i>fides</i> llevada hasta el final: aliada de Roma, resistió ocho meses el asedio de Aníbal en el 219 a. n. e. Livio dice de los saguntinos que</p>
+    <blockquote lang="la">fidem socialem usque ad perniciem suam coluerunt.</blockquote>
+    <p class="palabra-trad">«Mantuvieron la lealtad a sus aliados hasta su propia ruina».</p>
+    <p class="palabra-fuentes">Fuentes: Livio 21, 7, 3; Cicerón, <i>De officiis</i> 3, 104. Diccionario: Lewis &amp; Short, s. v. <i>fides</i>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="aquaeductus">
+  <div class="palabra-margen"><span class="palabra-num">III</span><span class="palabra-lugar">Segovia</span><span class="palabra-hoy">escapada a pie</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="la">aquaeductus</h2>
+    <p class="palabra-lema"><span lang="la">aquaeductus, -us</span>, m. (también <span lang="la">aquae ductus</span>) · conducción de agua, acueducto</p>
+    <p>Es literalmente «la conducción del agua»: <i lang="la">aqua</i> más <i lang="la">ductus</i>, de <i lang="la">ducere</i>, «llevar, conducir». Los romanos lo escribían muchas veces en dos palabras, y la expresión pasó tal cual a nuestra lengua.</p>
+    <p>Sexto Julio Frontino, encargado de las aguas de Roma desde el 97 n. e., escribió un tratado entero sobre ellas y no ocultaba su orgullo. Comparadlas, decía, con</p>
+    <blockquote lang="la">pyramidas videlicet otiosas</blockquote>
+    <p class="palabra-trad">«las pirámides, que evidentemente no sirven para nada», o con las obras de los griegos, famosas pero inútiles.</p>
+    <p>El de Segovia, de finales del siglo I o comienzos del II n. e., sigue en pie con sus sillares de granito encajados sin argamasa.</p>
+    <p class="palabra-fuentes">Fuentes: Frontino, <i>De aquaeductu urbis Romae</i> 1, 16. Diccionario: Lewis &amp; Short, s. v. <i>aquaeductus</i>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="res-publica">
+  <div class="palabra-margen"><span class="palabra-num">IV</span><span class="palabra-lugar">Roma</span><span class="palabra-hoy">Roma</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="la">res publica</h2>
+    <p class="palabra-lema"><span lang="la">res publica, rei publicae</span>, f. · el Estado, la comunidad política</p>
+    <p>Son dos palabras que se declinan juntas: <i lang="la">res</i>, «cosa, asunto», y <i lang="la">publica</i>, «del pueblo». No designaba un régimen concreto, sino lo común, aquello que pertenece a todos. Por eso los romanos podían seguir hablando de <i>res publica</i> bajo los emperadores.</p>
+    <p>Cicerón la definió por boca de Escipión:</p>
+    <blockquote lang="la">Est igitur res publica res populi.</blockquote>
+    <p class="palabra-trad">«La cosa pública es, por tanto, la cosa del pueblo».</p>
+    <p>Salustio cuenta en la <i>Conjuración de Catilina</i> cómo esa cosa común se fue deteriorando. Es el texto de mi <a href="investigacion/salustio-catilina.html">trabajo de fin de grado</a>.</p>
+    <p class="palabra-fuentes">Fuentes: Cicerón, <i>De re publica</i> 1, 39; Salustio, <i>Bellum Catilinae</i>. Diccionario: Lewis &amp; Short, s. v. <i>res</i>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="domus">
+  <div class="palabra-margen"><span class="palabra-num">V</span><span class="palabra-lugar">Pompeii</span><span class="palabra-hoy">Pompeya</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="la">domus</h2>
+    <p class="palabra-lema"><span lang="la">domus, -us</span>, f. · casa, hogar, familia</p>
+    <p>Es una palabra muy antigua: comparte raíz con el griego <span lang="grc">δόμος</span> y el sánscrito <i>dáma-</i>, «casa». Es femenina aunque acabe en <i>-us</i>, mezcla formas de dos declinaciones y conserva un viejo locativo, <i lang="la">domi</i>, «en casa». De ella vienen «doméstico», «domicilio» y también <i lang="la">dominus</i>, «el señor de la casa».</p>
+    <p>La <i>domus</i> era la casa unifamiliar de quien podía permitírsela, frente a la <i lang="la">insula</i>, el bloque de pisos de alquiler. Pompeya conserva decenas de ellas, con su atrio, su peristilo y sus pinturas. En la entrada de la Casa del Poeta Trágico, un mosaico con un perro avisa: <i lang="la">cave canem</i>, «cuidado con el perro».</p>
+    <p class="palabra-fuentes">Diccionario: Lewis &amp; Short, s. v. <i>domus</i>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="hybris">
+  <div class="palabra-margen"><span class="palabra-num">VI</span><span class="palabra-lugar" lang="grc">Συράκουσαι</span><span class="palabra-hoy">Siracusa</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">ὕβρις</h2>
+    <p class="palabra-lema"><span class="translit">hýbris</span> · <span lang="grc">ὕβρις, -εως, ἡ</span> · desmesura, soberbia, ultraje</p>
+    <p>Es la arrogancia que se pasa de la raya y acaba haciendo daño a otros. En el derecho ateniense, además, <i>hýbris</i> era un delito concreto: la agresión o la humillación contra una persona. Su etimología sigue discutida.</p>
+    <p>Hesíodo ya la oponía a la justicia, <span lang="grc">δίκη</span>, en el consejo a su hermano:</p>
+    <blockquote lang="grc">ὦ Πέρση, σὺ δ᾽ ἄκουε δίκης, μηδ᾽ ὕβριν ὄφελλε.</blockquote>
+    <p class="palabra-trad">«Tú, Perses, escucha a la justicia y no hagas crecer la desmesura».</p>
+    <p>Píndaro y un oráculo que recoge Heródoto la hacen madre de <span lang="grc">Κόρος</span>, la saciedad: de la abundancia sin freno nace la soberbia. La expedición ateniense a Sicilia, que acabó en desastre ante Siracusa en el 413 a. n. e., se ha leído muchas veces como una gran lección de <i>hýbris</i>.</p>
+    <p class="palabra-fuentes">Fuentes: Hesíodo, <i>Trabajos y días</i> 213; Píndaro, <i>Olímpica</i> 13, 10; Heródoto 8, 77; Tucídides, libros VI y VII. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">ὕβρις</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="nostos">
+  <div class="palabra-margen"><span class="palabra-num">VII</span><span class="palabra-lugar" lang="grc">Ἰθάκη</span><span class="palabra-hoy">Ítaca</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">νόστος</h2>
+    <p class="palabra-lema"><span class="translit">nóstos</span> · <span lang="grc">νόστος, -ου, ὁ</span> · el regreso a casa</p>
+    <p>Viene del verbo <span lang="grc">νέομαι</span>, «volver». Es la palabra de la <i>Odisea</i>: desde el quinto verso, Odiseo lucha por su vida y por el <i>nóstos</i> de sus compañeros. Había incluso un poema entero, hoy perdido, titulado <span lang="grc">Νόστοι</span>, «Los regresos», sobre la vuelta de los héroes desde Troya.</p>
+    <blockquote lang="grc">ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.</blockquote>
+    <p class="palabra-trad">«Luchando por su propia vida y por el regreso de sus compañeros».</p>
+    <p>En 1688, un médico de Basilea, Johannes Hofer, juntó <span lang="grc">νόστος</span> y <span lang="grc">ἄλγος</span>, «dolor», para dar nombre a la enfermedad de los soldados que añoraban su tierra. Así nació la «nostalgia».</p>
+    <p class="palabra-fuentes">Fuentes: <i>Odisea</i> 1, 5; <i>Ilíada</i> 9, 413. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">νόστος</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="demokratia">
+  <div class="palabra-margen"><span class="palabra-num">VIII</span><span class="palabra-lugar" lang="grc">Ἀθῆναι</span><span class="palabra-hoy">Atenas</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">δημοκρατία</h2>
+    <p class="palabra-lema"><span class="translit">demokratía</span> · <span lang="grc">δημοκρατία, -ας, ἡ</span> (jonio <span lang="grc">δημοκρατίη</span>) · el gobierno del pueblo</p>
+    <p>Une <span lang="grc">δῆμος</span>, «el pueblo» (y también «el distrito»), y <span lang="grc">κράτος</span>, «la fuerza, el poder efectivo». No es un poder suave: <i>krátos</i> es el poder de quien se impone. Heródoto es uno de los primeros autores conservados en los que la leemos.</p>
+    <p>Pericles, en el discurso fúnebre que le atribuye Tucídides, explica el nombre así:</p>
+    <blockquote lang="grc">καὶ ὄνομα μὲν διὰ τὸ μὴ ἐς ὀλίγους ἀλλ᾽ ἐς πλείονας οἰκεῖν δημοκρατία κέκληται.</blockquote>
+    <p class="palabra-trad">«Y de nombre, como no se gobierna para unos pocos sino para la mayoría, se llama democracia».</p>
+    <p class="palabra-fuentes">Fuentes: Heródoto 6, 43; Tucídides 2, 37, 1; Aristóteles, <i>Política</i> 1279b. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">δημοκρατία</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="kleos">
+  <div class="palabra-margen"><span class="palabra-num">IX</span><span class="palabra-lugar" lang="grc">Ἴλιον</span><span class="palabra-hoy">Troya</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">κλέος</h2>
+    <p class="palabra-lema"><span class="translit">kléos</span> · <span lang="grc">κλέος</span>, τό (solo nominativo y acusativo; plural <span lang="grc">κλέα</span>) · fama, gloria</p>
+    <p>Está emparentada con <span lang="grc">κλύω</span>, «oír»: el <i>kléos</i> es literalmente «lo que se oye» de alguien, lo que otros cuentan. Cuando el aedo canta las hazañas de los héroes canta <span lang="grc">κλέα ἀνδρῶν</span>, «las glorias de los hombres».</p>
+    <p>Aquiles resume en un verso la elección de toda la <i>Ilíada</i>: si se queda a luchar en Troya,</p>
+    <blockquote lang="grc">ὤλετο μέν μοι νόστος, ἀτὰρ κλέος ἄφθιτον ἔσται.</blockquote>
+    <p class="palabra-trad">«Se acabó para mí el regreso, pero mi gloria será imperecedera».</p>
+    <p>La fórmula «gloria imperecedera» tiene un eco exacto en los himnos védicos de la India, <i>śrávas … ákṣitam</i>: una de las pruebas de que griegos e indios heredaron una misma poesía indoeuropea.</p>
+    <p class="palabra-fuentes">Fuentes: <i>Ilíada</i> 9, 413 y 9, 189; <i>Rigveda</i> 1, 9, 7. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">κλέος</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="biblion">
+  <div class="palabra-margen"><span class="palabra-num">X</span><span class="palabra-lugar" lang="grc">Ἔφεσος</span><span class="palabra-hoy">Éfeso</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">βιβλίον</h2>
+    <p class="palabra-lema"><span class="translit">biblíon</span> · <span lang="grc">βιβλίον</span> (también <span lang="grc">βυβλίον</span>), -ου, τό · rollo, documento, libro</p>
+    <p>Es el diminutivo de <span lang="grc">βίβλος</span> o <span lang="grc">βύβλος</span>, el papiro. Según la explicación más extendida, los griegos llamaron así al papiro por Biblos, el puerto fenicio por el que lo compraban. Un <i>biblíon</i> podía ser una carta, un documento oficial o una obra literaria; de su plural, <i>biblía</i>, «los libros», viene «Biblia».</p>
+    <p>Calímaco, que trabajó en la Biblioteca de Alejandría, solía decir, según cuenta Ateneo, una frase que hoy suena a broma de bibliotecario:</p>
+    <blockquote lang="grc">μέγα βιβλίον ἴσον τῷ μεγάλῳ κακῷ.</blockquote>
+    <p class="palabra-trad">«Un libro grande equivale a un gran mal». Ha llegado hasta hoy como proverbio, abreviado: <span lang="grc">μέγα βιβλίον μέγα κακόν</span>.</p>
+    <p class="palabra-fuentes">Fuentes: Calímaco, fr. 465 Pfeiffer (transmitido por Ateneo 3, 72a). Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">βιβλίον</span>, <span lang="grc">βύβλος</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="pharos">
+  <div class="palabra-margen"><span class="palabra-num">XI</span><span class="palabra-lugar" lang="grc">Ἀλεξάνδρεια</span><span class="palabra-hoy">Alejandría</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">φάρος</h2>
+    <p class="palabra-lema"><span class="translit">pháros</span> · <span lang="grc">Φάρος, -ου, ἡ</span>, la isla; <span lang="grc">φάρος</span>, ὁ, el faro</p>
+    <p>Primero fue un nombre propio: Faros era una isla frente a la costa de Egipto, y ya aparece en la <i>Odisea</i>. Allí se levantó, a comienzos del siglo III a. n. e., la gran torre de luz de Alejandría, obra de Sóstrato de Cnido, según Estrabón. La torre se hizo tan famosa que el nombre de la isla pasó a designar cualquier faro: en griego, en latín y en español.</p>
+    <p>César, que la vio durante la guerra de Alejandría, lo explica así:</p>
+    <blockquote lang="la">Pharus est in insula turris magna altitudine, mirificis operibus exstructa, quae nomen ab insula accepit.</blockquote>
+    <p class="palabra-trad">«El Faro es una torre de gran altura, construida con obras admirables, que tomó su nombre de la isla».</p>
+    <p class="palabra-fuentes">Fuentes: <i>Odisea</i> 4, 355; Estrabón 17, 1, 6; César, <i>Bellum civile</i> 3, 112. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">Φάρος</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="pyramis">
+  <div class="palabra-margen"><span class="palabra-num">XII</span><span class="palabra-lugar" lang="grc">Πυραμίδες</span><span class="palabra-hoy">Giza, escapada</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">πυραμίς</h2>
+    <p class="palabra-lema"><span class="translit">pyramís</span> · <span lang="grc">πυραμίς, -ίδος, ἡ</span> · pirámide</p>
+    <p>Heródoto, que viajó a Egipto en el siglo V a. n. e., describe las pirámides y cuenta que la de Keops tardó veinte años en construirse. Los geómetras griegos tomaron después la palabra para la figura que todos conocemos.</p>
+    <p>Su origen es un pequeño misterio. El LSJ recoge que <i>pyramís</i> también era el nombre de un pastel de trigo tostado y miel, y considera dudosa la explicación que la hace venir del egipcio. A día de hoy, nadie sabe con seguridad de dónde viene.</p>
+    <p>Las pirámides ya eran antiquísimas para los griegos. Para los romanos, como Frontino, eran el ejemplo perfecto de obra grandiosa e inútil.</p>
+    <p class="palabra-fuentes">Fuentes: Heródoto 2, 124; Platón, <i>Timeo</i> 56b; Frontino, <i>De aquaeductu</i> 1, 16. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">πυραμίς</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="petra">
+  <div class="palabra-margen"><span class="palabra-num">XIII</span><span class="palabra-lugar" lang="grc">Πέτρα</span><span class="palabra-hoy">Petra, escapada</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma" lang="grc">πέτρα</h2>
+    <p class="palabra-lema"><span class="translit">pétra</span> · <span lang="grc">πέτρα, -ας, ἡ</span> (jonio <span lang="grc">πέτρη</span>) · roca, peña</p>
+    <p>Es la roca firme, la peña o el acantilado; para una piedra suelta los griegos solían decir <span lang="grc">πέτρος</span>. Por eso la roca sirve en la literatura griega como imagen de lo que no se mueve, y también del corazón duro.</p>
+    <p>Los griegos llamaron Petra a la capital de los nabateos, tallada en la roca del desierto. Flavio Josefo cuenta que sus habitantes la llamaban Rekem. Trajano la incorporó en el 106 n. e. a la nueva provincia romana de Arabia. De <i>pétra</i> vienen «piedra» y «petróleo», y de su pariente <span lang="grc">πέτρος</span>, el nombre de Pedro.</p>
+    <p class="palabra-fuentes">Fuentes: Flavio Josefo, <i>Antigüedades judías</i> 4, 161. Diccionarios: LSJ y <i>Cambridge Greek Lexicon</i>, s. v. <span lang="grc">πέτρα</span>.</p>
+  </div>
+</article>
+
+<article class="palabra" id="qart-hadasht">
+  <div class="palabra-margen"><span class="palabra-num">XIV</span><span class="palabra-lugar" lang="la">Carthago</span><span class="palabra-hoy">Cartago</span></div>
+  <div class="palabra-cuerpo">
+    <h2 class="palabra-forma">Qart-ḥadašt</h2>
+    <p class="palabra-lema">fenicio <span class="translit">qrt ḥdšt</span> · «ciudad nueva»</p>
+    <p>La única palabra del zurrón que no es griega ni latina. Los fenicios de Tiro llamaron así a su colonia del norte de África: <i>qart</i>, «ciudad», y <i>ḥadašt</i>, «nueva». Los griegos la adaptaron como <span lang="grc">Καρχηδών</span> y los romanos como <i lang="la">Carthago</i>. Según la tradición se fundó en el 814 a. n. e., y Roma la destruyó en el 146 a. n. e.</p>
+    <p>El nombre volvió a nacer en Hispania: hacia el 227 a. n. e., el cartaginés Asdrúbal fundó otra «ciudad nueva» en la costa del sureste, la que los romanos llamaron <i lang="la">Carthago Nova</i>. Es nuestra Cartagena, que por tanto se llama, literalmente, «Ciudad Nueva Nueva».</p>
+    <p>De Cartago apenas tenemos voz propia: casi todo lo que sabemos lo contaron griegos y romanos, sus rivales. Por eso conviene leer esas fuentes con cuidado.</p>
+    <p class="palabra-fuentes">Fuentes: Polibio 2, 13, 1; Livio, <i>Periochae</i> 51.</p>
+  </div>
+</article>
+
+</div>
+```
+
+Si quieres recogerlas tú misma, vuelve al [mapa de la portada](index.html#mapa) y zarpa desde Valentia. Al final te espera la paella.

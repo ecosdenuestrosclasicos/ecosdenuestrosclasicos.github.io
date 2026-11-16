@@ -10,6 +10,7 @@ Esta web es estática: no tiene formularios propios, no pide registro y no insta
 - **Tipografías.** Las fuentes de letra están alojadas en la propia web; no se cargan desde servicios externos.
 - **Correo.** Si me escribes, uso tu dirección y tu mensaje solo para contestarte. No los comparto ni los uso para enviarte publicidad. Si quieres que borre nuestra conversación, pídemelo.
 - **Comentarios.** Los comentarios funcionan con giscus, que guarda los mensajes en GitHub Discussions. Para comentar hay que iniciar sesión con una cuenta de GitHub, y se aplica su política de privacidad. Si solo lees la página, el recuadro de comentarios se carga desde giscus.app y GitHub.
+- **Botones para compartir.** Al final de las páginas hay botones para compartirlas por WhatsApp, Facebook o X. Son enlaces normales: no cargan nada de esas plataformas ni avisan a nadie de tu visita. Solo si pulsas uno se abre la plataforma elegida, con sus propias políticas.
 - **Enlaces externos.** Los enlaces a Instagram, TikTok, YouTube, Facebook y Patreon te llevan a esas plataformas, que tienen sus propias políticas.
 
 Para cualquier duda: [ecosdenuestrosclasicos@gmail.com](mailto:ecosdenuestrosclasicos@gmail.com).
