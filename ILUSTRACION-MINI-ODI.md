@@ -4,7 +4,7 @@ Documento para el ilustrador o ilustradora que haga la versión definitiva de Mi
 
 ## Quién es
 
-Mini Odi es el compañero de Isabel en Ecos de nuestros clásicos: un pequeño pato blanco de ganchillo. Aparece en el logo, sentado sobre una pila de libros con la *Odisea*, y en el mapa de la portada, en versión dibujo, corriendo detrás de Isabel con capa granate y corona de laurel (`imagenes/miniodi-ruta.webp`). La foto de referencia está en `imagenes/miniodi-referencia.jpg`. Tiene que conservar exactamente su identidad: no es un pato genérico, es *ese* muñeco.
+Mini Odi es el compañero de Isabel en Ecos de nuestros clásicos: un pequeño pato blanco de ganchillo. Aparece en el logo, sentado sobre una pila de libros con la *Odisea*, y en el mapa de la portada, en versión dibujo, corriendo detrás de Isabel con capa granate y corona de laurel (`imagenes/miniodi-ruta.webp`). La foto de referencia la guarda Isabel en su carpeta «Página web/Referencias» (no está en el repositorio, que es público). Tiene que conservar exactamente su identidad: no es un pato genérico, es *ese* muñeco.
 
 ## Rasgos que hay que respetar
 

@@ -10,6 +10,20 @@ toc: false
 ```{=html}
 <div class="portada">
 
+<!-- ANIVERSARIO: se muestra solo del 22 al 30 de noviembre de 2026.
+     Cambia el href del enlace por el del vídeo del domingo cuando esté publicado. -->
+<aside class="franja-aniversario" hidden>
+  <p><strong>Ecos cumple un año.</strong> Gracias por leer, preguntar, discrepar y estar aquí desde el 23 de noviembre de 2025.
+  <a href="https://www.youtube.com/@Ecosdenuestrosclásicos" data-enlace-video>Ver el vídeo del aniversario</a></p>
+</aside>
+<script>
+(function () {
+  var f = document.querySelector('.franja-aniversario'); if (!f) return;
+  var hoy = new Date(), ini = new Date(2026, 10, 22), fin = new Date(2026, 11, 1);
+  if (hoy >= ini && hoy < fin) f.hidden = false; else f.remove();
+})();
+</script>
+
 <header class="portada-cabecera">
   <p class="portada-firma">Un proyecto de Isabel Sanz, en marcha desde el 23 de noviembre de 2025</p>
   <h1 class="portada-titulo">Ecos de nuestros clásicos</h1>

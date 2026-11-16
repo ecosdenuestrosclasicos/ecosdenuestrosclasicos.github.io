@@ -15,10 +15,13 @@ La web vive en **https://ecosdenuestrosclasicos.com** (comprado en DonDominio, n
 ## Estadísticas
 GoatCounter (sin cookies), cuenta `ecosdenuestrosclasicos`: panel en https://ecosdenuestrosclasicos.goatcounter.com. El script está en `assets/cabecera.html`. Útil para dar cifras reales en la página de colaboraciones.
 
+## Aniversario
+Franja en la portada (`index.qmd`, clase `franja-aniversario`) que solo se ve del 22 al 30 de noviembre de 2026 (lo controla un script). Cambiar `ENLACE-VIDEO` por el enlace del vídeo del domingo 22.
+
 ## Estructura
 - Páginas: `index.qmd` (portada, `page-layout: custom`, HTML en bloques `{=html}`), `proyecto`, `sobre-mi`, `biblioteca` (listado con buscador de investigacion/, lecturas/, cuadernos/ y videos/), `investigacion`, `lecturas`, `videos`, `comunidad`, `apoyame`, `colaboraciones`, `contacto`, `privacidad`, `404`.
 - `assets/ecos.css`: todos los estilos. `assets/ecos.scss`: variables del tema. Las fuentes están alojadas en `assets/fuentes/`: IM Fell English para títulos, EB Garamond para el texto (incluye griego politónico) y Special Elite solo para las signaturas de las fichas y los sellos.
-- `assets/mapa-ruta.md`: el mapa de la portada. Fondo `imagenes/mapa-ilustrado.jpg` (marco, adornos, monumentos y personajes recortados de la ilustración original de Isabel sobre un Mediterráneo real de Natural Earth) más una capa SVG con la ruta circular en barco, las escapadas a pie (Segovia, Guiza, Petra), los nombres y el barquito animado. Geografía rigurosa: cada monumento junto a su lugar real. Generado con `herramientas/mapa_mediterraneo.py`, `componer_mapa.py` y `capa_ruta.py` (`hacer_mapa.py` y `imagenes/personajes-ruta.webp` son de la versión anterior y ya no se usan).
+- `assets/mapa-ruta.md`: el mapa de la portada. Fondo `imagenes/mapa-ilustrado.jpg` (marco, adornos, monumentos y personajes recortados de la ilustración original de Isabel sobre un Mediterráneo real de Natural Earth) más una capa SVG con la ruta circular en barco, las escapadas a pie (Segovia, Guiza, Petra), los nombres y el barquito animado. Geografía rigurosa: cada monumento junto a su lugar real. Generado con `herramientas/mapa_mediterraneo.py`, `componer_mapa.py` y `capa_ruta.py`.
 - `assets/miniodi.html`: Mini Odi dibujado se asoma al final de cada página; al hacer clic dice una frase.
 - Plantillas: `videos/_plantilla-video.qmd` y `cuadernos/_plantilla-cuaderno.qmd`.
 - Comentarios con giscus: ACTIVOS (Discussions activado, app giscus instalada solo en este repo, categoría «Comentarios» de tipo anuncio; repo-id R_kgDOVs3uXQ, category-id DIC_kwDOVs3uXc4DLIbd). Configurados en los `_metadata.yml` de cada carpeta y en la cabecera de `comunidad.qmd` y `lecturas.qmd`; tema en `assets/giscus-ecos.css`.
@@ -36,7 +39,7 @@ Granate `#652638`, burdeos `#421C2A`, marfil `#F6F0E5`, pergamino `#E8DCC7`, tin
 - Formación: no decir que Filología Clásica quedó sin terminar; basta con «antes estudié Filología Clásica».
 - No poner notas sobre ilustraciones hechas con IA.
 - No publicar cifras de audiencia (en la página de colaboraciones pone «a petición»).
-- La mascota se llama **Mini Odi** (no «Niodi»). Su foto real (`imagenes/miniodi-referencia.jpg`) lleva logos de F1, así que en la web se usa solo la versión dibujada.
+- La mascota se llama **Mini Odi** (no «Niodi»). Su foto real lleva logos de F1: no subirla nunca al repositorio; en la web solo se usa la versión dibujada.
 - Formación de Isabel: graduada en Economía (Universitat de València, junio de 2026); antes estudió Filología Clásica (no decir que no la terminó); ahora cursa el Máster en Economía (UV) y Matemáticas en la UNED; da clase desde 2019. TFG: deterioro institucional de la República tardía en el *Bellum Catilinae* (resultados todavía no publicados).
 - Correo público: ecosdenuestrosclasicos@gmail.com
 

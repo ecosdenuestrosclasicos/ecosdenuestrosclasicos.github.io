@@ -647,3 +647,10 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
 .mapa-zurron { list-style: none; padding: 0; margin: .3rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; max-width: 40rem; }
 .mapa-zurron li { font-family: var(--fell); font-style: italic; font-size: 1rem; padding: .15rem .65rem; border: 1px solid var(--granate); border-radius: 999px; color: var(--granate); background: #FBF7EE; }
 .mapa-zurron li.vacia { border-style: dashed; border-color: #CDBFA6; color: #B5A68A; font-style: normal; }
+
+/* Franja del aniversario (solo del 22 al 30 de noviembre de 2026) */
+.franja-aniversario { margin: 1.4rem auto 0; max-width: 46rem; padding: .8rem 1.3rem; text-align: center;
+  background: #FFF3C9; border: 1px solid #E9C46A; border-left: 4px solid var(--granate); border-right: 4px solid var(--granate); }
+.franja-aniversario p { margin: 0; max-width: none; font-size: 1.02rem; }
+.franja-aniversario strong { font-family: var(--fell); font-weight: 400; font-style: italic; font-size: 1.25rem; color: var(--granate); }
+.franja-aniversario a { white-space: nowrap; font-weight: 500; }
