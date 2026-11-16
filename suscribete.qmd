@@ -1,0 +1,79 @@
+---
+title: "La semana en Ecos"
+subtitle: "Un correo cada lunes por la mañana"
+description: "Suscríbete a la newsletter semanal de Ecos de nuestros clásicos: lo que publico cada semana y lo que pasó tal día como esos en Grecia y Roma, con su fecha romana y su fuente."
+toc: false
+---
+
+Cada lunes te escribo un correo corto para empezar la semana con los clásicos. Lleva tres cosas:
+
+- **Lo que viene esta semana en Ecos**: los vídeos, los carruseles y lo que esté preparando.
+- **Tal día como esta semana**: la fecha de cada día en el calendario romano y lo que pasó en Grecia y Roma, siempre con su fuente antigua.
+- **La cuenta atrás** para lo próximo que celebremos juntos.
+
+Es gratis y sin publicidad. Puedes darte de baja cuando quieras, con un clic al final de cualquier correo.
+
+```{=html}
+<form class="suscripcion" id="suscripcion" novalidate
+      data-destino="https://d9db051e.sibforms.com/serve/MUIFABDbVrd--aYL7LZ06-67xLfPFUS5Gbr17BoXpTZqhOPO4VR1MoPEY5dIQsSHd5JKhz3b4ybi30XYd01uSZm4b5GrXt18ppgVDv-8TrsvvIgFkfzteeJh-_l6K1mBIv4kmEeTfna5HxgtPz_8Oa16qBKbGlCw3DYQAjh355bQm3VKaiVXg0c1Kl8N17Auvk8fTIkmawW_xug2GA==">
+  <label class="suscripcion-etiqueta" for="suscripcion-correo">Tu correo electrónico</label>
+  <div class="suscripcion-fila">
+    <input class="suscripcion-correo" id="suscripcion-correo" name="EMAIL" type="email" autocomplete="email" required placeholder="nombre@ejemplo.com">
+    <button class="boton lleno suscripcion-boton" type="submit">Suscribirme</button>
+  </div>
+  <label class="suscripcion-acepto">
+    <input type="checkbox" name="acepto" value="1" required>
+    <span>Quiero recibir la newsletter semanal de Ecos y he leído la <a href="privacidad.html">política de privacidad</a>.</span>
+  </label>
+  <!-- Campo trampa para robots: las personas no lo ven -->
+  <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" class="suscripcion-trampa" aria-hidden="true">
+  <input type="hidden" name="locale" value="es">
+  <p class="suscripcion-mensaje" role="status" aria-live="polite"></p>
+</form>
+
+<script>
+(function () {
+  var f = document.getElementById('suscripcion');
+  if (!f) return;
+  var msg = f.querySelector('.suscripcion-mensaje');
+  var boton = f.querySelector('.suscripcion-boton');
+  function decir(texto, tipo) { msg.textContent = texto; msg.className = 'suscripcion-mensaje ' + (tipo || ''); }
+  if (location.hash === '#confirmada') {
+    decir('¡Suscripción confirmada! Bienvenida, bienvenido: el próximo lunes te llega la primera carta.', 'ok');
+    f.scrollIntoView({ block: 'center' });
+  }
+
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var correo = f.EMAIL.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) { decir('Revisa el correo: parece que falta algo.', 'error'); f.EMAIL.focus(); return; }
+    if (!f.acepto.checked) { decir('Para suscribirte, marca la casilla de aceptación.', 'error'); return; }
+    var destino = f.dataset.destino;
+    if (!destino) { decir('La suscripción abre muy pronto. ¡Vuelve en unos días!', 'error'); return; }
+    var datos = new FormData(f);
+    datos.delete('acepto');
+    datos.append('html_type', 'simple');
+    datos.append('isAjax', '1');
+    boton.disabled = true; decir('Enviando…');
+    fetch(destino, { method: 'POST', body: datos })
+      .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
+      .then(function (j) {
+        if (j && j.success) {
+          f.reset();
+          decir('¡Casi está! Te he enviado un correo para confirmar la suscripción. Si no lo ves en unos minutos, mira en spam o en promociones.', 'ok');
+        } else {
+          decir('No se ha podido completar la suscripción. Revisa el correo e inténtalo de nuevo.', 'error');
+        }
+      })
+      .catch(function () { decir('No se ha podido conectar. Inténtalo de nuevo en un momento.', 'error'); })
+      .then(function () { boton.disabled = false; });
+  });
+})();
+</script>
+```
+
+Cuando te suscribas, te llegará un correo para **confirmar** que eres tú. En cuanto pulses su enlace, quedas dentro y el lunes siguiente recibes tu primera carta.
+
+Los correos los envío con Brevo, un servicio europeo de envío de newsletters. Tu dirección solo sirve para mandarte la newsletter: no la comparto ni la uso para nada más. Tienes todos los detalles en la [política de privacidad](privacidad.html).
+
+¿Prefieres leerlo todo directamente en la web? «Tal día como hoy» está cada día en la [portada](index.html).

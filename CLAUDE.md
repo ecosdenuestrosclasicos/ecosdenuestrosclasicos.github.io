@@ -23,6 +23,13 @@ Franja granate arriba del todo en todas las páginas, debajo del menú (`assets/
 - `assets/tal-dia.md` + `assets/efemerides.js`: caja «Tal día como hoy» de la portada. Calcula cada día la fecha romana (Kalendas, Nonas, Idus, bisiesto) y muestra la efeméride del día o, si no hay, la próxima. Para añadir efemérides, una línea más en `efemerides.js`, siempre con fuente antigua y solo fechas bien documentadas.
 - `assets/compartir.html`: botones de compartir (WhatsApp, Facebook, X, copiar enlace y el menú del móvil) al final de cada página, menos portada, enlaces y 404. Son enlaces simples, sin scripts de terceros.
 
+## Newsletter semanal (Brevo)
+- Sale cada lunes por la mañana. Contenido: lo que Isa escribe en `newsletter/notas.md` (secciones `## AAAA-MM-DD`), las efemérides de la semana con su fecha romana y la cuenta atrás al aniversario. Lo genera `scripts/newsletter.mjs` (vista previa: `node scripts/newsletter.mjs semanal --vista`).
+- Lo envía `.github/workflows/newsletter.yml` (cron lunes 05:23 UTC) con la API de Brevo. Secreto de GitHub `BREVO_API_KEY`; variables `BREVO_REMITENTE` (newsletter@ecosdenuestrosclasicos.com) y `BREVO_LISTA_SEMANAL` (3). Pausa: archivo `newsletter/PAUSA`.
+- Brevo gratis: 300 correos al día (contando confirmaciones). El script avisa a Isa por correo si la lista llega al 80 %.
+- Dominio autenticado en Brevo con 4 registros en DonDominio (TXT brevo-code, CNAME brevo1/brevo2._domainkey, TXT _dmarc). No borrarlos.
+- Página `suscribete.qmd`: formulario propio que envía a Brevo (atributo `data-destino` = URL del formulario de Brevo), doble confirmación. Enlazada en el menú Comunidad, el pie, la página de enlaces y la caja «Tal día como hoy».
+
 ## Estructura
 - Páginas: `index.qmd` (portada, `page-layout: custom`, HTML en bloques `{=html}`), `proyecto`, `sobre-mi`, `biblioteca` (listado con buscador de investigacion/, lecturas/, cuadernos/ y videos/), `investigacion`, `lecturas`, `videos`, `comunidad`, `apoyame`, `colaboraciones`, `contacto`, `privacidad`, `404`.
 - `assets/ecos.css`: todos los estilos. `assets/ecos.scss`: variables del tema. Las fuentes están alojadas en `assets/fuentes/`: IM Fell English para títulos, EB Garamond para el texto (incluye griego politónico) y Special Elite solo para las signaturas de las fichas y los sellos.

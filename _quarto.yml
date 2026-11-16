@@ -11,6 +11,7 @@ project:
     - assets/giscus-ecos.css
     - robots.txt
     - assets/efemerides.js
+    - assets/fecha-romana.js
     - favicon.ico
     - apple-touch-icon.png
     - assets/favicon-48.png
@@ -62,7 +63,11 @@ website:
           - text: "Vídeos y episodios"
             href: videos.qmd
       - text: "Comunidad"
-        href: comunidad.qmd
+        menu:
+          - text: "Comentarios y propuestas"
+            href: comunidad.qmd
+          - text: "La newsletter de los lunes"
+            href: suscribete.qmd
       - text: "Prensa y colaboraciones"
         href: colaboraciones.qmd
       - text: "Contacto"
@@ -94,7 +99,7 @@ website:
         href: https://paypal.me/ecosclasicos
     right: |
       [ecosdenuestrosclasicos@gmail.com](mailto:ecosdenuestrosclasicos@gmail.com)<br>
-      [Apoya Ecos](/apoyame.html) · [Privacidad](/privacidad.html)
+      [Newsletter](/suscribete.html) · [Apoya Ecos](/apoyame.html) · [Privacidad](/privacidad.html)
 
 format:
   html:

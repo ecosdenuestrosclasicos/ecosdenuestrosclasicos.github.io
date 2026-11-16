@@ -39,6 +39,10 @@ body-classes: pagina-enlaces
       <span class="enlace-titulo">La web de Ecos</span>
       <span class="enlace-sub">Investigaciones, lecturas, fuentes y comunidad</span>
     </a>
+    <a class="enlace" href="../suscribete.html">
+      <span class="enlace-titulo">La newsletter de los lunes</span>
+      <span class="enlace-sub">Lo que trae la semana y lo que pasó tal día como estos</span>
+    </a>
     <a class="enlace" href="https://www.patreon.com/cw/Ecosdenuestrosclasicos">
       <span class="enlace-titulo">Patreon</span>
       <span class="enlace-sub">El rincón tranquilo, cada mes</span>

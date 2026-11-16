@@ -765,3 +765,24 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
 .palabras p, .palabras blockquote { max-width: none; }
 .palabras .palabra { margin: 0; }
 .palabra-cuerpo > :last-child { margin-bottom: 0 !important; }
+
+/* ---- Suscripción a la newsletter (suscribete.qmd) ---- */
+.suscripcion { margin: 2rem 0 2.2rem; padding: 1.6rem 1.7rem 1.3rem; background: #FBF7EF; border: 1px solid rgba(167,134,88,.6);
+  border-top: 3px double var(--bronce); max-width: var(--medida); }
+.suscripcion-etiqueta { display: block; font-family: var(--fell); font-size: 1.2rem; color: var(--burdeos); margin-bottom: .55rem; }
+.suscripcion-fila { display: flex; gap: .6rem; flex-wrap: wrap; }
+.suscripcion-correo { flex: 1 1 15rem; min-width: 0; font-family: var(--garamond); font-size: 1.08rem; padding: .62rem .9rem;
+  border: 1px solid var(--bronce); border-radius: 2rem; background: #fff; color: var(--tinta); }
+.suscripcion-correo:focus { outline: 2px solid var(--granate); outline-offset: 1px; }
+.suscripcion-boton { flex: 0 0 auto; cursor: pointer; }
+.suscripcion-boton[disabled] { opacity: .6; cursor: wait; }
+.suscripcion-acepto { display: flex; gap: .55rem; align-items: flex-start; margin-top: .9rem; font-size: .95rem; color: var(--oliva); line-height: 1.4; }
+.suscripcion-acepto input { margin-top: .25rem; accent-color: var(--granate); }
+.suscripcion-trampa { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.suscripcion p.suscripcion-mensaje { margin: .8rem 0 0; min-height: 1.2em; font-size: 1rem; max-width: none; }
+.suscripcion-mensaje.ok { color: #3E5A2E; }
+.suscripcion-mensaje.error { color: var(--granate); }
+
+/* Invitación a la newsletter bajo «Tal día como hoy» */
+.tal-dia-correo { margin-top: .8rem !important; font-size: .95rem; }
+.tal-dia-correo a { font-style: italic; }
