@@ -1,6 +1,6 @@
 ---
 title: "Soy Isabel Sanz"
-description: "Quién está detrás de Ecos de nuestros clásicos."
+description: "Isabel Sanz, divulgadora clásico-económica: quién está detrás de Ecos de nuestros clásicos."
 image: imagenes/isabel.jpg
 ---
 

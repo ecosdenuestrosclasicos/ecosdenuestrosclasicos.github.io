@@ -1,6 +1,6 @@
 ---
 pagetitle: "Ecos de nuestros clásicos"
-description: "Grecia y Roma leídas despacio, con las fuentes delante. Un proyecto de divulgación de Isabel."
+description: "Ecos de nuestros clásicos: divulgación sobre Grecia y Roma de Isabel Sanz. Historia, instituciones, poder y literatura clásica, leídas despacio y con las fuentes delante."
 image: imagenes/mapa-ruta.jpg
 page-layout: custom
 title-block-banner: false
