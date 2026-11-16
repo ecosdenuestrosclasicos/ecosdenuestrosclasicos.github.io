@@ -10,6 +10,11 @@ project:
     - assets/fuentes/
     - assets/giscus-ecos.css
     - robots.txt
+    - favicon.ico
+    - apple-touch-icon.png
+    - assets/favicon-48.png
+    - assets/favicon-96.png
+    - assets/favicon-192.png
 
 lang: es
 date-format: "D [de] MMMM [de] YYYY"
@@ -24,7 +29,7 @@ website:
   title: "Ecos de nuestros clásicos"
   site-url: "https://ecosdenuestrosclasicos.com"
   description: "Divulgación sobre Grecia y Roma: instituciones, poder, literatura, filosofía y fuentes. Un proyecto de Isabel Sanz."
-  favicon: assets/favicon.svg
+  favicon: assets/favicon-96.png
   open-graph: true
   twitter-card: true
   page-navigation: false
