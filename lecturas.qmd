@@ -13,7 +13,7 @@ comments:
     input-position: top
     loading: lazy
     language: es
-    theme: https://ecosdenuestrosclasicos.github.io/assets/giscus-ecos.css
+    theme: https://ecosdenuestrosclasicos.com/assets/giscus-ecos.css
 ---
 
 En redes casi nunca cabe la referencia completa, y aquí sí. Esta página reúne las lecturas que hacemos juntos, los libros que recomendaría a cualquiera que me pregunte y los autores que más aparecen en Ecos. Irá creciendo con cada cosa que lea.

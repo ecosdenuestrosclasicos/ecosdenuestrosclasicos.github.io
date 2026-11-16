@@ -21,7 +21,7 @@ execute:
 
 website:
   title: "Ecos de nuestros clásicos"
-  site-url: "https://ecosdenuestrosclasicos.github.io"
+  site-url: "https://ecosdenuestrosclasicos.com"
   description: "Divulgación sobre Grecia y Roma: instituciones, poder, literatura, filosofía y fuentes. Un proyecto de Isabel Sanz."
   favicon: assets/favicon.svg
   open-graph: true

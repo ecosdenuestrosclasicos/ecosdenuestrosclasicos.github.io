@@ -9,6 +9,12 @@ Web de **Ecos de nuestros clásicos**, proyecto independiente de divulgación so
 3. **Probar `investigacion/confianza-gobierno.qmd` con R** (`quarto render`). Es la única página que no se pudo probar: se migró del repo antiguo `ecosdenuestrosclasicos/confianza_gov` y se corrigió la ruta a `../datos/Trust_in_gov.csv` (en Linux importan las mayúsculas). Paquetes: tidyverse, countrycode, scales, rio, janitor, knitr, rmarkdown.
 4. Comprobar en la pestaña Actions de GitHub que la publicación sale en verde.
 
+## Dominio
+La web vive en **https://ecosdenuestrosclasicos.com** (comprado en DonDominio, noviembre de 2026; DNS: 4 registros A a GitHub Pages y `www` CNAME a ecosdenuestrosclasicos.github.io; dominio personalizado configurado en Settings → Pages). El repositorio sigue llamándose `ecosdenuestrosclasicos.github.io`.
+
+## Estadísticas
+GoatCounter (sin cookies), cuenta `ecosdenuestrosclasicos`: panel en https://ecosdenuestrosclasicos.goatcounter.com. El script está en `assets/cabecera.html`. Útil para dar cifras reales en la página de colaboraciones.
+
 ## Estructura
 - Páginas: `index.qmd` (portada, `page-layout: custom`, HTML en bloques `{=html}`), `proyecto`, `sobre-mi`, `biblioteca` (listado con buscador de investigacion/, lecturas/, cuadernos/ y videos/), `investigacion`, `lecturas`, `videos`, `comunidad`, `apoyame`, `colaboraciones`, `contacto`, `privacidad`, `404`.
 - `assets/ecos.css`: todos los estilos. `assets/ecos.scss`: variables del tema. Las fuentes están alojadas en `assets/fuentes/`: IM Fell English para títulos, EB Garamond para el texto (incluye griego politónico) y Special Elite solo para las signaturas de las fichas y los sellos.

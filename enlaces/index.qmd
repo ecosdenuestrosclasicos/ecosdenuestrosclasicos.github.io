@@ -10,7 +10,7 @@ body-classes: pagina-enlaces
 
 <!--
   PÁGINA DE ENLACES (para la bio de TikTok, Instagram…)
-  Dirección: https://ecosdenuestrosclasicos.github.io/enlaces/
+  Dirección: https://ecosdenuestrosclasicos.com/enlaces/
   Para añadir un enlace, copia una línea <a class="enlace">…</a> y cambia el texto y la dirección.
   El orden de la lista es el orden en que salen.
 -->
@@ -35,7 +35,7 @@ body-classes: pagina-enlaces
       <span class="enlace-titulo">Instagram</span>
       <span class="enlace-sub">Vídeos cortos y carruseles</span>
     </a>
-    <a class="enlace" href="https://ecosdenuestrosclasicos.github.io/">
+    <a class="enlace" href="https://ecosdenuestrosclasicos.com/">
       <span class="enlace-titulo">La web de Ecos</span>
       <span class="enlace-sub">Investigaciones, lecturas, fuentes y comunidad</span>
     </a>

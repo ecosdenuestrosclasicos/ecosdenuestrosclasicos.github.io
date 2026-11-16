@@ -5,6 +5,7 @@ description: "Qué datos se tratan al visitar esta web."
 
 Esta web es estática: no tiene formularios propios, no pide registro y no instala cookies de seguimiento ni de publicidad.
 
+- **Estadísticas de visitas.** Uso [GoatCounter](https://www.goatcounter.com) para saber cuántas personas visitan la web y qué páginas se leen más. No usa cookies, no recoge datos personales y no permite identificar a nadie: solo cuenta visitas de forma anónima (página, web de procedencia, navegador y país aproximado).
 - **Alojamiento.** La web está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos de las visitas, como la dirección IP, por motivos de seguridad.
 - **Tipografías.** Las fuentes de letra están alojadas en la propia web; no se cargan desde servicios externos.
 - **Correo.** Si me escribes, uso tu dirección y tu mensaje solo para contestarte. No los comparto ni los uso para enviarte publicidad. Si quieres que borre nuestra conversación, pídemelo.

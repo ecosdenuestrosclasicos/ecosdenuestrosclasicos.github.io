@@ -14,7 +14,7 @@ comments:
     input-position: top
     loading: lazy
     language: es
-    theme: https://ecosdenuestrosclasicos.github.io/assets/giscus-ecos.css
+    theme: https://ecosdenuestrosclasicos.com/assets/giscus-ecos.css
 ---
 
 ::: {.capitular}

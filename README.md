@@ -2,7 +2,7 @@
 
 Web de **Ecos de nuestros clásicos**, hecha con [Quarto](https://quarto.org) desde RStudio y publicada en GitHub Pages.
 
-Dirección prevista: <https://ecosdenuestrosclasicos.github.io>
+Dirección: <https://ecosdenuestrosclasicos.com>
 
 ---
 
@@ -15,7 +15,7 @@ Dirección prevista: <https://ecosdenuestrosclasicos.github.io>
 3. En el Finder, abre esta carpeta y pulsa **Cmd + Mayús + .** (punto) para ver los archivos ocultos. Tienen que aparecer `.github` y `.gitignore`. Sin `.github` la web no se publica.
 4. Selecciona **todo el contenido** de la carpeta (no la carpeta en sí) y arrástralo a GitHub. Pulsa **Commit changes**.
 5. Ve a **Settings → Pages** y, en **Source**, elige **GitHub Actions**.
-6. Abre la pestaña **Actions**. Verás «Publicar la web» trabajando. La primera vez tarda unos 5–8 minutos (instala R y los paquetes). Cuando salga el check verde, la web está en <https://ecosdenuestrosclasicos.github.io>.
+6. Abre la pestaña **Actions**. Verás «Publicar la web» trabajando. La primera vez tarda unos 5–8 minutos (instala R y los paquetes). Cuando salga el check verde, la web está en <https://ecosdenuestrosclasicos.com>.
 
 El repositorio antiguo, `confianza_gov`, no se toca y sigue funcionando. Su análisis ya está copiado aquí, en `investigacion/confianza-gobierno.qmd`, con los datos en `datos/`.
 
