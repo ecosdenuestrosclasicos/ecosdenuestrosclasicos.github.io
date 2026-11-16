@@ -9,4 +9,4 @@ Llevo tiempo escribiendo un libro sobre la democracia y sus grietas, y hasta aho
 
 Escribir un ensayo es bastante más desordenado de lo que parece desde fuera. Hay semanas en las que avanzo un capítulo entero y otras en las que me paso días con un solo pasaje de Tucídides. Quiero contar las dos cosas: lo que voy leyendo, las fuentes que aparecen, las ideas que se caen por el camino y las preguntas que todavía no sé responder.
 
-Lo que no voy a contar todavía es el título, ni la palabra que lo une todo. Esa se queda guardada hasta el final. Si tienes una teoría, en [la página del libro](../libro.qmd) puedes dejarme tu apuesta.
+El título y la palabra que lo une todo me los guardo para el final, como buena sorpresa. Si tienes una teoría, en [la página del libro](../libro.qmd) puedes dejarme tu apuesta.

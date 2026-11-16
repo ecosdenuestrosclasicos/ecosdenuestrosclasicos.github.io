@@ -1,5 +1,5 @@
 ---
-title: "Esta página no existe"
+title: "Esta página se ha perdido por el camino"
 pagetitle: "Página no encontrada"
 toc: false
 ---
@@ -8,7 +8,7 @@ toc: false
 <div class="error404">
   <img src="/imagenes/miniodi-ruta.webp" width="158" height="120" alt="Mini Odi, dibujado con su capa granate y su corona de laurel, corre buscando la página.">
   <div>
-    <p class="error404-texto">Ulises tardó diez años en volver a Ítaca y tú te has perdido con un solo clic. Mini Odi ha buscado esta página por todas partes y no aparece.</p>
+    <p class="error404-texto">Odiseo tardó diez años en volver a Ítaca y tú te has perdido con un solo clic. Mini Odi la está buscando por todas partes.</p>
     <p>Puede que el enlace esté mal escrito o que la página haya cambiado de sitio. Prueba desde el <a href="/index.html">inicio</a> o busca en la <a href="/biblioteca.html">biblioteca</a>.</p>
   </div>
 </div>

@@ -607,3 +607,35 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
 .enlace.destacado .enlace-sub { color: #EAD9C2; }
 .enlace.destacado:hover { background: var(--burdeos); }
 .enlaces-pie { text-align: center; color: var(--oliva); font-style: italic; font-size: .9rem; margin-top: 2rem; max-width: none; }
+
+/* Mapa interactivo: fichas y nóstos */
+.mapa-lienzo { position: relative; }
+.mapa-ficha {
+  position: absolute; z-index: 5; width: min(19rem, 80vw); padding: .9rem 1.1rem 1rem;
+  background: #FBF7EE; border: 1px solid var(--bronce); border-top: 3px solid var(--granate);
+  box-shadow: 0 18px 30px -18px rgba(40,35,33,.75); text-align: left;
+}
+.mapa-ficha[hidden] { display: none; }
+.mapa-ficha p { margin: 0; max-width: none; }
+.mapa-ficha-titulo { font-family: var(--fell); font-size: 1.45rem; color: var(--burdeos); line-height: 1.1; padding-right: 1.4rem; }
+.mapa-ficha-antiguo { display: block; font-family: var(--garamond); font-style: italic; font-size: .9rem; color: var(--oliva); }
+.mapa-ficha-texto { margin-top: .5rem !important; font-size: .97rem; line-height: 1.45; }
+.mapa-ficha-premio { margin-top: .6rem !important; padding: .5rem .7rem; background: #FFF3C9; border-left: 3px solid #E9A93A; font-size: .95rem; }
+.mapa-ficha-nota { margin-top: .45rem !important; font-size: .85rem; font-style: italic; color: var(--oliva); }
+.mapa-ficha-enlace { display: inline-block; margin-top: .6rem; font-weight: 500; }
+.mapa-ficha-cerrar { position: absolute; top: .3rem; right: .45rem; border: 0; background: none; font-size: 1.4rem; line-height: 1; color: var(--oliva); cursor: pointer; padding: .2rem .35rem; }
+.mapa-ficha-cerrar:hover { color: var(--granate); }
+.mapa-progreso { max-width: 44rem; margin: 1.6rem auto 0; text-align: center; }
+.mapa-progreso p { margin: 0 auto .5rem; max-width: none; }
+.mapa-progreso-texto { font-size: 1.02rem; }
+.mapa-progreso-texto strong { font-family: var(--fell); font-weight: 400; font-style: italic; font-size: 1.2rem; color: var(--granate); }
+.mapa-progreso-estado { font-size: .95rem; color: var(--oliva); }
+.mapa-progreso-cuenta { font-family: var(--maquina); color: var(--granate); }
+.mapa-progreso-reiniciar { margin-left: .6rem; border: 0; background: none; color: var(--oliva); text-decoration: underline; cursor: pointer; font: inherit; font-size: .85rem; }
+.mapa-progreso-barra { height: 6px; max-width: 22rem; margin: .3rem auto 0; background: var(--pergamino); border-radius: 3px; overflow: hidden; }
+.mapa-progreso-barra span { display: block; height: 100%; width: 0; background: var(--granate); transition: width .5s ease; }
+@media (max-width: 640px) {
+  .lamina.lamina-ilustrada .mapa-lienzo { width: 1100px; }
+  .lamina.lamina-ilustrada .mapa-lienzo .mapa-ruta { width: 100%; }
+  .mapa-ficha { width: 17rem; }
+}

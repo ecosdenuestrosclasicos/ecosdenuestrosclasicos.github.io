@@ -5,7 +5,7 @@ description: "Por qué Ecos de nuestros clásicos está en Patreon, cómo hacer 
 ---
 
 ::: {.capitular}
-Ecos es un proyecto independiente. No tengo detrás ninguna editorial, universidad ni empresa. Hay muchas horas de lectura, de búsqueda de fuentes, de guion, de grabación y de edición, y una comunidad que hace que todo eso merezca la pena.
+Ecos es un proyecto independiente: lo sostengo yo, con tu ayuda. Detrás hay muchas horas de lectura, de búsqueda de fuentes, de guion, de grabación y de edición, y una comunidad que hace que todo eso merezca la pena.
 :::
 
 Además, solo colaboro con marcas que de verdad encajan con el proyecto, y eso hace que casi todo el trabajo salga de mi tiempo y de mi bolsillo. Por eso cualquier apoyo, por pequeño que sea, se nota.
@@ -51,4 +51,4 @@ Si disfrutas del contenido y prefieres echar una mano de vez en cuando, sin susc
 
 ## Otras formas de apoyar
 
-Si ahora mismo no puedes o no quieres aportar dinero, de verdad que no pasa nada. Ver los vídeos, compartirlos con alguien a quien le puedan gustar o escribirme con una pregunta también es apoyar Ecos.
+Hay muchas formas de apoyar Ecos, y todas cuentan. Ver los vídeos, compartirlos con alguien a quien le puedan gustar o escribirme con una pregunta también es apoyar el proyecto.

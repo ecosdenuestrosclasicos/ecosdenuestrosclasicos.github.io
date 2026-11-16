@@ -37,7 +37,7 @@ Leemos un libro entero entre todos, poco a poco y con el contexto delante.
 
 ## Te recomiendo
 
-Si me preguntas qué leer, te diría alguno de estos. No son una lista de imprescindibles. Son libros que, por una razón u otra, me han cambiado la forma de mirar algo.
+Si me preguntas qué leer, te diría alguno de estos. Son libros que, por una razón u otra, me han cambiado la forma de mirar algo.
 
 <!--
   ISABEL: los «por qué» de cada recomendación son un borrador. Cámbialos

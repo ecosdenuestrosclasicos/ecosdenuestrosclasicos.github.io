@@ -62,8 +62,8 @@ También puedes hacerlo en los comentarios de [Instagram](https://www.instagram.
 Pocas normas, y bastante de sentido común.
 
 - Se puede discrepar de todo, con argumentos y con respeto.
-- Si citas una fuente, mejor con la referencia. Y si te equivocas no pasa nada, a mí también me pasa.
-- Nada de insultos, de spam ni de ataques personales. Esos mensajes se borran.
+- Si citas una fuente, mejor con la referencia. Y equivocarse forma parte de aprender: a mí también me pasa.
+- Aquí se habla con respeto. Los insultos, el spam y los ataques personales se borran.
 
 ## Recomienda tu lectura
 
@@ -72,5 +72,5 @@ Este es el rincón para hablar de libros. Cuéntanos qué estás leyendo o qué 
 Las investigaciones, las lecturas y los textos de la web tienen también su propio espacio de comentarios al final de cada página.
 
 ::: {.nota-margen}
-Los comentarios funcionan con GitHub, así que para escribir hace falta una cuenta (es gratuita). Si no tienes o no te apetece crearla, mándame tu recomendación con el formulario de arriba y la comparto yo.
+Los comentarios funcionan con GitHub, así que para escribir hace falta una cuenta (es gratuita). Si prefieres no crearla, mándame tu recomendación con el formulario de arriba y la comparto yo.
 :::

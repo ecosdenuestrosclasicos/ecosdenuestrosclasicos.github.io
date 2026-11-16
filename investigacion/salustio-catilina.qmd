@@ -28,7 +28,7 @@ image: ../imagenes/mapa-ruta.jpg
 
 El 5 de diciembre del 63 a. n. e. el Senado debate qué hacer con los cómplices de Catilina, que ya están detenidos. César propone que no se les ejecute. Catón le contesta con el discurso que Salustio recoge en el capítulo 52, y en mitad de ese discurso se queja de que Roma ha perdido los nombres verdaderos de las cosas. A repartir los bienes ajenos lo llaman generosidad (*bona aliena largiri liberalitas*) y a la audacia para el mal, valentía (*malarum rerum audacia fortitudo*). Por eso, dice, la república está en una situación límite (*eo res publica in extremo sita est*).
 
-Para Catón el problema no es solo la conjuración. Es que el vocabulario político se ha vaciado. Mi trabajo de fin de grado se pregunta si ese deterioro se puede seguir en el propio texto, en las palabras con las que Salustio describe una república que se estropea.
+Para Catón, además de la conjuración, hay un problema más profundo: el vocabulario político se ha vaciado. Mi trabajo de fin de grado se pregunta si ese deterioro se puede seguir en el propio texto, en las palabras con las que Salustio describe una república que se estropea.
 
 ## Las fuentes
 
@@ -44,4 +44,4 @@ Con ese marco leo el texto de dos maneras. Por un lado, de cerca, situándolo en
 
 ## Lo que viene después
 
-El trabajo completo no lo voy a publicar en esta web. Lo que sí irá apareciendo aquí son las líneas que abre y que quiero seguir. Una es el análisis de grandes corpus históricos como datos. La otra, el estudio del lenguaje político en momentos de cambio institucional. Las dos están en [Investigación](../investigacion.qmd).
+Aquí irán apareciendo las líneas que abre este trabajo y que quiero seguir. Una es el análisis de grandes corpus históricos como datos. La otra, el estudio del lenguaje político en momentos de cambio institucional. Las dos están en [Investigación](../investigacion.qmd).

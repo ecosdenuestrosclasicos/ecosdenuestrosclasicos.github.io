@@ -9,13 +9,13 @@ image: imagenes/mapa-ruta.jpg
 Ecos de nuestros clásicos empezó el 23 de noviembre de 2025, y la idea era bastante sencilla. Quería hablar de Grecia y Roma sin quedarme en la anécdota. Me interesa cómo se organizaban aquellas sociedades, cómo justificaban el poder, cómo levantaban sus instituciones y cómo se les iban estropeando. Y, sobre todo, qué pensaban de todo eso quienes lo vivieron y lo dejaron por escrito.
 :::
 
-No todo tiene que ser una lección sobre el presente, eso sí. Muchas veces lo que me apetece es contar una historia que me parece buenísima, comentar un libro o pararme en un pasaje porque me ha hecho gracia. O porque no lo he entendido y quiero entenderlo en voz alta, que también pasa.
+Y también hay sitio para disfrutar sin más. Muchas veces lo que me apetece es contar una historia que me parece buenísima, comentar un libro o pararme en un pasaje porque me ha hecho gracia. O porque quiero entenderlo mejor y pensarlo en voz alta, que también pasa.
 
 ## Cómo lo entiendo
 
-No uso la historia para darle la razón a ninguna opinión de hoy, y tampoco me creo que Grecia y Roma fueran sociedades ideales. La democracia ateniense dejaba fuera a la mayoría de la gente que vivía en Atenas, y la República romana se pasó buena parte de su último siglo a golpes. Justo esas contradicciones son las que más me interesan.
+Me gusta acercarme a Grecia y Roma tal como fueron, con sus logros y con sus contradicciones. La democracia ateniense dejaba fuera a la mayoría de la gente que vivía en Atenas, y la República romana pasó buena parte de su último siglo a golpes. Justo esas contradicciones son las que más me interesan, porque ayudan a pensar el presente con más matices.
 
-Leo a los clásicos porque me obligan a hacerme preguntas difíciles, no porque haya que aceptar sus respuestas sin mirarlas dos veces. Por eso intento que todo lo que cuento tenga detrás un autor, una obra y un pasaje concreto, y cuando puedo, el texto original. Si dos fuentes no cuentan lo mismo, te lo digo. Si no se sabe, también te lo digo.
+Leo a los clásicos porque me ayudan a hacerme preguntas difíciles, y sus respuestas merecen leerse con calma y con espíritu crítico. Por eso intento que todo lo que cuento tenga detrás un autor, una obra y un pasaje concreto, y cuando puedo, el texto original. Si dos fuentes cuentan versiones distintas, te enseño las dos. Y si es algo que todavía se discute, también te lo cuento.
 
 Para las fechas uso «antes de nuestra era» y «de nuestra era» (a. n. e. y n. e.).
 
@@ -35,4 +35,4 @@ Esta web es donde se queda todo lo que no cabe en un vídeo. Las fuentes, las in
 
 ## Quién está detrás
 
-Yo, Isabel, y una comunidad que pregunta, corrige y propone temas. Si quieres saber un poco más de mí, lo tienes en [Soy Isabel Sanz](sobre-mi.qmd). Y si te gustaría que Ecos siga siendo independiente, en [Apoya Ecos](apoyame.qmd) te cuento cómo ayudar.
+Yo, Isabel Sanz, y una comunidad que pregunta, corrige y propone temas. Si quieres saber un poco más de mí, lo tienes en [Soy Isabel Sanz](sobre-mi.qmd). Y si te gustaría que Ecos siga siendo independiente, en [Apoya Ecos](apoyame.qmd) te cuento cómo ayudar.

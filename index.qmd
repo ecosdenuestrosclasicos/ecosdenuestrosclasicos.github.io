@@ -33,7 +33,7 @@ toc: false
   </svg>
   <ul class="paradas-lista">
     <li><a href="proyecto.html"><span class="parada-nombre">El proyecto</span></a>
-      <p>Qué es Ecos, de dónde sale y por qué no creo que los clásicos tengan respuesta para todo.</p></li>
+      <p>Qué es Ecos, de dónde sale y por qué los clásicos son tan buenos compañeros para hacerse preguntas.</p></li>
     <li><a href="biblioteca.html"><span class="parada-nombre">La biblioteca</span></a>
       <p>El archivo: investigaciones, lecturas y textos, ordenados por temas y con buscador.</p></li>
     <li><a href="investigacion.html"><span class="parada-nombre">Investigación</span></a>

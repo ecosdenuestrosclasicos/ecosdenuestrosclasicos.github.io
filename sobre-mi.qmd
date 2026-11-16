@@ -21,7 +21,7 @@ Me llamo Isabel Sanz, vivo en la provincia de Valencia y soy la persona que hay 
 
 Soy economista. Me gradué en Economía por la Universitat de València, y antes estudié Filología Clásica, que me dio la base de todo lo demás: de ahí me traje el latín, el griego y la manía de ir siempre al texto original. Ahora curso el Máster en Economía, también en la Universitat de València, y el grado en Matemáticas en la UNED.
 
-Contado así parece un currículum sin rumbo. Para mí tiene bastante lógica. La filología me enseñó a leer despacio, la economía a preguntarme por qué unas instituciones funcionan y otras no, y las matemáticas a comprobar si lo que creo ver en un texto está de verdad ahí. Casi todo lo que hago en Ecos sale de juntar esas tres cosas.
+Contado así parece un camino con muchas curvas, pero para mí tiene toda la lógica. La filología me enseñó a leer despacio, la economía a preguntarme por qué unas instituciones funcionan y otras no, y las matemáticas a comprobar si lo que creo ver en un texto está de verdad ahí. Casi todo lo que hago en Ecos sale de juntar esas tres cosas.
 :::
 
 ::::
@@ -34,11 +34,11 @@ Cada vez me engancha más el análisis cuantitativo de textos. Contar palabras, 
 
 Me gustaría seguir investigando y hacer un doctorado. Mientras tanto, lo que voy haciendo lo tienes en [Investigación](investigacion.qmd).
 
-## Lo que no soy
+## Cómo soy en Ecos
 
-No soy una enciclopedia ni hablo desde lo alto de una tarima. Leo, me hago preguntas y comparto lo que voy encontrando. A veces me equivoco, y cuando alguien me lo señala con argumentos, lo agradezco y lo corrijo.
+Soy alguien que lee, se hace preguntas y comparte lo que va encontrando, de igual a igual. A veces me equivoco, y cuando alguien me lo señala con argumentos, lo agradezco y lo corrijo.
 
-Puedo pasarme una tarde con las instituciones de la República tardía y grabar al día siguiente un vídeo sobre las manías de un emperador. No son dos personas distintas, es la misma curiosidad.
+Puedo pasarme una tarde con las instituciones de la República tardía y grabar al día siguiente un vídeo sobre las manías de un emperador. Las dos cosas salen de la misma curiosidad.
 
 ## Y Mini Odi
 

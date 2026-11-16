@@ -124,25 +124,25 @@ def base_svg():
 
 # ------------------------------------------------------------------ lugares
 L = {
-    "Sagunto": (0.27, 39.68), "Roma": (12.48, 41.89), "Pompeya": (14.49, 40.75),
+    "Valencia": (-0.38, 39.47), "Sagunto": (0.27, 39.68), "Roma": (12.48, 41.89), "Pompeya": (14.49, 40.75),
     "Siracusa": (15.29, 37.07), "Ítaca": (20.70, 38.38),
     "Atenas": (23.73, 37.97), "Troya": (26.24, 39.96), "Éfeso": (27.34, 37.94),
     "Alejandría": (29.92, 31.20), "Cartago": (10.32, 36.85),
     # escapadas por tierra
     "Segovia": (-4.12, 40.95), "Giza": (31.13, 29.98), "Petra": (35.44, 30.33),
 }
-ANT = {"Atenas": "Ἀθῆναι", "Delfos": "Δελφοί", "Troya": "Ἴλιον", "Éfeso": "Ἔφεσος", "Ítaca": "Ἰθάκη",
+ANT = {"Valencia": "Valentia", "Atenas": "Ἀθῆναι", "Delfos": "Δελφοί", "Troya": "Ἴλιον", "Éfeso": "Ἔφεσος", "Ítaca": "Ἰθάκη",
        "Roma": "Roma", "Pompeya": "Pompeii", "Siracusa": "Συράκουσαι", "Sagunto": "Saguntum",
        "Alejandría": "Ἀλεξάνδρεια", "Cartago": "Carthago", "Segovia": "Segovia", "Giza": "Γίζα", "Petra": "Πέτρα"}
 # etiqueta: dx, dy, anclaje
-ET = {"Sagunto": (-11, 4, "end"), "Roma": (10, 14, "start"), "Pompeya": (11, 13, "start"),
+ET = {"Valencia": (-12, 24, "end"), "Sagunto": (10, -12, "start"), "Roma": (10, 14, "start"), "Pompeya": (11, 13, "start"),
       "Siracusa": (-10, 19, "end"), "Ítaca": (-10, 4, "end"), "Delfos": (-2, -12, "middle"),
       "Atenas": (-10, -12, "end"), "Troya": (10, -2, "start"), "Éfeso": (10, 18, "start"),
       "Alejandría": (-10, 18, "end"), "Cartago": (-10, -8, "end"),
       "Segovia": (-10, 18, "end"), "Giza": (12, 30, "start"), "Petra": (10, 18, "start")}
 
 RUTA = [
-    L["Sagunto"], (1.6, 39.2), (5.0, 38.6), (8.4, 38.55), (10.6, 39.6), (11.9, 41.2), L["Roma"],
+    L["Valencia"], (-0.05, 39.58), L["Sagunto"], (1.6, 39.2), (5.0, 38.6), (8.4, 38.55), (10.6, 39.6), (11.9, 41.2), L["Roma"],
     (12.6, 41.25), (13.6, 40.75), L["Pompeya"],
     (14.6, 40.1), (15.2, 39.2), (15.5, 38.45), (15.62, 38.17), (15.56, 37.55), L["Siracusa"],
     (16.5, 37.2), (18.5, 37.7), (20.2, 38.25), L["Ítaca"],
@@ -152,7 +152,7 @@ RUTA = [
     (25.9, 39.4), (26.2, 38.7), (26.75, 38.15), L["Éfeso"],
     (26.95, 37.55), (27.05, 37.0), (27.75, 36.3), (28.7, 35.0), (29.6, 32.6), L["Alejandría"],
     (28.0, 32.0), (25.0, 33.1), (21.0, 33.7), (17.0, 34.5), (13.6, 36.1), (11.4, 37.2), L["Cartago"],
-    (8.5, 37.6), (5.0, 37.9), (2.0, 38.6), (0.9, 39.25),
+    (8.5, 37.6), (5.0, 37.9), (2.0, 38.6), (0.6, 39.05), (0.0, 39.32),
 ]
 # escapadas a pie (por tierra), con puntos de paso reales
 ESCAPADAS = [

@@ -17,11 +17,11 @@ listing:
 Estoy escribiendo un libro. Es un ensayo de divulgación sobre la democracia, sobre sus contradicciones y sobre los problemas institucionales que ya asomaban en Atenas y en Roma y que, con otros nombres, siguen apareciendo hoy. El título, de momento, me lo guardo.
 :::
 
-No es un libro de historia antigua al uso, ni tampoco uno de política actual. Es lo que pasa cuando alguien que ha estudiado economía y filología se pone a leer a Tucídides, a Salustio y a Polibio con las preguntas de ahora, y descubre que muchas de ellas ya se las habían hecho, a su manera, hace más de dos mil años.
+Es un libro a medio camino entre la historia antigua y la política actual. Nace de lo que pasa cuando alguien que ha estudiado economía y filología se pone a leer a Tucídides, a Salustio y a Polibio con las preguntas de ahora, y descubre que muchas de ellas ya se las habían hecho, a su manera, hace más de dos mil años.
 
 ## La palabra
 
-Todo el libro gira alrededor de una palabra. Es un concepto en el que llevo tiempo trabajando, que no vas a encontrar en ningún diccionario y que no contaré hasta el día en que el libro se publique.
+Todo el libro gira alrededor de una palabra. Es un concepto propio en el que llevo tiempo trabajando, y lo descubrirás el día en que el libro se publique.
 
 ```{=html}
 <div class="palabra">
