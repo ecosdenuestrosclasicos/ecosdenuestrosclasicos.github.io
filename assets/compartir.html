@@ -1,5 +1,5 @@
 <!-- Botones para compartir al final de cada página (menos portada, enlaces y 404).
-     Son enlaces normales: no cargan nada de WhatsApp, Facebook ni X hasta que alguien pulsa. -->
+     Son enlaces normales: no cargan nada de WhatsApp, Facebook, X ni Instagram hasta que alguien pulsa. -->
 <script>
 (function () {
   function poner() {
@@ -22,6 +22,7 @@
         '<a class="compartir-boton" href="https://wa.me/?text=' + t + '%20' + u + '" target="_blank" rel="noopener">WhatsApp</a>' +
         '<a class="compartir-boton" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener">Facebook</a>' +
         '<a class="compartir-boton" href="https://x.com/intent/post?text=' + t + '&url=' + u + '" target="_blank" rel="noopener">X</a>' +
+        '<button type="button" class="compartir-boton compartir-instagram">Instagram</button>' +
         '<button type="button" class="compartir-boton compartir-copiar">Copiar enlace</button>' +
       '</div>';
 
@@ -31,6 +32,18 @@
     var movil = caja.querySelector('.compartir-movil');
     if (movil) movil.addEventListener('click', function () {
       navigator.share({ title: texto, url: url }).catch(function () {});
+    });
+    // Instagram no deja compartir enlaces desde la web: en el móvil se abre el menú de compartir
+    // (donde sale Instagram); en el ordenador se copia el enlace y se abre Instagram para pegarlo.
+    var insta = caja.querySelector('.compartir-instagram');
+    insta.addEventListener('click', function () {
+      if (navigator.share) { navigator.share({ title: texto, url: url }).catch(function () {}); return; }
+      function abrir() {
+        insta.textContent = 'Enlace copiado: pégalo en Instagram';
+        setTimeout(function () { insta.textContent = 'Instagram'; }, 3500);
+        window.open('https://www.instagram.com/direct/inbox/', '_blank', 'noopener');
+      }
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(abrir, abrir); else abrir();
     });
     var copiar = caja.querySelector('.compartir-copiar');
     copiar.addEventListener('click', function () {
