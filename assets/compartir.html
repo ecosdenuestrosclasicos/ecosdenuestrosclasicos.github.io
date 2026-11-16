@@ -5,7 +5,7 @@
   function poner() {
     var main = document.querySelector('main.content');
     if (!main || document.querySelector('.portada') || document.body.classList.contains('pagina-enlaces')) return;
-    if (/\/404(\.html)?$/.test(location.pathname)) return;
+    if (/\/404(\.html)?$/.test(location.pathname) || /^Página no encontrada/.test(document.title)) return;
 
     var url = location.href.split('#')[0];
     var titulo = document.title.replace(/\s+–\s+Ecos de nuestros clásicos$/, '');
