@@ -33,7 +33,7 @@ website:
     type: overlay
   navbar:
     title: "Ecos de nuestros clásicos"
-    collapse-below: lg
+    collapse-below: xl
     left:
       - text: "Sobre Ecos"
         menu:

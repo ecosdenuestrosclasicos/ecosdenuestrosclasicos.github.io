@@ -15,7 +15,7 @@
   var titular, extra = "";
   if (faltan > 1) {
     titular = "El 23 de noviembre Ecos cumple su primer año";
-    extra = '<span class="aniv-cuenta">faltan ' + faltan + ' días</span>';
+    extra = '<span class="aniv-cuenta">Faltan ' + faltan + ' días</span>';
   } else if (faltan === 1) {
     titular = "Mañana, 23 de noviembre, Ecos cumple su primer año";
     extra = '<a class="aniv-enlace" href="' + VIDEO + '">Ver el vídeo del aniversario</a>';
@@ -32,9 +32,14 @@
   f.setAttribute("aria-label", "Primer aniversario de Ecos");
   f.innerHTML =
     '<div class="aniv-dentro">' +
-      '<p class="aniv-titular"><span class="aniv-anno">I</span>' + titular + extra + '</p>' +
-      '<p class="aniv-cita"><span lang="grc">ἀρχὴ ἥμισυ παντός</span> · <span lang="la">Dimidium facti qui coepit habet</span></p>' +
-      '<p class="aniv-trad">«Empezar ya es la mitad de todo». Lo decían los griegos (Aristóteles lo recoge en la <em>Política</em>) y Horacio le dio su eco en latín (<em>Epístolas</em> I, 2, 40).</p>' +
+      '<div class="aniv-lado aniv-fiesta">' +
+        '<p class="aniv-titular"><span class="aniv-anno">I</span>' + titular + '</p>' +
+        (extra ? '<p class="aniv-extra">' + extra + '</p>' : '') +
+      '</div>' +
+      '<div class="aniv-lado aniv-sabiduria">' +
+        '<p class="aniv-cita"><span lang="grc">ἀρχὴ ἥμισυ παντός</span> · <span lang="la">Dimidium facti qui coepit habet</span></p>' +
+        '<p class="aniv-trad">«Empezar ya es la mitad de todo». Proverbio griego que recoge Aristóteles en la <em>Política</em>; Horacio le dio su eco en latín (<em>Epístolas</em> I, 2, 40).</p>' +
+      '</div>' +
     '</div>' +
     '<button class="aniv-cerrar" type="button" aria-label="Cerrar la franja del aniversario">×</button>';
 
