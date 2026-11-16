@@ -639,3 +639,11 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
   .lamina.lamina-ilustrada .mapa-lienzo .mapa-ruta { width: 100%; }
   .mapa-ficha { width: 17rem; }
 }
+.mapa-ficha-palabra { margin-top: .45rem !important; font-size: .92rem; color: var(--oliva); }
+.mapa-ficha-palabra i { font-family: var(--fell); font-size: 1.15rem; color: var(--granate); }
+.mapa-ficha-siguiente { display: block; margin-top: .75rem; padding: .4rem .9rem; border: 1px solid var(--granate); border-radius: 999px; background: var(--granate); color: var(--marfil); font: inherit; font-size: .92rem; cursor: pointer; }
+.mapa-ficha-siguiente:hover { background: var(--burdeos); }
+.mapa-zurron-titulo { margin-top: 1rem !important; font-family: var(--fell); font-style: italic; color: var(--burdeos); font-size: 1.1rem; }
+.mapa-zurron { list-style: none; padding: 0; margin: .3rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; max-width: 40rem; }
+.mapa-zurron li { font-family: var(--fell); font-style: italic; font-size: 1rem; padding: .15rem .65rem; border: 1px solid var(--granate); border-radius: 999px; color: var(--granate); background: #FBF7EE; }
+.mapa-zurron li.vacia { border-style: dashed; border-color: #CDBFA6; color: #B5A68A; font-style: normal; }

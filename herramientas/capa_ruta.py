@@ -8,21 +8,21 @@ FONDO = "imagenes/mapa-ilustrado.jpg"
 BARCO = "imagenes/barco-ruta.webp"
 
 # Fichas de cada parada: (texto, enlace o None, texto del enlace)
-FICHAS = {
- "Valencia": ("Casa. Los romanos la fundaron en el 138 a. n. e. con el nombre de Valentia. Como Odiseo al llegar a Ítaca, aquí termina el viaje… y el regreso merece banquete: una buena paella.", "sobre-mi.html", "Conoce a Isabel"),
- "Sagunto": ("Arse para los íberos, Saguntum para los romanos. El asedio de Aníbal en el 219 a. n. e. desencadenó la segunda guerra púnica. De aquí zarpa el barco de Ecos.", None, None),
- "Segovia": ("Su acueducto romano, de finales del siglo I o comienzos del II n. e., se sostiene sin argamasa: piedra sobre piedra. Una escapada a pie desde la costa.", None, None),
- "Roma": ("La ciudad cuya República se resquebraja en la Conjuración de Catilina de Salustio, el texto que Isa estudió en su trabajo de fin de grado.", "investigacion/salustio-catilina.html", "Ver la investigación"),
- "Pompeya": ("El Vesubio la sepultó en el 79 n. e. Plinio el Joven contó la erupción en dos cartas a Tácito, y gracias a la ceniza hoy podemos pasear por sus calles.", None, None),
- "Siracusa": ("La gran ciudad griega de Sicilia. Aquí terminó la expedición ateniense de 415 a 413 a. n. e., que Tucídides narra en los libros VI y VII de su Historia.", "lecturas.html", "Tucídides en el fichero"),
- "Ítaca": ("La patria de Odiseo. Tardó diez años en volver a casa desde Troya, y la Odisea canta ese regreso: el nóstos.", "videos.html", "La serie sobre la Odisea"),
- "Atenas": ("La ciudad de la democracia, del ostracismo, de Sócrates y de Tucídides. Muchas de las palabras con las que hablamos de política nacieron aquí.", "lecturas.html", "Autores griegos en el fichero"),
- "Troya": ("Ilión, en la costa de Anatolia. Tras diez años de guerra, de aquí parte Odiseo en su largo viaje de vuelta.", None, None),
- "Éfeso": ("Una de las grandes ciudades griegas de Asia Menor. La Biblioteca de Celso, del siglo II n. e., guardaba miles de rollos.", None, None),
- "Alejandría": ("La ciudad de la gran Biblioteca y del Faro, una de las siete maravillas del mundo antiguo.", "biblioteca.html", "Entra en la biblioteca de Ecos"),
- "Giza": ("Las pirámides ya eran antiquísimas para los propios griegos: Heródoto las describe en el libro II de su Historia. Escapada a pie siguiendo el Nilo.", None, None),
- "Petra": ("La capital de los nabateos, tallada en la roca rosada. Roma la incorporó en el 106 n. e. a la nueva provincia de Arabia.", None, None),
- "Cartago": ("La gran rival de Roma en las guerras púnicas, con su famoso puerto circular. Roma la destruyó en el 146 a. n. e.", None, None),
+FICHAS = {   # nombre: (palabra que se recoge, su significado, texto, enlace, texto del enlace)
+ "Valencia": ("valentia", "vigor, fuerza", "Casa. Los romanos fundaron Valentia en el 138 a. n. e., y su nombre en latín significa «vigor». De aquí zarpas para recoger las palabras que nos dejaron los clásicos. Cuando las tengas todas, vuelve: el regreso merece banquete.", "sobre-mi.html", "Conoce a Isabel"),
+ "Sagunto": ("fides", "lealtad", "Saguntum resistió el asedio de Aníbal en el 219 a. n. e. sin abandonar su alianza con Roma, y su lealtad se hizo proverbial. Ese asedio desencadenó la segunda guerra púnica.", None, None),
+ "Segovia": ("aquaeductus", "conducción del agua", "Una escapada a pie para ver cómo llevaban el agua los romanos: el acueducto, de finales del siglo I o comienzos del II n. e., se sostiene sin argamasa, piedra sobre piedra.", None, None),
+ "Roma": ("res publica", "la cosa de todos", "La República romana y su larga crisis, que Salustio cuenta en la Conjuración de Catilina. Es el texto que Isa estudió en su trabajo de fin de grado.", "investigacion/salustio-catilina.html", "Ver la investigación"),
+ "Pompeya": ("domus", "casa", "El Vesubio la sepultó en el 79 n. e. y la ceniza conservó sus casas, sus calles y su vida diaria. Plinio el Joven contó la erupción en dos cartas a Tácito.", None, None),
+ "Siracusa": ("hybris", "desmesura", "Aquí terminó la expedición ateniense a Sicilia de 415 a 413 a. n. e., que Tucídides narra en los libros VI y VII. Una lección sobre la ambición que se pasa de la raya.", "lecturas.html", "Tucídides en el fichero"),
+ "Ítaca": ("nóstos", "el regreso a casa", "La patria de Odiseo, que tardó diez años en volver desde Troya. Aquí entiendes el sentido del viaje: toda aventura termina en el regreso.", "videos.html", "La serie sobre la Odisea"),
+ "Atenas": ("demokratía", "el poder del pueblo", "La ciudad de la democracia, del ostracismo, de Sócrates y de Tucídides. Muchas palabras con las que hablamos de política nacieron aquí.", "lecturas.html", "Autores griegos en el fichero"),
+ "Troya": ("kléos", "la gloria que se recuerda", "Ilión, en la costa de Anatolia. Los héroes de la Ilíada luchan por un kléos que dure para siempre. Tras diez años de guerra, de aquí parte Odiseo hacia casa.", None, None),
+ "Éfeso": ("biblíon", "libro", "Una de las grandes ciudades griegas de Asia Menor. La Biblioteca de Celso, del siglo II n. e., guardaba miles de rollos.", "biblioteca.html", "Entra en la biblioteca de Ecos"),
+ "Alejandría": ("pháros", "faro", "La ciudad de la gran Biblioteca y del Faro, una de las siete maravillas. La palabra «faro» viene de Pháros, la isla donde se levantaba.", None, None),
+ "Giza": ("pyramís", "pirámide", "Una escapada siguiendo el Nilo. Las pirámides ya eran antiquísimas para los griegos: Heródoto las describe en el libro II de su Historia, y la palabra «pirámide» nos llega del griego.", None, None),
+ "Petra": ("pétra", "roca", "La capital de los nabateos, tallada en la roca rosada, y por eso su nombre griego significa «roca». Roma la incorporó en el 106 n. e. a la provincia de Arabia.", None, None),
+ "Cartago": ("Qart-hadasht", "ciudad nueva", "Así se llamaba en fenicio. Fue la gran rival de Roma hasta su destrucción en el 146 a. n. e., y casi todo lo que sabemos de ella lo contaron sus enemigos. Una buena razón para leer las fuentes con cuidado.", None, None),
 }
 ORDEN = ["Valencia", "Sagunto", "Segovia", "Roma", "Pompeya", "Siracusa", "Ítaca", "Atenas", "Troya", "Éfeso", "Alejandría", "Giza", "Petra", "Cartago"]
 TIERRA = {"Segovia": "Sagunto", "Giza": "Alejandría", "Petra": "Alejandría"}   # escapadas: el barco espera en este puerto
@@ -33,11 +33,11 @@ for n in ORDEN:
     clases = "lugar" + (" a-pie" if n in TIERRA else "") + (" casa" if n == "Valencia" else "")
     r = 6 if n not in TIERRA else 4.5
     lug.append(
-        f'<g class="{clases}" data-lugar="{n}" tabindex="0" role="button" aria-label="{n}: ver ficha">'
+        f'<g class="{clases}" data-lugar="{n}" tabindex="0" role="button" aria-label="{"Valentia (Valencia)" if n == "Valencia" else n}: ver ficha">'
         f'<circle class="zona" cx="{x:.1f}" cy="{y:.1f}" r="18"/>'
         f'<circle class="punto" cx="{x:.1f}" cy="{y:.1f}" r="{r}"/>'
-        f'<text x="{x+dx:.1f}" y="{y+dy:.1f}" text-anchor="{a}">{n}'
-        f'<tspan class="antiguo" x="{x+dx:.1f}" dy="16">{d["ant"][n]}</tspan></text></g>')
+        f'<text x="{x+dx:.1f}" y="{y+dy:.1f}" text-anchor="{a}">{"Valentia" if n == "Valencia" else n}'
+        f'<tspan class="antiguo" x="{x+dx:.1f}" dy="16">{"Valencia, casa" if n == "Valencia" else d["ant"][n]}</tspan></text></g>')
 
 mares = [f'<text class="mar" x="{x:.1f}" y="{y:.1f}" font-size="{fs}" letter-spacing="{ls}" text-anchor="middle" transform="rotate({rot} {x:.1f} {y:.1f})">{t}</text>'
          for t, x, y, rot, fs, ls in d["mares"]]
@@ -75,7 +75,9 @@ svg = f'''<svg class="mapa-ruta" viewBox="0 0 {W} {H}" role="img" aria-labelledb
 <rect x=".5" y=".5" width="{W-1}" height="{H-1}" fill="none" stroke="#A78658"/>
 </svg>'''
 
-fichas_js = json.dumps({n: {"t": t, "ant": d["ant"][n], "url": u, "ut": ut} for n, (t, u, ut) in FICHAS.items()}, ensure_ascii=False)
+ORDEN_RUTA = ["Valencia", "Sagunto", "Segovia", "Roma", "Pompeya", "Siracusa", "Ítaca", "Atenas", "Troya", "Éfeso", "Alejandría", "Giza", "Petra", "Cartago"]
+fichas_js = json.dumps({n: {"p": p, "sig": sg, "t": t, "ant": d["ant"][n], "url": u, "ut": ut} for n, (p, sg, t, u, ut) in FICHAS.items()}, ensure_ascii=False)
+orden_js = json.dumps(ORDEN_RUTA, ensure_ascii=False)
 tierra_js = json.dumps(TIERRA, ensure_ascii=False)
 lugares_js = json.dumps({n: d["lugares"][n] for n in ORDEN}, ensure_ascii=False)
 
@@ -84,6 +86,8 @@ script = '''<script>
   var FICHAS = ''' + fichas_js + ''';
   var TIERRA = ''' + tierra_js + ''';
   var PUNTOS = ''' + lugares_js + ''';
+  var ORDEN = ''' + orden_js + ''';
+  var NOMBRE = { 'Valencia': 'Valentia' };
   var lienzo = document.querySelector('.mapa-lienzo'); if (!lienzo) return;
   var svg = lienzo.querySelector('svg'), ruta = svg.getElementById ? svg.getElementById('ruta-lazo') : document.getElementById('ruta-lazo');
   var barco = svg.querySelector('.barco'), ficha = lienzo.querySelector('.mapa-ficha');
@@ -136,6 +140,16 @@ script = '''<script>
     var n = nombres.filter(function (k) { return visitados[k]; }).length;
     if (progreso) progreso.textContent = n + ' de ' + total;
     if (barra) barra.style.width = (n / total * 100) + '%';
+    var zurron = document.querySelector('.mapa-zurron');
+    if (zurron) {
+      zurron.innerHTML = '';
+      ORDEN.forEach(function (k) {
+        var li = document.createElement('li');
+        if (visitados[k]) { li.textContent = FICHAS[k].p; li.title = (NOMBRE[k] || k) + ': ' + FICHAS[k].sig; }
+        else { li.textContent = '?'; li.className = 'vacia'; li.title = 'Por descubrir'; }
+        zurron.appendChild(li);
+      });
+    }
     svg.querySelectorAll('.lugar').forEach(function (g) { g.classList.toggle('visitado', !!visitados[g.dataset.lugar]); });
     svg.classList.toggle('nostos-completo', n === total);
     return n;
@@ -146,25 +160,38 @@ script = '''<script>
     visitados[n] = true; try { localStorage.setItem('ecos-nostos', JSON.stringify(visitados)); } catch (e) {}
     var ahora = pintarProgreso();
     ficha.innerHTML = '';
-    var h = document.createElement('p'); h.className = 'mapa-ficha-titulo'; h.textContent = n;
-    var a = document.createElement('span'); a.className = 'mapa-ficha-antiguo'; a.textContent = info.ant; h.appendChild(a);
+    var h = document.createElement('p'); h.className = 'mapa-ficha-titulo'; h.textContent = NOMBRE[n] || n;
+    var a = document.createElement('span'); a.className = 'mapa-ficha-antiguo'; a.textContent = n === 'Valencia' ? 'Valencia, tu casa' : info.ant; h.appendChild(a);
+    var w = document.createElement('p'); w.className = 'mapa-ficha-palabra';
+    w.innerHTML = 'Palabra para el zurrón: <i></i> <span></span>';
+    w.querySelector('i').textContent = info.p; w.querySelector('span').textContent = '(' + info.sig + ')';
     var p = document.createElement('p'); p.className = 'mapa-ficha-texto'; p.textContent = info.t;
-    ficha.appendChild(h); ficha.appendChild(p);
+    ficha.appendChild(h); ficha.appendChild(w); ficha.appendChild(p);
     if (ahora === total && antes < total && n === 'Valencia') {
       var cv = document.createElement('p'); cv.className = 'mapa-ficha-premio';
-      cv.textContent = '¡Nóstos completado! Has recorrido todo el Mediterráneo y has vuelto a casa, como Odiseo a Ítaca. La recompensa es tuya: una paella. ¡Buen provecho!';
+      cv.textContent = '¡Nóstos completado! Vuelves a Valentia con las catorce palabras en el zurrón, como Odiseo al llegar a Ítaca. El viaje merece banquete: la paella es tuya. ¡Buen provecho!';
       ficha.appendChild(cv);
     } else if (ahora === total && antes < total) {
       var c = document.createElement('p'); c.className = 'mapa-ficha-premio';
-      c.textContent = '¡Has visitado todas las paradas! Como Odiseo, ya puedes volver a casa: pulsa la paella de Valencia para recoger tu recompensa.';
+      c.textContent = '¡Ya tienes todas las palabras! Como Odiseo, es hora de volver a casa: pulsa la paella de Valentia para celebrarlo.';
       ficha.appendChild(c);
     } else if (n === 'Valencia' && ahora === total) {
       var c2 = document.createElement('p'); c2.className = 'mapa-ficha-premio';
-      c2.textContent = 'Has vuelto a casa después de recorrer todo el Mediterráneo. La paella es tuya. ¡Buen provecho!';
+      c2.textContent = 'Ya has vuelto a casa con todas las palabras. La paella es tuya. ¡Buen provecho!';
       ficha.appendChild(c2);
     }
     if (info.url) { var l = document.createElement('a'); l.href = info.url; l.className = 'mapa-ficha-enlace'; l.textContent = info.ut; ficha.appendChild(l); }
     if (TIERRA[n]) { var t = document.createElement('p'); t.className = 'mapa-ficha-nota'; t.textContent = 'El barco te espera en ' + TIERRA[n] + '.'; ficha.appendChild(t); }
+    var pendientes = ORDEN.filter(function (k) { return !visitados[k]; });
+    var sig = null, idx = ORDEN.indexOf(n);
+    for (var s2 = 1; s2 <= ORDEN.length; s2++) { var cand = ORDEN[(idx + s2) % ORDEN.length]; if (!visitados[cand]) { sig = cand; break; } }
+    if (!sig && n !== 'Valencia') sig = 'Valencia';
+    if (sig) {
+      var bt = document.createElement('button'); bt.type = 'button'; bt.className = 'mapa-ficha-siguiente';
+      bt.textContent = sig === 'Valencia' && !pendientes.length ? 'Volver a casa, a Valentia' : 'Siguiente parada: ' + (NOMBRE[sig] || sig);
+      bt.addEventListener('click', function (e) { e.stopPropagation(); abrir(sig, svg.querySelector('.lugar[data-lugar="' + sig + '"]')); });
+      ficha.appendChild(bt);
+    }
     var x = document.createElement('button'); x.type = 'button'; x.className = 'mapa-ficha-cerrar'; x.setAttribute('aria-label', 'Cerrar la ficha'); x.textContent = '×';
     x.addEventListener('click', cerrar); ficha.appendChild(x);
     ficha.hidden = false;
@@ -222,12 +249,14 @@ figura = f'''```{{=html}}
 {svg}
 <div class="mapa-ficha" role="dialog" aria-live="polite" hidden></div>
 </div>
-<figcaption>Isabel y Mini Odi, de ruta por el Mediterráneo. Las costas y cada monumento están en su lugar real. <strong>Pulsa cada parada</strong> para ver su ficha y mandar allí el barco.<span class="lamina-pista">Desliza para recorrer el mapa.</span></figcaption>
+<figcaption>Isabel y Mini Odi, de ruta por el Mediterráneo. Las costas y cada monumento están en su lugar real. <strong>Empieza en Valentia</strong> y pulsa cada parada para ver su ficha, recoger su palabra y mandar allí el barco.<span class="lamina-pista">Desliza para recorrer el mapa.</span></figcaption>
 </figure>
 <div class="mapa-progreso">
-  <p class="mapa-progreso-texto"><strong>Tu nóstos, el viaje de vuelta a casa.</strong> Los héroes griegos, como Odiseo, tenían que regresar a casa después de la aventura. Visita todas las paradas del mapa y, al final, en Valencia te espera la recompensa.</p>
+  <p class="mapa-progreso-texto"><strong>La odisea de Ecos.</strong> Sales de casa, de Valentia, para recoger las palabras que nos dejaron los clásicos: una en cada parada. Cuando las tengas todas, haz como Odiseo y vuelve a casa. El regreso, el <i>nóstos</i>, merece banquete: te espera una paella.</p>
   <p class="mapa-progreso-estado">Paradas visitadas: <span class="mapa-progreso-cuenta">0 de 14</span> <button type="button" class="mapa-progreso-reiniciar">Empezar de nuevo</button></p>
   <div class="mapa-progreso-barra" aria-hidden="true"><span></span></div>
+  <p class="mapa-zurron-titulo">Tu zurrón</p>
+  <ul class="mapa-zurron" aria-label="Palabras recogidas"></ul>
 </div>
 {script}
 ```
