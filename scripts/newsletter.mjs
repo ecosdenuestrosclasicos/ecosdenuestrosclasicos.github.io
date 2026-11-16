@@ -230,14 +230,15 @@ async function avisoLimite() {
   try {
     const total = await suscritos(process.env.BREVO_LISTA_SEMANAL);
     console.log(`Envíos previstos hoy: ${total} de ${LIMITE_DIARIO}.`);
-    if (total < LIMITE_DIARIO * 0.8) return;
+    if (total < LIMITE_DIARIO * 0.8) return total;
     await brevo('/smtp/email', {
       sender: { name: 'Newsletter de Ecos', email: process.env.BREVO_REMITENTE },
       to: [{ email: process.env.BREVO_RESPONDER || 'ecosdenuestrosclasicos@gmail.com' }],
       subject: `Aviso: la newsletter se acerca al límite gratuito (${total} de ${LIMITE_DIARIO})`,
       htmlContent: `<p>Hola, Isa:</p><p>Hoy la newsletter sale a <strong>${total}</strong> personas. El plan gratuito de Brevo permite ${LIMITE_DIARIO} correos al día, contando las confirmaciones de alta, así que estás cerca del límite.</p><p>La opción más sencilla es pasar al plan Starter de Brevo, que quita el límite diario.</p>`
     });
-  } catch (e) { console.log('No se pudo comprobar el límite: ' + e.message); }
+    return total;
+  } catch (e) { console.log('No se pudo comprobar el límite: ' + e.message); return null; }
 }
 
 async function principal() {
@@ -253,7 +254,10 @@ async function principal() {
   const faltan = ['BREVO_API_KEY', 'BREVO_REMITENTE', modo === 'semanal' ? 'BREVO_LISTA_SEMANAL' : 'BREVO_LISTA_DIARIA'].filter(v => !process.env[v]);
   if (faltan.length) { console.log('Falta configurar: ' + faltan.join(', ') + '. No se envía nada.'); return; }
   const lista = Number(modo === 'semanal' ? process.env.BREVO_LISTA_SEMANAL : process.env.BREVO_LISTA_DIARIA);
-  if (modo === 'semanal') await avisoLimite();
+  if (modo === 'semanal') {
+    const total = await avisoLimite();
+    if (total === 0) { console.log('La lista todavía está vacía: esta semana no se envía nada. Conexión con Brevo correcta.'); return; }
+  }
   const camp = await brevo('/emailCampaigns', {
     name: `Ecos ${modo} ${iso(HOY)}`,
     subject: correo.asunto,
