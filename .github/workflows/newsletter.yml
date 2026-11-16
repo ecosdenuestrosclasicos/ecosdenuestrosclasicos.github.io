@@ -1,0 +1,25 @@
+# Newsletter semanal de Ecos: sale cada lunes por la mañana (hora de Madrid, entre las 6 y las 7).
+# Contenido: newsletter/notas.md + efemérides de la semana + cuenta atrás. Lo genera scripts/newsletter.mjs.
+# También se puede lanzar a mano: pestaña Actions → «Newsletter semanal» → Run workflow.
+# Para pausarla: crea el archivo newsletter/PAUSA.
+name: Newsletter semanal
+
+on:
+  schedule:
+    - cron: '23 5 * * 1'
+  workflow_dispatch:
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Enviar el correo de la semana
+        run: node scripts/newsletter.mjs semanal --enviar
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_REMITENTE: ${{ vars.BREVO_REMITENTE }}
+          BREVO_LISTA_SEMANAL: ${{ vars.BREVO_LISTA_SEMANAL }}
