@@ -1,12 +1,12 @@
 ---
 title: "Tal día como hoy"
 subtitle: "Una curiosidad del mundo griego y romano para cada día del año, con su fuente"
-description: "366 curiosidades de Grecia y Roma, una por día: nacimientos de autores, batallas, pactos, fiestas romanas y griegas, obras, hallazgos arqueológicos y ecos de los clásicos, cada una con su fuente. Y una palabra griega y otra latina cada día."
+description: "366 curiosidades de Grecia y Roma, una por día: nacimientos y muertes, batallas, pactos, leyes, estrenos de teatro, fiestas romanas y griegas y anécdotas antiguas, cada una con su fuente. Y una palabra griega y otra latina cada día."
 image: imagenes/mapa-ruta.jpg
 toc: false
 ---
 
-Cada día del año tiene aquí su historia: autores que nacen o mueren, batallas y pactos, fiestas del calendario romano y del ateniense, obras que se estrenan, estatuas que salen de la tierra y ecos modernos de los clásicos. Todas llevan su fuente. Cuando una fecha es tradicional, calculada o discutida, lo digo; y cuando una fiesta griega no puede fijarse en nuestro calendario, porque el ateniense era lunar, va como «por estas fechas».
+Cada día del año tiene aquí una historia de Grecia y de Roma: griegos y romanos que nacen o mueren, batallas y guerras, pactos y leyes, estrenos de teatro, fiestas del calendario romano y del ateniense, y lo que contaban los propios antiguos. Todas llevan su fuente. Cuando una fecha es tradicional o discutida, lo digo; cuando una fiesta griega no puede fijarse en nuestro calendario, porque el ateniense era lunar, va como «por estas fechas»; y si un día no guarda nada fechado, te cuento una anécdota antigua.
 
 ```{=html}
 <div class="efem-hoy" id="efem-hoy"></div>

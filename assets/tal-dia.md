@@ -50,7 +50,7 @@
 
   var k = clave(hoy), e = EF[k];
   if (!e) return;
-  caja.querySelector('.tal-dia-cuando').textContent = (/^(calendario|por estas|mito)/.test(e.anno) ? 'Hoy · ' : 'Tal día como hoy · ') + e.anno;
+  caja.querySelector('.tal-dia-cuando').textContent = (/^(calendario|por estas|mito|anécdota)/.test(e.anno) ? 'Hoy · ' : 'Tal día como hoy · ') + e.anno;
   caja.querySelector('.tal-dia-que').textContent = e.titulo;
   caja.querySelector('.tal-dia-texto').textContent = e.texto;
   caja.querySelector('.tal-dia-enlace').href = 'efemerides.html#d-' + k;
