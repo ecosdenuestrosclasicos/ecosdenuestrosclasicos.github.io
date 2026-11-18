@@ -12,6 +12,8 @@ project:
     - robots.txt
     - assets/efemerides.js
     - assets/fecha-romana.js
+    - assets/libro-datos.js
+    - assets/libro-juego.js
     - favicon.ico
     - apple-touch-icon.png
     - assets/favicon-48.png
@@ -42,14 +44,14 @@ website:
     title: "Ecos de nuestros clásicos"
     collapse-below: xl
     left:
+      - text: "El enigma del libro"
+        href: libro.qmd
       - text: "Sobre Ecos"
         menu:
           - text: "El proyecto"
             href: proyecto.qmd
           - text: "Soy Isabel Sanz"
             href: sobre-mi.qmd
-          - text: "El libro"
-            href: libro.qmd
       - text: "Biblioteca"
         menu:
           - text: "Todo el archivo"

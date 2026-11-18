@@ -1,8 +1,9 @@
 ---
-title: "El libro"
-subtitle: "Un ensayo sobre la democracia y sus grietas, todavía en el escritorio"
-description: "El libro que estoy escribiendo, la palabra que lo une todo y el diario donde cuento cómo avanza."
+title: "El enigma del libro"
+subtitle: "Un ensayo sobre la democracia y sus grietas, que se irá desvelando pieza a pieza"
+description: "El libro que estoy escribiendo, en forma de juego: el título sellado, una ruta por el Mediterráneo y una línea del tiempo que se irán abriendo con acertijos hasta la publicación."
 image: imagenes/mapa-ruta.jpg
+page-layout: full
 listing:
   id: diario-libro
   contents: "libro/*.qmd"
@@ -13,11 +14,61 @@ listing:
   feed: true
 ---
 
+::: {.libro-juego}
+
 ::: {.capitular}
-Estoy escribiendo un libro. Es un ensayo de divulgación sobre la democracia, sobre sus contradicciones y sobre los problemas institucionales que ya asomaban en Atenas y en Roma y que, con otros nombres, siguen apareciendo hoy. El título, de momento, me lo guardo.
+Estoy escribiendo un libro. Es un ensayo de divulgación sobre la democracia, sobre sus contradicciones y sobre los problemas que ya asomaban en Atenas y en Roma y que, con otros nombres, siguen apareciendo hoy.
 :::
 
-Es un libro a medio camino entre la historia antigua y la política actual. Nace de lo que pasa cuando alguien que ha estudiado economía y filología se pone a leer a Tucídides, a Salustio y a Polibio con las preguntas de ahora, y descubre que muchas de ellas ya se las habían hecho, a su manera, hace más de dos mil años.
+No te lo voy a contar de golpe. De aquí a la publicación, el libro se irá abriendo como un juego: habrá acertijos, y con cada uno caerá algo. Una letra del título, un lugar de la ruta, una fecha de la línea del tiempo. Tira del hilo conmigo.
+
+```{=html}
+<p class="libro-progreso" id="libro-progreso"></p>
+```
+
+## El título
+
+```{=html}
+<div class="libro-titulo" id="libro-titulo"></div>
+```
+
+## El acertijo
+
+```{=html}
+<div class="libro-acertijo" id="libro-acertijo"></div>
+<form class="form-correo caja-propuesta" id="libro-acertijo-form" data-etiqueta="Acertijo" hidden>
+  <label for="acert-titulo">Tu respuesta</label>
+  <input id="acert-titulo" name="titulo" type="text" required>
+  <label for="acert-nombre">Tu nombre <span>(opcional)</span></label>
+  <input id="acert-nombre" name="nombre" type="text" autocomplete="name">
+  <button class="boton lleno" type="submit">Enviar mi respuesta</button>
+  <p class="form-nota">Al enviarla se abre tu correo con el mensaje ya preparado. Solo tienes que darle a enviar.</p>
+  <p class="form-aviso" hidden>Se ha abierto tu programa de correo. Si no aparece, escríbeme directamente a <a href="mailto:ecosdenuestrosclasicos@gmail.com">ecosdenuestrosclasicos@gmail.com</a>.</p>
+</form>
+```
+
+## La ruta del libro
+
+El libro también es un viaje por el Mediterráneo. Cada lacre marca un lugar donde ocurre algo que cuento en sus páginas. Ahora mismo están todos sellados: se irán abriendo uno a uno a medida que se acerque la publicación. Pulsa cualquiera para ver si ya tiene algo que contarte.
+
+```{=html}
+<figure class="lamina lamina-ilustrada libro-lamina">
+  <div class="libro-lienzo" id="libro-mapa"></div>
+  <figcaption>Las costas y los lugares están en su sitio real. La línea dorada sigue el orden del libro.<span class="lamina-pista">Desliza para recorrer el mapa.</span></figcaption>
+</figure>
+<div class="libro-ficha" id="libro-mapa-ficha" hidden aria-live="polite"></div>
+```
+
+## La línea del tiempo
+
+Esta línea del tiempo nació de una votación aquí, en la web, y la editorial aceptó que estuviera en el libro. Cada lacre es un momento de la historia que aparece en sus páginas, de la Grecia arcaica a hoy.
+
+```{=html}
+<div class="libro-linea" id="libro-linea"></div>
+<div class="libro-ficha" id="libro-linea-ficha" hidden aria-live="polite"></div>
+<script src="assets/libro-datos.js"></script>
+<script src="assets/libro-juego.js"></script>
+```
 
 ## La palabra
 
@@ -34,12 +85,19 @@ Todo el libro gira alrededor de una palabra. Es un concepto propio en el que lle
 
 ### ¿Qué crees que es?
 
-Te dejo jugar. Si tienes una teoría sobre qué palabra puede ser, o sobre qué idea cabe en ella, mándamela. Guardo todas las apuestas para el día de la publicación.
+Te dejo jugar. Si tienes una teoría sobre el título, sobre la palabra o sobre algún lacre del mapa o de la línea del tiempo, mándamela. Guardo todas las apuestas para el día de la publicación.
 
 ```{=html}
 <form class="form-correo caja-propuesta palabra-apuesta" data-etiqueta="La palabra">
+  <label for="pal-sobre">Apuesto sobre</label>
+  <select id="pal-sobre" name="etiqueta">
+    <option value="El título">El título</option>
+    <option value="La palabra" selected>La palabra</option>
+    <option value="Un lugar del mapa">Un lugar del mapa</option>
+    <option value="Una fecha">Una fecha de la línea del tiempo</option>
+  </select>
   <label for="pal-titulo">Tu apuesta</label>
-  <input id="pal-titulo" name="titulo" type="text" placeholder="Una palabra, o una idea" required>
+  <input id="pal-titulo" name="titulo" type="text" placeholder="Una palabra, un lugar, una fecha…" required>
   <label for="pal-mensaje">Por qué lo crees <span>(opcional)</span></label>
   <textarea id="pal-mensaje" name="mensaje" rows="3"></textarea>
   <label for="pal-nombre">Tu nombre <span>(opcional)</span></label>
@@ -55,4 +113,6 @@ Te dejo jugar. Si tienes una teoría sobre qué palabra puede ser, o sobre qué 
 Aquí voy contando cómo avanza: lo que leo para escribirlo, los capítulos que se me atascan, las fuentes que encuentro por el camino y alguna duda que quiero compartir contigo. Sin desvelar la palabra, eso sí.
 
 :::{#diario-libro}
+:::
+
 :::

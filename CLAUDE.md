@@ -57,3 +57,8 @@ Granate `#652638`, burdeos `#421C2A`, marfil `#F6F0E5`, pergamino `#E8DCC7`, tin
 
 ## Pendiente de Isabel
 Revisar las traducciones de las tres citas de la portada; fecha real de la lectura de *Los doce césares* y del TFG (hay comentarios en los archivos); resultados del TFG; ilustración definitiva de Mini Odi (`ILUSTRACION-MINI-ODI.md`); activar los comentarios.
+
+## El enigma del libro (libro.qmd)
+- Pestaña principal «El enigma del libro». Pinta título, acertijo, ruta en el mapa y línea del tiempo con `assets/libro-juego.js` a partir de `assets/libro-datos.js`.
+- `libro-datos.js` solo contiene lo YA DESVELADO: los puntos sellados llevan coordenadas/año y nada más. El plan completo está en el ordenador de Isa, fuera del repo (pregúntale). Nunca copiar nada de él al repo salvo lo que Isa pida desvelar.
+- Para desvelar: poner `estado: "revelado"` y añadir `nombre`, `capitulo`, `texto` (lugares) o `etiqueta`, `titulo`, `texto` (fechas). Título: `estado` "sellado" → "parcial" (con `palabras`, "_" = casilla cerrada) → "revelado". Acertijo: objeto `{numero, fecha, texto, pista}` o `null`.

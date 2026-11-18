@@ -786,3 +786,74 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
 /* Invitación a la newsletter bajo «Tal día como hoy» */
 .tal-dia-correo { margin-top: .8rem !important; font-size: .95rem; }
 .tal-dia-correo a { font-style: italic; }
+
+/* ---------- El enigma del libro (libro.qmd + assets/libro-juego.js) ---------- */
+.libro-juego .palabra { display: block; padding: 0; border-top: 0; }
+.libro-progreso { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; margin: 1.4rem 0 .4rem; font-size: 1rem; color: var(--oliva); }
+.libro-progreso strong { font-family: var(--fell); font-weight: 400; font-size: 1.35rem; color: var(--granate); }
+/* lacre en SVG (mapa, línea y título) */
+.lacre-gota, .lacre-cuerpo { fill: #6E2738; }
+.lacre-cuerpo { fill: #7A2B3F; }
+.lacre-anillo { fill: none; stroke: #A9576A; stroke-width: 1.4; }
+.lacre-signo { font-family: "IM Fell English", Georgia, serif; fill: #F6F0E5; text-anchor: middle; }
+/* título */
+.libro-titulo { max-width: var(--medida); margin: 1rem 0 1.6rem; }
+.titulo-sellado { display: flex; align-items: center; gap: 1.3rem; padding: 1.3rem 1.5rem;
+  background: repeating-linear-gradient(-45deg, rgba(101,38,56,.12) 0 2px, transparent 2px 9px), var(--pergamino);
+  border: 1px solid #D8C7A8; box-shadow: inset 0 0 0 6px #FBF7EE; }
+.titulo-sellado p { margin: 0; font-size: 1.05rem; line-height: 1.45; }
+.titulo-sellado strong { font-family: var(--fell); font-weight: 400; font-size: 1.35rem; color: var(--burdeos); }
+.titulo-lacre { flex: 0 0 4.6rem; width: 4.6rem; height: 4.6rem; transform: rotate(-8deg); filter: drop-shadow(0 5px 5px rgba(40,35,33,.45)); }
+.titulo-fichas { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; }
+.titulo-palabra { display: inline-flex; gap: .2rem; }
+.titulo-letra { width: 1.9rem; height: 2.4rem; display: grid; place-items: center; font-family: var(--fell); font-size: 1.6rem;
+  color: var(--burdeos); background: #FBF7EE; border: 1px solid var(--bronce); }
+.titulo-letra.oculta { background: repeating-linear-gradient(-45deg, rgba(101,38,56,.18) 0 2px, transparent 2px 7px), var(--pergamino); }
+.titulo-pie { font-style: italic; color: var(--oliva); font-size: .95rem; margin-top: .6rem; }
+.titulo-revelado { font-family: var(--fell); font-size: 2.2rem; line-height: 1.1; color: var(--granate); margin: 0; }
+.titulo-subtitulo { font-style: italic; color: var(--oliva); margin: .4rem 0 0; }
+/* acertijo */
+.libro-acertijo { max-width: var(--medida); padding: 1.1rem 1.4rem; border-left: 3px solid var(--bronce); background: #FBF7EE; margin: 1rem 0 1.2rem; }
+.libro-acertijo p { margin: 0; }
+.acertijo-numero { font-family: var(--fell); font-size: 1.2rem; color: var(--granate); }
+.acertijo-texto { font-family: var(--garamond); font-style: italic; font-size: 1.3rem; line-height: 1.45; margin: .6rem 0; border: 0; padding: 0; color: var(--tinta); }
+.acertijo-pista { font-size: .95rem; color: var(--oliva); }
+.acertijo-espera { font-size: 1.02rem; }
+#libro-acertijo-form[hidden] { display: none; }
+/* mapa */
+.libro-lienzo { position: relative; }
+.libro-mapa .libro-ruta-sombra { fill: none; stroke: #F5E7C6; stroke-width: 7; stroke-linecap: round; opacity: .75; }
+.libro-mapa .libro-ruta { fill: none; stroke: #9C7A3C; stroke-width: 3.2; stroke-dasharray: 2 9; stroke-linecap: round; }
+.libro-lugar, .libro-fecha { cursor: pointer; outline: none; }
+.libro-lugar .zona, .libro-fecha .zona { fill: transparent; }
+.libro-lugar .lacre, .libro-fecha .lacre { transition: transform .2s ease; }
+.libro-lugar:hover .lacre, .libro-lugar:focus-visible .lacre,
+.libro-fecha:hover .lacre, .libro-fecha:focus-visible .lacre { transform: scale(1.25) rotate(-10deg); }
+.libro-lugar:focus-visible .zona, .libro-fecha:focus-visible .zona { stroke: var(--granate); stroke-width: 2; stroke-dasharray: 3 3; }
+.libro-lugar .punto, .libro-fecha .punto { fill: var(--granate); stroke: #F6F0E5; stroke-width: 2.5; }
+.libro-lugar text { font-family: "IM Fell English", Georgia, serif; font-size: 22px; fill: #421C2A; paint-order: stroke; stroke: #F5E7C6; stroke-width: 5px; }
+.libro-ficha { max-width: var(--medida); margin: .9rem 0 1.4rem; padding: .9rem 1.2rem; background: #FBF7EE;
+  border: 1px solid var(--bronce); border-top: 3px solid var(--granate); }
+.libro-ficha[hidden] { display: none; }
+.libro-ficha p { margin: 0 0 .3rem; }
+.libro-ficha-cap { font-size: .9rem; color: var(--oliva); font-style: italic; }
+.libro-ficha-nombre { font-family: var(--fell); font-size: 1.35rem; color: var(--burdeos); }
+/* línea del tiempo, con la misma piel del mapa */
+.libro-linea { margin: 1.2rem 0 .4rem; border: 1px solid #D8C7A8; padding: .6rem .4rem .2rem;
+  background: radial-gradient(ellipse at 50% 40%, #F5EAD3 0%, #EADCC0 70%, #DCC9A6 100%);
+  box-shadow: inset 0 0 0 6px #FBF7EE, 0 30px 50px -40px rgba(40,35,33,.8); }
+.libro-linea-svg { display: block; width: 100%; height: auto; }
+.libro-linea-svg .eje { stroke: #7C6038; stroke-width: 2; }
+.libro-linea-svg .corte { stroke: #7C6038; stroke-width: 2; fill: none; }
+.libro-linea-svg .marca { stroke: #7C6038; stroke-width: 1.5; }
+.libro-linea-svg .tallo { stroke: #9C7A3C; stroke-width: 1; stroke-dasharray: 2 3; }
+.libro-linea-svg .etiqueta { font-family: "EB Garamond", Georgia, serif; font-size: 17px; fill: #5F6152; text-anchor: middle; }
+.libro-linea-svg .etiqueta.hoy { font-family: "IM Fell English", Georgia, serif; font-size: 19px; fill: #652638; }
+.libro-linea-svg .era { font-family: "IM Fell English", Georgia, serif; font-style: italic; font-size: 17px; fill: #7C6038; text-anchor: middle; }
+@media (max-width: 640px) {
+  .libro-lamina .libro-lienzo { width: 1100px; }
+  .libro-lamina .libro-lienzo .mapa-ruta { width: 100%; }
+  .libro-linea { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .libro-linea-svg { width: 760px; max-width: none; }
+  .titulo-sellado { flex-direction: column; text-align: center; }
+}
