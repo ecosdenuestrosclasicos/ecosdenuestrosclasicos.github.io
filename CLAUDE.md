@@ -20,7 +20,9 @@ Franja granate arriba del todo en todas las páginas, debajo del menú (`assets/
 
 ## Palabras, efemérides y compartir
 - `palabras.qmd`: «Las palabras del zurrón», las 14 palabras del mapa como entradas de diccionario (forma, genitivo y género según LSJ y *Cambridge Greek Lexicon*; latín según Lewis & Short), con citas en lengua original, traducción y fuentes. Cada palabra tiene un ancla (`#hybris`, `#nostos`…) y el mapa enlaza a ellas (tabla `ANCLA` en `assets/mapa-ruta.md`).
-- `assets/tal-dia.md` + `assets/efemerides.js`: caja «Tal día como hoy» de la portada. Calcula cada día la fecha romana (Kalendas, Nonas, Idus, bisiesto) y muestra la efeméride del día o, si no hay, la próxima. Para añadir efemérides, una línea más en `efemerides.js`, siempre con fuente antigua y solo fechas bien documentadas.
+- `assets/tal-dia.md` + `assets/efemerides.js`: caja «Tal día como hoy» de la portada. Calcula la fecha romana y muestra la curiosidad del día (hay 366, una por día, con el 29 de febrero), con enlace a `efemerides.qmd#d-MM-DD`. Cada entrada: anno, titulo, texto (corto, portada), mas (largo, página) y fuente. Solo fechas documentadas; si es tradicional o discutida, decirlo; las fiestas griegas van como «por estas fechas».
+- `efemerides.qmd`: página «Tal día como hoy» (en Biblioteca) con las 366, por meses, buscador y anclas por día. Se pinta desde `efemerides.js`.
+- `assets/palabras-dia.js` + `assets/palabra-dia.js`: palabra griega y latina del día (portada y página de efemérides). Rotan por día del año; para añadir, una línea más en cada lista.
 - `assets/compartir.html`: botones de compartir (WhatsApp, Facebook, X, copiar enlace y el menú del móvil) al final de cada página, menos portada, enlaces y 404. Son enlaces simples, sin scripts de terceros.
 
 ## Newsletter semanal (Brevo)

@@ -11,6 +11,8 @@ project:
     - assets/giscus-ecos.css
     - robots.txt
     - assets/efemerides.js
+    - assets/palabras-dia.js
+    - assets/palabra-dia.js
     - assets/fecha-romana.js
     - assets/libro-datos.js
     - assets/libro-juego.js
@@ -62,6 +64,8 @@ website:
             href: lecturas.qmd
           - text: "Las palabras del zurrón"
             href: palabras.qmd
+          - text: "Tal día como hoy"
+            href: efemerides.qmd
           - text: "Vídeos y episodios"
             href: videos.qmd
       - text: "Comunidad"

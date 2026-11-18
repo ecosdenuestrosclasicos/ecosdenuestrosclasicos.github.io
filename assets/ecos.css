@@ -857,3 +857,62 @@ body.pagina-enlaces #quarto-content { padding-top: 0 !important; }
   .libro-linea-svg { width: 760px; max-width: none; }
   .titulo-sellado { flex-direction: column; text-align: center; }
 }
+
+/* ---------- Tal día como hoy: enlace, palabra del día y página efemerides.qmd ---------- */
+.tal-dia-mas { margin-top: .8rem !important; font-size: .98rem; }
+.tal-dia-mas a:first-child { font-weight: 500; }
+.palabra-dia { max-width: 56rem; margin: 1.2rem auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.palabra-dia[hidden] { display: none; }
+.palabra-dia p { margin: 0; max-width: none; }
+.palabra-dia-caja { background: #FBF7EF; border: 1px solid rgba(167,134,88,.6); border-top: 3px double var(--bronce); padding: 1.1rem 1.3rem 1.2rem; }
+.palabra-dia-etiqueta { font-family: var(--garamond); font-style: italic; font-size: .92rem; color: var(--oliva); }
+.palabra-dia-forma { font-family: var(--garamond); font-size: 2.2rem; line-height: 1.15; color: var(--granate); margin: .25rem 0 .2rem !important; }
+.palabra-dia-forma[lang="la"] { font-style: italic; }
+.palabra-dia-lema { font-size: .98rem; color: var(--burdeos); }
+.palabra-dia-nota { margin-top: .5rem !important; font-size: 1rem; line-height: 1.45; }
+.palabra-dia-pagina { margin: 1.6rem 0 2rem; max-width: none; }
+@media (max-width: 700px) { .palabra-dia { grid-template-columns: 1fr; } }
+
+.efem-hoy { margin: 1.6rem 0 0; padding: 1.2rem 1.4rem; background: var(--pergamino); border-left: 3px solid var(--granate); max-width: var(--medida); }
+.efem-hoy p { margin: 0 0 .35rem; max-width: none; }
+.efem-hoy-fecha { font-family: var(--garamond); font-style: italic; color: var(--oliva); font-size: .98rem; }
+.efem-hoy-titulo { font-family: var(--fell); font-size: 1.55rem; line-height: 1.2; }
+.efem-hoy-titulo a { color: var(--burdeos); text-decoration: none; }
+.efem-hoy-titulo a:hover { text-decoration: underline; }
+.efem-meses { position: sticky; top: 3.6rem; z-index: 3; display: flex; flex-wrap: wrap; gap: .35rem; padding: .6rem 0; margin: 1rem 0 .4rem;
+  background: var(--marfil); border-bottom: 1px solid rgba(167,134,88,.5); }
+.efem-meses a { font-family: var(--garamond); font-size: .98rem; padding: .25rem .65rem; border: 1px solid rgba(167,134,88,.7); border-radius: 2rem; text-decoration: none; color: var(--granate); }
+.efem-meses a:hover, .efem-meses a:focus-visible { background: var(--granate); color: var(--marfil); }
+.efem-meses a.efem-ir-hoy { background: var(--granate); color: var(--marfil); }
+.efem-buscar { margin: 1rem 0 1.4rem; max-width: 34rem; }
+.efem-buscar label { display: block; font-family: var(--garamond); font-style: italic; color: var(--oliva); margin-bottom: .3rem; }
+.efem-buscar input { width: 100%; font-family: var(--garamond); font-size: 1.05rem; padding: .55rem .9rem; border: 1px solid var(--bronce); border-radius: 2rem; background: #fff; }
+.efem-buscar input:focus { outline: 2px solid var(--granate); outline-offset: 1px; }
+p.efem-cuenta { margin: .4rem 0 0; font-size: .92rem; color: var(--oliva); min-height: 1.2em; }
+.efem-mes[hidden], .efem-dia[hidden] { display: none; }
+.efem-mes > h2 { font-family: var(--fell); color: var(--granate); border-bottom: 3px double var(--bronce); padding-bottom: .3rem; margin-top: 2.6rem; scroll-margin-top: 7rem; }
+.efem-dia { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); column-gap: 1.6rem; padding: 1.5rem 0 1.3rem;
+  border-top: 1px solid var(--pergamino); scroll-margin-top: 7rem; }
+.efem-dia:first-of-type { border-top: 0; }
+.efem-dia.es-hoy { background: linear-gradient(90deg, rgba(232,220,199,.65), rgba(232,220,199,0) 70%); padding-left: .6rem; margin-left: -.6rem; }
+.efem-dia:target { background: linear-gradient(90deg, rgba(167,134,88,.25), rgba(167,134,88,0) 70%); }
+.efem-margen { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+.efem-num { font-family: var(--fell); font-size: 2.3rem; line-height: 1; color: var(--granate); }
+.efem-mesc { font-family: var(--garamond); font-style: italic; color: var(--oliva); font-size: .95rem; }
+.efem-romana { font-family: var(--garamond); font-style: italic; font-size: .82rem; color: var(--bronce-osc); margin-top: .35rem; line-height: 1.25; }
+.efem-cuerpo { min-width: 0; }
+.efem-cuerpo p { max-width: none; }
+p.efem-anno { margin: 0; font-family: var(--maquina); font-size: .82rem; color: var(--oliva); }
+.efem-anno b { color: var(--granate); font-weight: 600; }
+.efem-cuerpo h3 { font-family: var(--garamond); font-size: 1.45rem; line-height: 1.25; color: var(--burdeos); margin: .25rem 0 .55rem; }
+p.efem-texto { margin: 0; font-size: 1.04rem; line-height: 1.55; }
+p.efem-fuente { margin: .6rem 0 0; font-size: .88rem; font-style: italic; color: var(--oliva); }
+p.efem-acciones { margin: .4rem 0 0; font-size: .88rem; }
+.efem-enlace { color: var(--bronce-osc); }
+@media (max-width: 640px) {
+  .efem-dia { grid-template-columns: 1fr; }
+  .efem-margen { flex-direction: row; align-items: baseline; gap: .5rem; text-align: left; margin-bottom: .3rem; }
+  .efem-num { font-size: 1.6rem; }
+  .efem-romana { margin-top: 0; }
+  .efem-meses { top: 3.2rem; }
+}

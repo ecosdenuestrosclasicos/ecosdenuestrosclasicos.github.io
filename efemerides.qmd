@@ -1,0 +1,107 @@
+---
+title: "Tal día como hoy"
+subtitle: "Una curiosidad del mundo griego y romano para cada día del año, con su fuente"
+description: "366 curiosidades de Grecia y Roma, una por día: nacimientos de autores, batallas, pactos, fiestas romanas y griegas, obras, hallazgos arqueológicos y ecos de los clásicos, cada una con su fuente. Y una palabra griega y otra latina cada día."
+image: imagenes/mapa-ruta.jpg
+toc: false
+---
+
+Cada día del año tiene aquí su historia: autores que nacen o mueren, batallas y pactos, fiestas del calendario romano y del ateniense, obras que se estrenan, estatuas que salen de la tierra y ecos modernos de los clásicos. Todas llevan su fuente. Cuando una fecha es tradicional, calculada o discutida, lo digo; y cuando una fiesta griega no puede fijarse en nuestro calendario, porque el ateniense era lunar, va como «por estas fechas».
+
+```{=html}
+<div class="efem-hoy" id="efem-hoy"></div>
+
+<section class="palabra-dia palabra-dia-pagina" aria-label="Palabras del día" hidden>
+  <div class="palabra-dia-caja" data-lengua="griego">
+    <p class="palabra-dia-etiqueta">Palabra griega del día</p>
+    <p class="palabra-dia-forma" lang="grc"></p>
+    <p class="palabra-dia-lema"></p>
+    <p class="palabra-dia-nota"></p>
+  </div>
+  <div class="palabra-dia-caja" data-lengua="latin">
+    <p class="palabra-dia-etiqueta">Palabra latina del día</p>
+    <p class="palabra-dia-forma" lang="la"></p>
+    <p class="palabra-dia-lema"></p>
+    <p class="palabra-dia-nota"></p>
+  </div>
+</section>
+
+<nav class="efem-meses" id="efem-meses" aria-label="Meses"></nav>
+<div class="efem-buscar">
+  <label for="efem-filtro">Buscar en las 366</label>
+  <input id="efem-filtro" type="search" placeholder="Cicerón, eclipse, Hispania, teatro…" autocomplete="off">
+  <p class="efem-cuenta" id="efem-cuenta" aria-live="polite"></p>
+</div>
+<div class="efem-lista" id="efem-lista"></div>
+
+<script src="assets/fecha-romana.js"></script>
+<script src="assets/efemerides.js"></script>
+<script src="assets/palabras-dia.js"></script>
+<script src="assets/palabra-dia.js"></script>
+<script>
+(function () {
+  var EF = window.ECOS_EFEMERIDES, F = window.ECOS_FECHA;
+  if (!EF || !F) return;
+  var MES_ES = F.MES_ES;
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+  var hoy = new Date(); hoy.setHours(12, 0, 0, 0);
+  var kHoy = ('0' + (hoy.getMonth() + 1)).slice(-2) + '-' + ('0' + hoy.getDate()).slice(-2);
+
+  var lista = document.getElementById('efem-lista'), nav = document.getElementById('efem-meses');
+  var html = '', navHtml = '';
+  for (var m = 0; m < 12; m++) {
+    var mm = ('0' + (m + 1)).slice(-2);
+    navHtml += '<a href="#mes-' + mm + '">' + cap(MES_ES[m]).slice(0, 3) + '</a>';
+    html += '<section class="efem-mes" id="mes-' + mm + '"><h2>' + cap(MES_ES[m]) + '</h2>';
+    for (var d = 1; d <= 31; d++) {
+      var k = mm + '-' + ('0' + d).slice(-2), e = EF[k];
+      if (!e) continue;
+      // año bisiesto (2024) para que exista el 29 de febrero en la fecha romana
+      var r = F.fechaRomana(new Date(2024, m, d, 12));
+      html += '<article class="efem-dia' + (k === kHoy ? ' es-hoy' : '') + '" id="d-' + k + '">' +
+        '<div class="efem-margen"><span class="efem-num">' + d + '</span><span class="efem-mesc">' + MES_ES[m] + '</span>' +
+        '<span class="efem-romana" lang="la">' + esc(r.corta) + '</span></div>' +
+        '<div class="efem-cuerpo"><p class="efem-anno">' + (k === kHoy ? '<b>Hoy</b> · ' : '') + esc(e.anno) + '</p>' +
+        '<h3>' + esc(e.titulo) + '</h3><p class="efem-texto">' + esc(e.mas || e.texto) + '</p>' +
+        '<p class="efem-fuente">Fuente: ' + esc(e.fuente) + '</p>' +
+        '<p class="efem-acciones"><a href="#d-' + k + '" class="efem-enlace" data-k="' + k + '">Enlace a este día</a></p></div></article>';
+    }
+    html += '</section>';
+  }
+  lista.innerHTML = html;
+  nav.innerHTML = '<a href="#d-' + kHoy + '" class="efem-ir-hoy">Hoy</a>' + navHtml;
+
+  // Hoy, destacado arriba
+  var eh = EF[kHoy], rh = F.fechaRomana(hoy);
+  if (eh) document.getElementById('efem-hoy').innerHTML =
+    '<p class="efem-hoy-fecha">Hoy, ' + hoy.getDate() + ' de ' + MES_ES[hoy.getMonth()] + ' · <span lang="la">' + esc(rh.larga) + '</span></p>' +
+    '<p class="efem-hoy-titulo"><a href="#d-' + kHoy + '">' + esc(eh.titulo) + '</a></p><p>' + esc(eh.texto) + '</p>';
+
+  // Buscador
+  var filtro = document.getElementById('efem-filtro'), cuenta = document.getElementById('efem-cuenta');
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  var dias = lista.querySelectorAll('.efem-dia');
+  var textos = Array.prototype.map.call(dias, function (a) { return norm(a.textContent); });
+  filtro.addEventListener('input', function () {
+    var q = norm(filtro.value.trim()), n = 0;
+    Array.prototype.forEach.call(dias, function (a, i) {
+      var ok = !q || textos[i].indexOf(q) !== -1; a.hidden = !ok; if (ok) n++;
+    });
+    lista.querySelectorAll('.efem-mes').forEach(function (s) { s.hidden = !s.querySelector('.efem-dia:not([hidden])'); });
+    cuenta.textContent = q ? (n === 1 ? 'Una curiosidad' : n + ' curiosidades') : '';
+  });
+
+  // Copiar el enlace de un día
+  lista.addEventListener('click', function (ev) {
+    var a = ev.target.closest('.efem-enlace'); if (!a) return;
+    var url = location.origin + location.pathname + '#d-' + a.dataset.k;
+    if (navigator.clipboard) { ev.preventDefault(); navigator.clipboard.writeText(url).then(function () { a.textContent = 'Enlace copiado'; setTimeout(function () { a.textContent = 'Enlace a este día'; }, 2000); }); history.replaceState(null, '', '#d-' + a.dataset.k); }
+  });
+
+  // Al entrar, ir al día pedido o al de hoy
+  var destino = location.hash ? document.getElementById(location.hash.slice(1)) : document.getElementById('d-' + kHoy);
+  if (destino && location.hash) setTimeout(function () { destino.scrollIntoView(); }, 50);
+})();
+</script>
+```
